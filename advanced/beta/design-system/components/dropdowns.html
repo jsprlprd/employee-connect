@@ -1,0 +1,53 @@
+---
+layout: cirrus/advanced/design-system
+
+heading-title: Dropdown
+
+page-menu:
+- text: Code
+  url: 
+- text: Usage
+  url: 
+- text: Style
+  url: 
+
+---
+
+<div class="clearfix js-html-inspector" data-remove-target="p:first">
+  <p><strong>.dropdown ul.dropdown-menu</strong></p>
+  <div class="dropdown">
+    <!-- Only use inline style for static display -->
+    <ul class="dropdown-menu" style="display: block; position: static;">
+      <li class="dropdown-header">li.dropdown-header</li>
+      <li><a href="#">li a</a></li>
+      <li><a href="#">Another link</a></li>
+      <li class="disabled"><a href="#">li.disabled a</a></li>
+      <li class="divider"></li>
+      <li class="dropdown-header">Dropdown header</li>
+      <li><a href="#">Separated link</a></li>
+    </ul>
+  </div>
+</div>
+
+
+
+
+<!-- Javascript -->
+
+<p>Via data attributes: <code>data-toggle="dropdown"</code></p>
+
+<div class="js-html-inspector">
+  <div class="dropdown">
+    <a class="btn btn-primary" data-toggle="dropdown" href="#">
+      Dropdown trigger
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="#">Link #1</a></li>
+      <li><a href="#">Link #2</a></li>
+    </ul>
+  </div>
+</div>
+
+<p><br>Via Javascript: <code>$('.dropdown-toggle').dropdown()</code>(<code>data-toggle="dropdown"</code> still required)</p>
+<p>Methods: <code>.dropdown('toggle')</code></p>
+<p>Events: <code>show.bs.dropdown</code> <code>shown.bs.dropdown</code> <code>hide.bs.dropdown</code> <code>hidden.bs.dropdown</code></p>

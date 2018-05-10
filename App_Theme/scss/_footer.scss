@@ -1,0 +1,598 @@
+//
+// footers
+// --------------------------------------------------
+
+
+// Wrapper and base class
+//
+// Provide a static footer from which we expand to create full-width, fixed, and
+// other footer variations.
+
+.footer {
+  position: relative;
+  // min-height: $footer-height; // Ensure a footer always shows (e.g., without a .footer-brand in collapsed mode)
+  // margin-bottom: $footer-margin-bottom;
+  // border: 1px solid transparent;
+
+  // Prevent floats from breaking the footer
+  @include clearfix;
+
+  @media (min-width: $grid-float-breakpoint) {
+    // border-radius: $footer-border-radius;
+  }
+}
+
+
+// footer heading
+//
+// Groups `.footer-brand` and `.footer-toggle` into a single component for easy
+// styling of responsive aspects.
+
+.footer-header {
+  @include clearfix;
+
+  @media (min-width: $grid-float-breakpoint) {
+    float: left;
+  }
+}
+
+.footer-fixed-top,
+.footer-fixed-bottom {
+  .footer-collapse {
+    max-height: $footer-collapse-max-height;
+
+    @media (max-device-width: $screen-xs-min) and (orientation: landscape) {
+      max-height: 200px;
+    }
+  }
+}
+
+
+// Both footer header and collapse
+//
+// When a container is present, change the behavior of the header and collapse.
+
+.container,
+.container-fluid {
+  > .footer-header,
+  > .footer-collapse {
+    margin-right: -$footer-padding-horizontal;
+    margin-left:  -$footer-padding-horizontal;
+
+    @media (min-width: $grid-float-breakpoint) {
+      margin-right: 0;
+      margin-left:  0;
+    }
+  }
+}
+
+
+//
+// footer alignment options
+//
+// Display the footer across the entirety of the page or fixed it to the top or
+// bottom of the page.
+
+// Static top (unfixed, but 100% wide) footer
+.footer-static-top {
+  z-index: $zindex-footer;
+  // border-width: 0 0 1px;
+
+  @media (min-width: $grid-float-breakpoint) {
+    // border-radius: 0;
+  }
+}
+
+// Fix the top/bottom footers when screen real estate supports it
+.footer-fixed-top,
+.footer-fixed-bottom {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: $zindex-footer-fixed;
+
+  // Undo the rounded corners
+  @media (min-width: $grid-float-breakpoint) {
+    // border-radius: 0;
+  }
+}
+.footer-fixed-top {
+  top: 0;
+  // border-width: 0 0 1px;
+}
+.footer-fixed-bottom {
+  bottom: 0;
+  margin-bottom: 0; // override .footer defaults
+  // border-width: 1px 0 0;
+}
+
+
+
+
+// Fix the top/bottom footers when screen real estate supports it
+.footer-top,
+.footer-bottom {
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: $zindex-footer-fixed;
+
+  // Undo the rounded corners
+  @media (min-width: $grid-float-breakpoint) {
+    border-radius: 0;
+  }
+}
+.footer-top {
+  top: 0;
+  // border-width: 0 0 1px;
+}
+.footer-bottom {
+  bottom: 0;
+  // margin-bottom: 0; // override .footer defaults
+  // border-width: 1px 0 0;
+}
+
+
+
+// Brand/project name
+
+.footer-brand {
+  float: left;
+  padding: $footer-padding-vertical $footer-padding-horizontal;
+  font-size: $font-size-large;
+  line-height: $line-height-computed;
+  height: $footer-height;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+
+  > img {
+    display: block;
+  }
+
+  @media (min-width: $grid-float-breakpoint) {
+    .footer > .container &,
+    .footer > .container-fluid & {
+      margin-left: -$footer-padding-horizontal;
+    }
+  }
+}
+
+// footer nav links
+//
+// Builds on top of the `.nav` components with its own modifier class to make
+// the nav the full height of the horizontal nav (above 768px).
+
+// .footer-nav {
+//   margin: ($footer-padding-vertical / 2) (-$footer-padding-horizontal);
+
+//   > li > a {
+//     padding-top:    10px;
+//     padding-bottom: 10px;
+//     line-height: $line-height-computed;
+//   }
+
+//   @media (max-width: $grid-float-breakpoint-max) {
+//     // Dropdowns get custom display when collapsed
+//     .open .dropdown-menu {
+//       position: static;
+//       float: none;
+//       width: auto;
+//       margin-top: 0;
+//       background-color: transparent;
+//       border: 0;
+//       box-shadow: none;
+//       > li > a,
+//       .dropdown-header {
+//         padding: 5px 15px 5px 25px;
+//       }
+//       > li > a {
+//         line-height: $line-height-computed;
+//         &:hover,
+//         &:focus {
+//           background-image: none;
+//         }
+//       }
+//     }
+//   }
+
+//   // Uncollapse the nav
+//   @media (min-width: $grid-float-breakpoint) {
+//     float: left;
+//     margin: 0;
+
+//     > li {
+//       float: left;
+//       > a {
+//         padding-top:    $footer-padding-vertical;
+//         padding-bottom: $footer-padding-vertical;
+//       }
+//     }
+//   }
+// }
+
+
+// footer form
+//
+// Extension of the `.form-inline` with some extra flavor for optimum display in
+// our footers.
+
+.footer-form {
+  margin-left: -$footer-padding-horizontal;
+  margin-right: -$footer-padding-horizontal;
+  padding: 10px $footer-padding-horizontal;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  $shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 0 rgba(255,255,255,.1);
+  @include box-shadow($shadow);
+
+  // Mixin behavior for optimum display
+  @include form-inline;
+
+  .form-group {
+    @media (max-width: $grid-float-breakpoint-max) {
+      margin-bottom: 5px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  // Vertically center in expanded, horizontal footer
+  @include footer-vertical-align($input-height-base);
+
+  // Undo 100% width for pull classes
+  @media (min-width: $grid-float-breakpoint) {
+    width: auto;
+    border: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    @include box-shadow(none);
+  }
+}
+
+
+// Dropdown menus
+
+// Menu position and menu carets
+.footer-nav > li > .dropdown-menu {
+  margin-top: 0;
+  // @include border-top-radius(0);
+}
+// Menu position and menu caret support for dropups via extra dropup class
+.footer-fixed-bottom .footer-nav > li > .dropdown-menu {
+  margin-bottom: 0;
+  // @include border-top-radius($footer-border-radius);
+  // @include border-bottom-radius(0);
+}
+
+
+// Buttons in footers
+//
+// Vertically center a button within a footer (when *not* in a form).
+
+.footer-btn {
+  @include footer-vertical-align($input-height-base);
+
+  &.btn-sm {
+    @include footer-vertical-align($input-height-small);
+  }
+  &.btn-xs {
+    @include footer-vertical-align(22);
+  }
+}
+
+
+// Text in footers
+//
+// Add a class to make any element properly align itself vertically within the footers.
+
+// .footer-text {
+//   @include footer-vertical-align($line-height-computed);
+
+//   @media (min-width: $grid-float-breakpoint) {
+//     float: left;
+//     margin-left: $footer-padding-horizontal;
+//     margin-right: $footer-padding-horizontal;
+//   }
+// }
+
+
+// Component alignment
+//
+// Repurpose the pull utilities as their own footer utilities to avoid specificity
+// issues with parents and chaining. Only do this when the footer is uncollapsed
+// though so that footer contents properly stack and align in mobile.
+//
+// Declared after the footer components to ensure more specificity on the margins.
+
+@media (min-width: $grid-float-breakpoint) {
+  .footer-left {
+    float: left !important;
+  }
+  .footer-right {
+    float: right !important;
+    margin-right: -$footer-padding-horizontal;
+
+    ~ .footer-right {
+      margin-right: 0;
+    }
+  }
+}
+
+
+// Alternate footers
+// --------------------------------------------------
+
+// Default footer
+.footer-default {
+  background-color: $footer-default-bg;
+  border-color: $footer-default-border;
+
+  .footer-brand {
+    color: $footer-default-brand-color;
+    &:hover,
+    &:focus {
+      color: $footer-default-brand-hover-color;
+      background-color: $footer-default-brand-hover-bg;
+    }
+  }
+
+  .footer-text {
+    color: $footer-default-color;
+  }
+
+  .footer-nav {
+    > li > a {
+      color: $footer-default-link-color;
+
+      &:hover,
+      &:focus {
+        color: $footer-default-link-hover-color;
+        background-color: $footer-default-link-hover-bg;
+      }
+    }
+    > .active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: $footer-default-link-active-color;
+        background-color: $footer-default-link-active-bg;
+      }
+    }
+    > .disabled > a {
+      &,
+      &:hover,
+      &:focus {
+        color: $footer-default-link-disabled-color;
+        background-color: $footer-default-link-disabled-bg;
+      }
+    }
+  }
+
+  .footer-toggle {
+    border-color: $footer-default-toggle-border-color;
+    &:hover,
+    &:focus {
+      background-color: $footer-default-toggle-hover-bg;
+    }
+    .icon-bar {
+      background-color: $footer-default-toggle-icon-bar-bg;
+    }
+  }
+
+  .footer-collapse,
+  .footer-form {
+    border-color: $footer-default-border;
+  }
+
+  // Dropdown menu items
+  .footer-nav {
+    // Remove background color from open dropdown
+    > .open > a {
+      &,
+      &:hover,
+      &:focus {
+        background-color: $footer-default-link-active-bg;
+        color: $footer-default-link-active-color;
+      }
+    }
+
+    @media (max-width: $grid-float-breakpoint-max) {
+      // Dropdowns get custom display when collapsed
+      .open .dropdown-menu {
+        > li > a {
+          color: $footer-default-link-color;
+          &:hover,
+          &:focus {
+            color: $footer-default-link-hover-color;
+            background-color: $footer-default-link-hover-bg;
+          }
+        }
+        > .active > a {
+          &,
+          &:hover,
+          &:focus {
+            color: $footer-default-link-active-color;
+            background-color: $footer-default-link-active-bg;
+          }
+        }
+        > .disabled > a {
+          &,
+          &:hover,
+          &:focus {
+            color: $footer-default-link-disabled-color;
+            background-color: $footer-default-link-disabled-bg;
+          }
+        }
+      }
+    }
+  }
+
+
+  // Links in footers
+  //
+  // Add a class to ensure links outside the footer nav are colored correctly.
+
+  .footer-link {
+    color: $footer-default-link-color;
+    &:hover {
+      color: $footer-default-link-hover-color;
+    }
+  }
+
+  .btn-link {
+    color: $footer-default-link-color;
+    &:hover,
+    &:focus {
+      color: $footer-default-link-hover-color;
+    }
+    &[disabled],
+    fieldset[disabled] & {
+      &:hover,
+      &:focus {
+        color: $footer-default-link-disabled-color;
+      }
+    }
+  }
+}
+
+// Inverse footer
+
+.footer-inverse {
+  background-color: $footer-inverse-bg;
+  border-color: $footer-inverse-border;
+
+  .footer-brand {
+    color: $footer-inverse-brand-color;
+    &:hover,
+    &:focus {
+      color: $footer-inverse-brand-hover-color;
+      background-color: $footer-inverse-brand-hover-bg;
+    }
+  }
+
+  .footer-text {
+    color: $footer-inverse-color;
+  }
+
+  .footer-nav {
+    > li > a {
+      color: $footer-inverse-link-color;
+
+      &:hover,
+      &:focus {
+        color: $footer-inverse-link-hover-color;
+        background-color: $footer-inverse-link-hover-bg;
+      }
+    }
+    > .active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: $footer-inverse-link-active-color;
+        background-color: $footer-inverse-link-active-bg;
+      }
+    }
+    > .disabled > a {
+      &,
+      &:hover,
+      &:focus {
+        color: $footer-inverse-link-disabled-color;
+        background-color: $footer-inverse-link-disabled-bg;
+      }
+    }
+  }
+
+  // Darken the responsive nav toggle
+  .footer-toggle {
+    border-color: $footer-inverse-toggle-border-color;
+    &:hover,
+    &:focus {
+      background-color: $footer-inverse-toggle-hover-bg;
+    }
+    .icon-bar {
+      background-color: $footer-inverse-toggle-icon-bar-bg;
+    }
+  }
+
+  .footer-collapse,
+  .footer-form {
+    border-color: darken($footer-inverse-bg, 7%);
+  }
+
+  // Dropdowns
+  .footer-nav {
+    > .open > a {
+      &,
+      &:hover,
+      &:focus {
+        background-color: $footer-inverse-link-active-bg;
+        color: $footer-inverse-link-active-color;
+      }
+    }
+
+    @media (max-width: $grid-float-breakpoint-max) {
+      // Dropdowns get custom display
+      .open .dropdown-menu {
+        > .dropdown-header {
+          border-color: $footer-inverse-border;
+        }
+        .divider {
+          background-color: $footer-inverse-border;
+        }
+        > li > a {
+          color: $footer-inverse-link-color;
+          &:hover,
+          &:focus {
+            color: $footer-inverse-link-hover-color;
+            background-color: $footer-inverse-link-hover-bg;
+          }
+        }
+        > .active > a {
+          &,
+          &:hover,
+          &:focus {
+            color: $footer-inverse-link-active-color;
+            background-color: $footer-inverse-link-active-bg;
+          }
+        }
+        > .disabled > a {
+          &,
+          &:hover,
+          &:focus {
+            color: $footer-inverse-link-disabled-color;
+            background-color: $footer-inverse-link-disabled-bg;
+          }
+        }
+      }
+    }
+  }
+
+  .footer-link {
+    color: $footer-inverse-link-color;
+    &:hover {
+      color: $footer-inverse-link-hover-color;
+    }
+  }
+
+  .btn-link {
+    color: $footer-inverse-link-color;
+    &:hover,
+    &:focus {
+      color: $footer-inverse-link-hover-color;
+    }
+    &[disabled],
+    fieldset[disabled] & {
+      &:hover,
+      &:focus {
+        color: $footer-inverse-link-disabled-color;
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+---
+layout: login
+
+page-style: login
+---
+
+<main class="login">
+  <form>
+    <img class="login-brand" src="{{ site.baseurl }}/Images/ec-logo-dark.svg" alt="" height="72">
+    <div class="heading">
+      <h1 class="heading-title h3">Sign In</h1>
+      <p class="heading-subtitle">with your EmployeeConnect account</p>
+    </div>
+    <fieldset class="form-group" style="margin-bottom: 8px;">
+      <span class="help-block">Enter your <strong>Email or Username</strong> and <strong>Password</strong></span>
+    </fieldset>
+    <fieldset class="form-group form-group-lg has-icon-left" style="margin-bottom: 8px;">
+      <input class="form-control" type="text" name="" id="" placeholder="Email or Username">
+      <span class="form-control-icon">
+        <i class="ec-icon icon-user-2"></i> 
+      </span>
+    </fieldset>
+    <fieldset class="form-group form-group-lg has-icon-left" style="margin-bottom: 8px;">
+      <input class="form-control" type="password" name="" id="" placeholder="Password">
+      <span class="form-control-icon">
+        <i class="ec-icon icon-key-1"></i> 
+      </span>
+    </fieldset>
+    <fieldset class="form-group form-group-lg has-icon-right" style="margin-bottom: 8px;">
+      <input class="form-control" type="text" name="" id="" placeholder="Company ID">
+      <span class="form-control-icon"  data-toggle="popover" data-placement="left" data-content="[data-content]" title="" data-original-title="[title]">
+        <i class="fa fa-lg fa-info-circle"></i> 
+      </span>
+    </fieldset>
+    <fieldset class="form-group" style="margin-bottom: 24px;">
+      <div class="checkbox">
+        <label><input type="checkbox">Rembember me</label>
+      </div>
+    </fieldset>
+    <a class="btn btn-primary btn-lg btn-block" href="{{ site.baseurl }}/home/">Login</a>
+    <a class="btn btn-link btn-lg btn-block"  href="{{ site.baseurl }}/forgot-password.html">Forgot Password?</a>
+    <hr class="dashed">
+    <div class="row">
+      <div class="col-xs-6 text-muted">
+        EC6.1.0434
+      </div>
+      <div class="col-xs-6 text-muted text-right">
+        v3.2.40
+      </div>
+    </div>
+         
+  </form>
+
+</main>
+
+<footer class="footer footer-inverse footer-bottom">
+  <div class="container">
+    <ul class="footer-nav">
+      <li><a href="">EmployeeConnect</a></li>
+      <li class="divider"></li>
+      <li><a href="">Terms</a></li>
+      <li class="divider"></li>
+      <li><a href="">Privacy</a></li>
+    </ul>
+    <p class="footer-text">Copyright © EmployeeConnect Pty Ltd. <br/> All rights reserved.</p>
+  </div>
+</footer>

@@ -1,0 +1,24 @@
+// Panels
+
+@mixin section-variant($border, $heading-text-color, $heading-bg-color, $heading-border) {
+  border-color: $border;
+
+  & > .section-heading {
+    color: $heading-text-color;
+    // background-color: $heading-bg-color;
+    border-color: $heading-border;
+
+    + .section-collapse > .section-body {
+      border-top-color: $border;
+    }
+    .badge {
+      color: $heading-bg-color;
+      background-color: $heading-text-color;
+    }
+  }
+  & > .section-footer {
+    + .section-collapse > .section-body {
+      border-bottom-color: $border;
+    }
+  }
+}

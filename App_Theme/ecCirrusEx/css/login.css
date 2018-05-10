@@ -1,0 +1,89 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 171px;
+}
+
+@media (min-width: 992px) {
+  body {
+    background-color: #2E4052;
+    margin-bottom: 84px;
+  }
+}
+
+.login {
+  padding-top: 16px;
+  padding-bottom: 32px;
+}
+
+@media (min-width: 567px) {
+  .login {
+    padding-top: 24px;
+    padding-bottom: 48px;
+  }
+}
+
+@media (min-width: 768px) {
+  .login {
+    padding-top: 32px;
+    padding-bottom: 64px;
+  }
+}
+
+@media (min-width: 992px) {
+  .login {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .login {
+    padding-top: 48px;
+    padding-bottom: 96px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .login {
+    padding-top: 56px;
+    padding-bottom: 112px;
+  }
+}
+
+.login form {
+  background-color: #FFFFFF;
+  margin: 0 auto;
+  padding: 24px;
+  max-width: 560px;
+}
+
+@media (min-width: 567px) {
+  .login form {
+    padding: 36px;
+  }
+}
+
+@media (min-width: 768px) {
+  .login form {
+    padding: 48px;
+  }
+}
+
+@media (min-width: 992px) {
+  .login form {
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+  }
+}
+
+.login-brand {
+  max-width: 250px;
+}
+
+.login .heading {
+  margin-top: 40px;
+}

@@ -1,0 +1,116 @@
+---
+layout: onboarding/content
+
+page-style: onboarding
+
+heading-title: Tax File Number Declaration
+heading-subtitle: The information you provide on this form will determine how your tax is calculated, and withheld from your wages.
+
+prev-page: training-plan.html
+next-page: banking.html
+
+---
+
+<form class="form-horizontal">
+
+  <fieldset class="form-group">
+    <label class="col-sm-3 col-lg-2 control-label" for="">Tax File Number</label>
+    <div class="col-sm-6 col-lg-4">
+      <input type="text" class="form-control" placeholder="Enter Tax File Number">
+      <div class="checkbox">
+        <label><input type="checkbox">I don't have TFN</label>
+      </div>
+    </div>
+  </fieldset>
+
+  <fieldset class="form-group">
+    <label class="col-sm-3 col-lg-2 control-label" for="">Reason</label>
+    <div class="col-sm-6 col-lg-4">
+      <select class="form-control" name="" id="">
+        <option value="" selected="" disabled="">Select Reason</option>
+        <option value="">No TFN</option>
+        <option value="">Application to ATO for TFN</option>
+        <option value="">Under 18 yrs of age</option>
+        <option value="">Recieving Pension</option>
+      </select>
+    </div>
+  </fieldset>
+
+  <hr class="dashed" />
+
+  <p class="lead">Tax Calculation Options</p>
+  
+  <ol>
+    <li>
+      <p>Are you an Australian Resident for tax purposes?</p>
+      <label class="radio-inline">
+        <input name="optionsRadios2" type="radio" value="option1">
+        Yes
+      </label>
+      <label class="radio-inline">
+        <input name="optionsRadios2" type="radio" value="option2">
+        No
+      </label>
+      <label class="radio-inline disabled">
+        <input name="optionsRadios2" type="radio" value="option3">
+        Working Holiday
+      </label>
+    </li>
+    <li>
+      <p>Do you want to claim the tax free threshold from this Payer?</p>
+      <label class="radio-inline">
+        <input name="optionsRadios2" type="radio" value="option1">
+        Yes
+      </label>
+      <label class="radio-inline">
+        <input name="optionsRadios2" type="radio" value="option2">
+        No
+      </label>
+    </li>
+    <li>
+      <p>Do you have a HELP, SSL or TSL accumulated debt?</p>
+      <label class="radio-inline">
+        <input name="optionsRadios2" type="radio" value="option1">
+        Yes
+      </label>
+      <label class="radio-inline">
+        <input name="optionsRadios2" type="radio" value="option2">
+        No
+      </label>
+    </li>
+    <li>
+      <p>Do you have a Financial Supplement Debt?</p>
+      <label class="radio-inline">
+        <input name="optionsRadios2" type="radio" value="option1">
+        Yes
+      </label>
+      <label class="radio-inline">
+        <input name="optionsRadios2" type="radio" value="option2">
+        No
+      </label>
+    </li>
+    <li>
+      <p>Do you have an approved withholding variation?</p>
+      <label class="radio-inline">
+        <input name="optionsRadios2" type="radio" value="option1">
+        Yes
+      </label>
+      <label class="radio-inline">
+        <input name="optionsRadios2" type="radio" value="option2">
+        No
+      </label>
+    </li>
+    <li>
+      What is your withholding variation % if applicable?
+    </li>
+  </ol>
+  <hr class="dashed" />
+  
+  <div class="row">
+    <div class="col-sm-3 col-md-2"></div>
+    <div class="col-sm-6 col-lg-4">
+      <button type="submit" class="btn btn-primary btn-wide">Save</button>        
+    </div>
+  </div>
+
+</form>

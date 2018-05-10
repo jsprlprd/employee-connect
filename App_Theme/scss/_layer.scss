@@ -1,0 +1,19 @@
+.shadow-2 {
+  @include box-shadow($shadow-2);
+}
+
+.shadow-8 {
+  @include box-shadow($shadow-8);
+}
+
+.shadow-12 {
+  @include box-shadow($shadow-12);
+}
+
+.shadow-16 {
+  @include box-shadow($shadow-16);
+}
+
+.shadow-24 {
+  @include box-shadow($shadow-24);
+}

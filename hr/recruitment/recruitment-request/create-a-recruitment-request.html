@@ -1,0 +1,808 @@
+---
+layout: cirrus/hr/recruitment
+
+heading-title: Create a Recruitment Request
+heading-subtitle: The wizard will guide you through creating a new Recruitment Request. You will be prompted for specific detail about the vacancy to enable the approval and recruitment processes to commence.
+---
+
+<ul class="wizard wizard-tab wizard-lg">
+  <li class="wizard-item complete">
+    <a class="wizard-link" data-toggle="tab" href="#start">
+      <div class="wizard-indicator"></div>
+      Create a Recruitment Request
+    </a>
+  </li>
+  <li class="wizard-item active">
+    <a class="wizard-link" data-toggle="tab" href="#position-details">
+      <div class="wizard-indicator"></div>
+      Position Details
+    </a>
+  </li>
+  <li class="wizard-item">
+    <a class="wizard-link" data-toggle="tab" href="#remuneration-and-benefits">
+      <div class="wizard-indicator"></div>
+      Remuneration &amp; Benefits
+    </a>
+  </li>
+  <li class="wizard-item">
+    <a class="wizard-link" data-toggle="tab" href="#recruitment-roles-and-status">
+      <div class="wizard-indicator"></div>
+      Recruitment Roles &amp; Status
+    </a>
+  </li>
+</ul>
+
+<div class="tab-content">
+
+  <div class="tab-pane active" id="start">
+
+    <div class="alert alert-info">
+      <p><strong>Note</strong> To create a vacancy for an existing position, simply select the position in the field below.</p>
+      <ul>
+        <li>You may also choose from a number of templates to pre-populate details of your request with the values from the template.</li>
+        <li>You may choose to 'Save' the request and complete it at a later date or 'Submit' it for approval and processing.</li>
+      </ul>
+    </div>
+
+    <div class="alert alert-info">
+      <p><strong>Note</strong> A 'Saved' request will not proceed for approval or processing until it has been submitted for approval.</p>
+    </div>
+
+    <form class="form-horizontal">
+
+      <fieldset class="form-group form-group-lg form-required">
+        <label class="col-sm-4 col-md-3 control-label" for="">Position Name</label>
+        <div class="col-sm-6 col-md-5">
+          <input class="form-control" type="text" placeholder="Enter Position Name">
+        </div>
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label class="col-sm-4 col-md-3 control-label" for="">Choose an Existing Template</label>
+        <div class="col-sm-6 col-md-5">
+          <select class="form-control" name="" id="">
+            <option value="" selected="" disabled="">Select Existing Template</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label class="col-sm-4 col-md-3 control-label" for="">Choose an Existing Position</label>
+        <div class="col-sm-6 col-md-5">
+          <div class="input-group">
+            <span class="input-group-btn">
+              <button class="btn btn-primary" type="button"><i class="fa fa-list"></i></button>
+            </span>
+            <input type="text" class="form-control" placeholder="Select Position to be Filled" disabled>
+          </div>
+          <p class="help-block">If this vacancy is for an existing position, please select the position to be filled.</p>
+        </div>
+      </fieldset>
+      <hr class="dashed" />
+
+      <div class="row">
+        <div class="col-sm-6 col-sm-push-4 col-md-5 col-md-push-3 text-right">
+          <button type="submit" class="btn btn-primary btn-wide">Next</button>        
+        </div>
+      </div>
+  
+    </form>
+
+
+  </div>
+
+  <div class="tab-pane" id="position-details">
+
+    <p class="lead">Position Details</p>
+
+    <form class="form-horizontal">
+
+      <fieldset class="form-group">
+        <label class="col-sm-4 col-md-3 control-label" for="">Status</label>
+        <div class="col-sm-6 col-md-5">
+          <p class="form-control-static"><span class="fa fa-circle"></span> Pending</p>
+        </div>
+      </fieldset>
+
+      <fieldset class="form-group form-required">
+        <label class="col-sm-4 col-md-3 control-label" for="">Vacancy</label>
+        <div class="col-sm-6 col-md-5">
+          <input class="form-control" type="text" placeholder="Enter Vacancy">
+        </div>
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label class="col-sm-4 col-md-3 control-label" for="">Location</label>
+        <div class="col-sm-6 col-md-5">
+          <div class="input-group">
+            <span class="input-group-btn">
+              <button class="btn btn-primary" type="button"><i class="fa fa-list"></i></button>
+            </span>
+            <input type="text" class="form-control" placeholder="Choose Location" disabled>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label class="col-sm-4 col-md-3 control-label" for="">Organisation Unit</label>
+        <div class="col-sm-6 col-md-5">
+          <div class="input-group">
+            <span class="input-group-btn">
+              <button class="btn btn-primary" type="button"><i class="fa fa-list"></i></button>
+            </span>
+            <input type="text" class="form-control" placeholder="Choose Organisation Unit" disabled>
+          </div>
+        </div>
+      </fieldset>
+
+      <hr class="dashed" />
+
+      <p class="lead">Please specify details for the new vacancy</p>
+
+      <fieldset class="form-group">
+        <label class="col-sm-4 col-md-3 control-label" for="">Position ID</label>
+        <div class="col-sm-6 col-md-5">
+          <input class="form-control" type="text" placeholder="Enter Position ID">
+        </div>
+      </fieldset>
+      
+      <fieldset class="form-group">
+        <label class="col-sm-4 col-md-3 control-label" for="">Position Title</label>
+        <div class="col-sm-6 col-md-5">
+          <input class="form-control" type="text" placeholder="Enter Position Title">
+        </div>
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label class="col-sm-4 col-md-3 control-label" for="">Report To Position</label>
+        <div class="col-sm-6 col-md-5">
+          <div class="input-group">
+            <span class="input-group-btn">
+              <button class="btn btn-primary" type="button"><i class="fa fa-list"></i></button>
+            </span>
+            <input type="text" class="form-control" placeholder="Choose Report To Position" disabled>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label class="col-sm-4 col-md-3 control-label" for="">Company</label>
+        <div class="col-sm-6 col-md-5">
+          <div class="input-group">
+            <span class="input-group-btn">
+              <button class="btn btn-primary" type="button"><i class="fa fa-list"></i></button>
+            </span>
+            <input type="text" class="form-control" placeholder="Choose Company" disabled>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label class="col-sm-4 col-md-3 control-label" for="">Organisation Unit</label>
+        <div class="col-sm-6 col-md-5">
+          <div class="input-group">
+            <span class="input-group-btn">
+              <button class="btn btn-primary" type="button"><i class="fa fa-list"></i></button>
+            </span>
+            <input type="text" class="form-control" placeholder="Choose Organisation Unit" disabled>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label class="col-sm-4 col-md-3 control-label" for="">Location</label>
+        <div class="col-sm-6 col-md-5">
+          <div class="input-group">
+            <span class="input-group-btn">
+              <button class="btn btn-primary" type="button"><i class="fa fa-list"></i></button>
+            </span>
+            <input type="text" class="form-control" placeholder="Choose Location" disabled>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label class="col-sm-4 col-md-3 control-label" for="">Cost Centre</label>
+        <div class="col-sm-6 col-md-5">
+          <div class="input-group">
+            <span class="input-group-btn">
+              <button class="btn btn-primary" type="button"><i class="fa fa-list"></i></button>
+            </span>
+            <input type="text" class="form-control" placeholder="Choose Cost Centre" disabled>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label class="col-sm-4 col-md-3 control-label" for="">Position Start Date</label>
+        <div class="col-sm-6 col-md-5">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Enter Position Start Date">
+            <span class="input-group-btn">
+              <button class="btn btn-primary" type="button"><i class="fa fa-calendar-o"></i></button>
+            </span>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label class="col-sm-4 col-md-3 control-label" for="">Standard Work Hours</label>
+        <div class="col-sm-6 col-md-5">
+          <input class="form-control" type="number" placeholder="Enter Standard Work Hours">
+        </div>
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label class="col-sm-4 col-md-3 control-label" for="">Standard Work period</label>
+        <div class="col-sm-6 col-md-5">
+          <select class="form-control" name="" id="">
+            <option value="" selected="" disabled="">Select Standard Work period</option>
+            <option value="">Hourly</option>
+            <option value="">Daily</option>
+            <option value="">Weekly</option>
+            <option value="">Fortnightly</option>
+            <option value="">Four-weekly</option>
+            <option value="">Monthly</option>
+            <option value="">Quarterly</option>
+            <option value="">Yearly</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label class="col-sm-4 col-md-3 control-label" for="">Reason Vacancy Exists</label>
+        <div class="col-sm-6 col-md-5">
+          <select class="form-control" name="" id="">
+            <option value="" selected="" disabled="">Select Reason Vacancy Exists</option>
+            <option value="">New Position</option>
+            <option value="">Replacement</option>
+            <option value="">Weekly</option>
+            <option value="">Fortnightly</option>
+            <option value="">Four-weekly</option>
+            <option value="">Monthly</option>
+            <option value="">Quarterly</option>
+            <option value="">Yearly</option>
+          </select>
+        </div>
+      </fieldset>
+   
+      <fieldset class="form-group">
+        <label class="col-sm-4 col-md-3 control-label" for="">Is the New Postion Budgeted</label>
+        <div class="col-sm-6 col-md-5">
+          <label class="radio-inline">
+            <input type="radio" name="gender" value="Male" checked="">Yes
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="gender" value="Female">No
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label class="col-sm-4 col-md-3 control-label" for="">Position Budget</label>
+        <div class="col-sm-6 col-md-5">
+          <input class="form-control" type="text" placeholder="Enter Position Budget">
+        </div>
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label class="col-sm-4 col-md-3 control-label" for="">Justification For New Position</label>
+        <div class="col-sm-6 col-md-5">
+          <textarea class="form-control" name="" id="" placeholder="Enter Justification For New Position"></textarea>
+        </div>
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label class="col-sm-4 col-md-3 control-label" for="">Attach Justification</label>
+        <div class="col-sm-6 col-md-5">
+          <input type="file" class="form-control">
+        </div>
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label class="col-sm-4 col-md-3 control-label" for="">Position Description Attachment</label>
+        <div class="col-sm-6 col-md-5">
+          <input type="file" class="form-control">
+        </div>
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label class="col-sm-4 col-md-3 control-label" for="">Head Count</label>
+        <div class="col-sm-6 col-md-5">
+          <input class="form-control" type="number" placeholder="Enter Head Count">
+        </div>
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label class="col-sm-4 col-md-3 control-label" for="">Replacement for</label>
+        <div class="col-sm-6 col-md-5">
+          <input class="form-control" type="text" placeholder="Enter Replacement for">
+        </div>
+      </fieldset>
+
+      <hr class="dashed" />
+
+      <div class="row">
+        <div class="col-sm-6 col-sm-push-4 col-md-5 col-md-push-3 text-right">
+          <button type="submit" class="btn btn-default btn-wide">Previous</button>        
+          <button type="submit" class="btn btn-primary btn-wide">Next</button>        
+        </div>
+      </div>
+  
+    </form>
+      
+  </div>
+
+  <div class="tab-pane" id="remuneration-and-benefits">
+
+    <p class="lead">Remuneration and Benefits</p>
+
+    <form class="form-horizontal">
+      <fieldset class="form-group">
+        <label class="col-sm-4 col-md-3 control-label" for="">Status</label>
+        <div class="col-sm-6 col-md-5">
+          <p class="form-control-static"><span class="fa fa-circle"></span> Pending</p>
+        </div>
+      </fieldset>
+
+      <fieldset class="form-group form-required">
+        <label class="col-sm-4 col-md-3 control-label" for="">Vacancy Name</label>
+        <div class="col-sm-6 col-md-5">
+          <input class="form-control" type="text" placeholder="Enter Vacancy">
+        </div>
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label class="col-sm-4 col-md-3 control-label" for="">Employment Type</label>
+        <div class="col-sm-6 col-md-5">
+          <select class="form-control" name="" id="">
+            <option value="" selected="" disabled="">Select Employment Type</option>
+            <option value="">Casual</option>
+            <option value="">Contract</option>
+            <option value="">Fixed-Term</option>
+            <option value="">Full Time</option>
+            <option value="">Labour Hire</option>
+            <option value="">Part Time</option>
+            <option value="">Super Income Stream</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label class="col-sm-4 col-md-3 control-label" for="">Fixed Contract Start Date</label>
+        <div class="col-sm-6 col-md-5">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Enter Fixed Contract Start Date">
+            <span class="input-group-btn">
+              <button class="btn btn-primary" type="button"><i class="fa fa-calendar-o"></i></button>
+            </span>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label class="col-sm-4 col-md-3 control-label" for="">Fixed Contract End Date</label>
+        <div class="col-sm-6 col-md-5">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Enter Fixed Contract End Date">
+            <span class="input-group-btn">
+              <button class="btn btn-primary" type="button"><i class="fa fa-calendar-o"></i></button>
+            </span>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label class="col-sm-4 col-md-3 control-label" for="">Payment Type</label>
+        <div class="col-sm-6 col-md-5">
+          <select class="form-control" name="" id="">
+            <option value="" selected="" disabled="">Select Payment Type</option>
+            <option value="">Hourly</option>
+            <option value="">Daily</option>
+            <option value="">Weekly</option>
+            <option value="">Fortnightly</option>
+            <option value="">Four-weekly</option>
+            <option value="">Monthly</option>
+            <option value="">Quarterly</option>
+            <option value="">Yearly</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label class="col-sm-4 col-md-3 control-label" for="">Contract Type</label>
+        <div class="col-sm-6 col-md-5">
+          <select class="form-control" name="" id="">
+            <option value="" selected="" disabled="">Select Contract Type</option>
+            <option value="">Standard Agreement</option>
+            <option value="">Individual Agreement</option>
+            <option value="">Award</option>
+            <option value="">Not Applicable</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label class="col-sm-4 col-md-3 control-label" for="">Award</label>
+        <div class="col-sm-6 col-md-5">
+          <select class="form-control" name="" id="">
+            <option value="" selected="" disabled="">Select Award</option>
+            <option value="">Aboriginal Community Controlled Health Services Award 2010 [MA000115]</option>
+            <option value="">Business Equipment Award 2010 [MA000021]</option>
+            <option value="">Children's Services (Shiftworker) Award 2010 [MA000120]</option>
+            <option value="">Children's Services Award 2010 [MA000120]</option>
+            <option value="">Cleaning Services Award 2010 [MA000022]</option>
+            <option value="">Clerks Private Sector Award 2010 [MA000002]</option>
+            <option value="">Education Services (Teachers) Award 2010 [MA000077]</option>
+            <option value="">Electrical, Electronic and Communications Contracting Award 2010 [MA000025]</option>
+            <option value="">Fast Food Industry Award 2010 [MA000003]</option>
+            <option value="]">Fitness Industry Award 2010 [MA000094]</option>
+            <option value="">Food, Beverage and Tobacco Manufacturing Award 2010 [MA000073]</option>
+            <option value="">Hair and Beauty Industry Award 2010 [MA000005]</option>
+            <option value="">Health Professionals and Support Services Award 2010 [MA000027]</option>
+            <option value="">Horticulture Award [MA000028]</option>
+            <option value="">Hospitality Industry (General) Award 2010 [MA000009]</option>
+            <option value="">Joinery and Building Trades Award 2010 [MA000029]</option>
+            <option value="">Miscellaneous Award 2010 [MA000104]</option>
+            <option value="">Pastoral Award 2010 - Broadacre Farming and Livestock Operations [MA000035]</option>
+            <option value="">Pastoral Award 2010 - Pig Breeding and Raising [MA000035]</option>
+            <option value="">Pastoral Award 2010 - Poultry Farming [MA000035]</option>
+            <option value="">Pastoral Award 2010 - Shearing Operations [MA000035]</option>
+            <option value="">Pharmacy Industry Award 2010 [MA000012]</option>
+            <option value="">Registered and Licensed Clubs Award 2010 [MA000058]</option>
+            <option value="">Restaurant Industry Award (2010)</option>
+            <option value="">Restaurant Industry Award 2010 [MA000119]</option>
+            <option value="">Retail (Baking) Industry Award 2010 [MA000004]</option>
+            <option value="">Retail (General - Extended Hours) Industry Award 2010 [MA000004]</option>
+            <option value="">Retail (General - Shiftworker) Industry Award 2010 [MA000004]</option>
+            <option value="">Retail (General) Industry Award 2010 [MA000004]</option>
+            <option value="">Retail (Newsagent) Industry Award 2010 [MA000004]</option>
+            <option value="">Social, Community, Home Care and Disability Services Industry Award 2010 [MA000100]</option>
+            <option value="">Storage Services and Wholesale Award 2010 [MA000084]</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label class="col-sm-4 col-md-3 control-label" for="">Classification</label>
+        <div class="col-sm-6 col-md-5">
+          <input class="form-control" type="text" placeholder="Enter Classification">
+        </div>
+      </fieldset>
+
+      <!-- Recommendation -->
+      <!-- Users just need to tick all applicable days in a week -->
+
+      <fieldset class="form-group hidden">
+        <label class="col-sm-4 col-md-3 control-label" for="">Standard Hours (Shift Work Roster)</label>
+        <div class="col-sm-6 col-md-5">
+          <select class="form-control" name="" id="">
+            <option value="" selected="" disabled="">Select Standard Hours (Shift Work Roster)</option>
+            <option value="">8-on 6-off</option>
+            <option value="">Mon7.6|Tue7.6|Wed0|Thu7.6|Fri7.6|Sat0|Sun7.6</option>
+            <option value="">Mon7.6|Tue7.6|Wed7.6|Thu7.6|Fri7.6|Sat7.6</option>
+            <option value="">Mon-Wed_Fri</option>
+            <option value="">Tue8|Wed8|Thu8|Fri8</option>
+            <option value="">Wed9|Thu9|Fri9</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label class="col-sm-4 col-md-3 control-label" for="">Standard Hours (Shift Work Roster)</label>
+        <div class="col-sm-6 col-md-5">
+          <label class="checkbox-inline">
+            <input type="checkbox" name="gender" value="Sunday">Sun
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" name="gender" value="Monday" checked="">Mon
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" name="gender" value="Tuesday" checked="">Tues
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" name="gender" value="Wednesday" checked="">Wed
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" name="gender" value="Thursday" checked="">Thurs
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" name="gender" value="Friday" checked="">Fri
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" name="gender" value="Saturday">Sat
+          </label>
+        </div>
+      </fieldset>      
+
+      <!-- Recommendation -->
+      <!-- Users just need to select the start time, it is best to just compute it Based on Standard Work Hours -->
+ 
+      <fieldset class="form-group hidden">
+        <label class="col-sm-4 col-md-3 control-label" for="">Time</label>
+        <div class="col-sm-6 col-md-5">
+          <select class="form-control" name="" id="">
+            <option value="" selected="" disabled="">Select Time</option>
+            <option value="">9AM - 5PM</option>
+            <option value="">9AM - 4:20PM</option>
+            <option value="">8:30AM - 5PM</option>
+            <option value="">8AM - 5PM</option>
+            <option value="">6AM - 6PM</option>
+            <option value="">5AM - 5PM</option>
+            <option value="">5PM - 5AM</option>
+            <option value="">7:30AM - 5PM</option>
+          </select>
+          <select class="form-control" name="" id="">
+            <option value="" selected="" disabled="">Select Time</option>
+            <option value="">12:00 AM</option>
+            <option value="">1:00 AM</option>
+            <option value="">2:00 AM</option>
+            <option value="">3:00 AM</option>
+            <option value="">4:00 AM</option>
+            <option value="">5:00 AM</option>
+            <option value="">6:00 AM</option>
+            <option value="">7:00 AM</option>
+            <option value="">8:00 AM</option>
+            <option value="">9:00 AM</option>
+            <option value="">10:00 AM</option>
+            <option value="">11:00 AM</option>
+            <option value="">12:00 PM</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label class="col-sm-4 col-md-3 control-label" for="">Time (Start Time)</label>
+        <div class="col-sm-6 col-md-5">
+          <div class="form-inline">
+            <select class="form-control" name="" id="" style="width: 30%; text-align: center;">
+              <option value="">01</option>
+              <option value="">02</option>
+              <option value="">03</option>
+              <option value="">04</option>
+              <option value="">05</option>
+              <option value="">06</option>
+              <option value="">07</option>
+              <option value="">08</option>
+              <option value="" selected="">09</option>
+              <option value="">10</option>
+              <option value="">11</option>
+              <option value="">12</option>
+            </select>
+            <span style="width: 5%;display: inline-block;text-align: center; margin-left: -3.5px; margin-right: -3.5px;">:</span>
+            <select class="form-control" name="" id="" style="width: 30%; text-align: center;">
+              <option value="" selected="">00</option>
+              <option value="">01</option>
+              <option value="">02</option>
+              <option value="">03</option>
+              <option value="">04</option>
+              <option value="">05</option>
+              <option value="">06</option>
+              <option value="">07</option>
+              <option value="">08</option>
+              <option value="">09</option>
+              <option value="">10</option>
+              <option value="">11</option>
+              <option value="">12</option>
+              <option value="">13</option>
+              <option value="">14</option>
+              <option value="">15</option>
+              <option value="">16</option>
+              <option value="">17</option>
+              <option value="">18</option>
+              <option value="">19</option>
+              <option value="">20</option>
+              <option value="">21</option>
+              <option value="">22</option>
+              <option value="">23</option>
+              <option value="">24</option>
+              <option value="">25</option>
+              <option value="">26</option>
+              <option value="">27</option>
+              <option value="">28</option>
+              <option value="">29</option>
+              <option value="">30</option>
+              <option value="">31</option>
+              <option value="">32</option>
+              <option value="">33</option>
+              <option value="">34</option>
+              <option value="">35</option>
+              <option value="">36</option>
+              <option value="">37</option>
+              <option value="">38</option>
+              <option value="">39</option>
+              <option value="">40</option>
+              <option value="">41</option>
+              <option value="">42</option>
+              <option value="">43</option>
+              <option value="">44</option>
+              <option value="">45</option>
+              <option value="">46</option>
+              <option value="">47</option>
+              <option value="">48</option>
+              <option value="">49</option>
+              <option value="">50</option>
+              <option value="">51</option>
+              <option value="">52</option>
+              <option value="">53</option>
+              <option value="">54</option>
+              <option value="">55</option>
+              <option value="">56</option>
+              <option value="">57</option>
+              <option value="">58</option>
+              <option value="">59</option>
+            </select>
+            <span style="width: 5%;display: inline-block;text-align: center; margin-left: -3.5px; margin-right: -3.5px;">:</span>
+            <select class="form-control" name="" id="" style="width: 30%; text-align: center;">
+              <option value="" selected="">AM</option>
+              <option value="">PM</option>
+            </select>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label class="col-sm-4 col-md-3 control-label" for="">Meal/Rest Breaks</label>
+        <div class="col-sm-6 col-md-5">
+          <select class="form-control" name="" id="">
+            <option value="" selected="" disabled="">Select Meal/Rest Breaks</option>
+            <option value="">1 x Unpaid 30 minute Meal Break</option>
+            <option value="">2 x Paid 10 minute Rest Intervals</option>
+            <option value="">2 x  Unpaid 30 minute Meal Breaks</option>
+            <option value="">3 x Paid 10 minute Rest Intervals</option>
+            <option value="">1 x Paid 60 minute Meal Break</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label class="col-sm-4 col-md-3 control-label" for="">Remuneration Details</label>
+        <div class="col-sm-6 col-md-5">
+          <textarea class="form-control" name="" id="" placeholder="Enter Remuneration Details"></textarea>
+        </div>
+      </fieldset>
+      
+      <fieldset class="form-group">
+        <label class="col-sm-4 col-md-3 control-label" for="">Proposed Remuneration</label>
+        <div class="col-sm-6 col-md-5">
+          <input class="form-control" type="text" placeholder="Enter Proposed Remuneration">
+        </div>
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label class="col-sm-4 col-md-3 control-label" for="">Salary Currency</label>
+        <div class="col-sm-6 col-md-5">
+          <select class="form-control" name="" id="">
+            <option value="" selected="" disabled="">Select Salary Currency</option>
+            <option value="">AUD</option>
+            <option value="">NZD</option>
+            <option value="">HKD</option>
+            <option value="">SGD</option>
+            <option value="">USD</option>
+            <option value="">EUR</option>
+            <option value="">GBP</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label class="col-sm-4 col-md-3 control-label" for="">Salary Cost Code</label>
+        <div class="col-sm-6 col-md-5">
+          <input class="form-control" type="text" placeholder="Enter Salary Cost Code">
+        </div>
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label class="col-sm-4 col-md-3 control-label" for="">Transportation</label>
+        <div class="col-sm-6 col-md-5">
+          <select class="form-control" name="" id="">
+            <option value="" selected="" disabled="">Select Transportation</option>
+            <option value="">Free bus service to site</option>
+            <option value="">Access to Company Vehicle</option>
+            <option value="">Provide own transport</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label class="col-sm-4 col-md-3 control-label" for="">Company Vehicle</label>
+        <div class="col-sm-6 col-md-5">
+          <select class="form-control" name="" id="">
+            <option value="" selected="" disabled="">Select Company Vehicle</option>
+            <option value="">Executive</option>
+            <option value="">Standard</option>
+            <option value="">Category A - Manager</option>
+            <option value="">Category B - Superintendent</option>
+            <option value="">Category C - Rostered on Call</option>
+            <option value="">Category D - On Call</option>
+            <option value="">None</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label class="col-sm-4 col-md-3 control-label" for="">Additional Comments</label>
+        <div class="col-sm-6 col-md-5">
+          <textarea class="form-control" name="" id="" placeholder="Enter Additional Comments"></textarea>
+        </div>
+      </fieldset>
+
+      <hr class="dashed" />
+
+      <div class="row">
+        <div class="col-sm-6 col-sm-push-4 col-md-5 col-md-push-3 text-right">
+          <button type="submit" class="btn btn-default btn-wide">Previous</button>        
+          <button type="submit" class="btn btn-primary btn-wide">Next</button>        
+        </div>
+      </div>
+
+    </form>
+    
+  </div>
+
+  <div class="tab-pane" id="recruitment-roles-and-status">
+      
+    <p class="lead">Recruitment Roles and Status</p>
+    <form class="form-horizontal">
+      <fieldset class="form-group form-required">
+        <label class="col-sm-4 col-md-3 control-label" for="">Vacancy Name</label>
+        <div class="col-sm-6 col-md-5">
+          <input class="form-control" type="text" placeholder="Enter Vacancy">
+        </div>
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label class="col-sm-4 col-md-3 control-label" for="">Hiring Manager</label>
+        <div class="col-sm-6 col-md-5">
+          <div class="input-group">
+            <span class="input-group-btn">
+              <button class="btn btn-primary" type="button"><i class="fa fa-list"></i></button>
+            </span>
+            <input type="text" class="form-control" placeholder="Choose Hiring Manager" disabled>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label class="col-sm-4 col-md-3 control-label" for="">HR Advisor</label>
+        <div class="col-sm-6 col-md-5">
+          <div class="input-group">
+            <span class="input-group-btn">
+              <button class="btn btn-primary" type="button"><i class="fa fa-list"></i></button>
+            </span>
+            <input type="text" class="form-control" placeholder="Choose HR Advisor" disabled>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label class="col-sm-4 col-md-3 control-label" for="">Status</label>
+        <div class="col-sm-6 col-md-5">
+          <p class="form-control-static"><span class="fa fa-circle"></span> Pending</p>
+        </div>
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label class="col-sm-4 col-md-3 control-label" for="">Save Only /Submit To Workflow</label>
+        <div class="col-sm-6 col-md-5">
+          <label class="radio-inline">
+            <input type="radio" name="workflow-action" value="Save" checked="">Save
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="workflow-action" value="Submit">Submit
+          </label>
+        </div>
+      </fieldset>      
+
+      <hr class="dashed" />
+
+      <div class="row">
+        <div class="col-sm-6 col-sm-push-4 col-md-5 col-md-push-3 text-right">
+          <button type="submit" class="btn btn-default btn-wide">Previous</button>        
+          <button type="submit" class="btn btn-success btn-wide">Finish</button>        
+        </div>
+      </div>
+
+    </form>
+  </div>
+</div>

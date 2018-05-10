@@ -1,0 +1,80 @@
+---
+layout: cirrus/advanced/design-system
+
+heading-title: Card
+
+page-menu:
+- text: Code
+  url: 
+- text: Usage
+  url: 
+- text: Style
+  url: 
+
+---
+
+<p class="lead">Card (Default)</p>
+<div class="js-html-inspector">
+  <div class="card card-default">
+    <div class="card-heading">
+      <h3 class="card-title">Card Title</h3>
+    </div>
+    <div class="card-body">
+      <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+    </div>
+    <div class="card-footer">Card Footer</div>
+  </div>
+</div>
+
+<div class="js-html-inspector" data-remove-target="p:first">
+  <p class="lead">Card (primary)</p>
+  <div class="card card-primary">
+    <div class="card-heading">.card-heading</div>
+    <div class="card-body">.card-body</div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-6 js-html-inspector" data-remove-target="p:first">
+    <p class="lead">Card (success)</p>
+    <div class="card card-success">
+      <div class="card-heading">.card-heading</div>
+      <div class="card-body">.card-body</div>
+    </div>
+  </div>
+  <div class="col-sm-6 js-html-inspector" data-remove-target="p:first">
+    <p class="lead">Card (info)</p>
+    <div class="card card-info">
+      <div class="card-heading">.card-heading</div>
+      <div class="card-body">.card-body</div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-6 js-html-inspector" data-remove-target="p:first">
+    <p class="lead">Card (warning (with table))</p>
+    <div class="card card-warning">
+      <div class="card-heading">.card-heading</div>
+      <table class="table">
+        <thead>
+          <tr><th>Header</th><th>Header</th><th>Header</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Data</td><td>Data</td><td>Data</td></tr>
+          <tr><td>Data</td><td>Data</td><td>Data</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="col-sm-6 js-html-inspector" data-remove-target="p:first">
+    <p class="lead">Card (danger (with list group))</p>
+    <div class="card card-danger">
+      <div class="card-heading">.card-heading</div>
+      <ul class="list-group">
+        <li class="list-group-item">List item</li>
+        <li class="list-group-item">List item</li>
+        <li class="list-group-item">List item</li>
+      </ul>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,41 @@
+---
+layout: base
+
+theme: ecCirrusEx
+---
+
+<table id="ecContainer">
+  <tbody>
+    <tr>
+      <td colspan="2" id="HEADERPANEL">
+        {% include onboarding-header.html %}
+      </td>
+    </tr>
+    <tr>
+      <!-- <td rowspan="2" id="LEFTPANEL">
+        {% include onboarding-side-navigation.html %}
+      </td> -->
+      <td id="MAINPANEL">
+        <main class="container full-screen">
+          {{ content }}
+        </main>      
+      </td>
+      <td id="RIGHTPANEL">
+        <a class="btn btn-link" id="advance-search-close" type="button">
+          <i class="fa fa-close"></i>
+        </a>
+        <p class="h5">Advance Search</p>
+        <a class="btn btn-primary" href="">Apply Filter</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" id="FOOTERPANEL">
+        <footer class="footer footer-inverse">
+          <div class="container-fluid full-screen">
+            <p class="footer-text">Copyright © EmployeeConnect Pty Ltd. <br> All rights reserved.</p>
+          </div>
+        </footer>
+      </td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,197 @@
+---
+layout: default
+
+side-menu-header: Home
+
+side-menu-icon: home
+
+side-menu-index: home
+
+side-menu:
+- title: My Activities
+  icon: th-large-3
+  name: my-activities
+  sub-menu:
+  - title:
+    menuitems:
+    - text: Newsfeed <span class="label label-success">New</span>
+      icon: note
+      url: my-activities/newsfeed.html
+    - text: Workflow <span class="label label-success">New</span>
+      icon: shuffle-3
+      url: my-activities/workflow/
+    - text: Workflow Active
+      icon: shuffle-3
+      url: 
+    - text: Workflow History
+      icon: archive
+      url:
+    - text: Time &amp; Attendance
+      icon: stopwatch
+      url:
+  - title: Manager
+    menuitems:
+    - text: Leave Approval
+      icon: ok-circled-2
+      url: 
+    - text: Timesheet Approval
+      icon: thumbs-up-alt
+      url:
+  - title: Admin / Payroll
+    menuitems:
+    - text: Leave Validate
+      icon: progress-11
+      url:
+    - text: Bulk Update
+      icon: box
+      url:
+    - text: Timesheet Verify
+      icon: back-in-time
+      url:
+    - text: Change Request Validate
+      icon: progress-0 
+      url:
+- title: Company
+  icon: building
+  name: company
+  sub-menu:
+  - title:
+    menuitems:
+    - text: Notice Board
+      icon: desktop
+      url:
+    - text: Company Directory
+      icon: address-book
+      url:
+    - text: Organisation Chart
+      icon: flow-tree
+      url:
+    - text: Support
+      icon: phone-outline
+      url:
+    - text: Documents
+      icon: doc-7
+      url:
+    - text: Search Documents
+      icon: search-8
+      url:
+- title: Personal
+  icon: leaf
+  name: personal
+  sub-menu:
+  - title:
+    menuitems:
+    - text: My Profile <span class="label label-success">New</span>
+      icon: leaf
+      url: my-profile/
+- title: Recruitment
+  icon: spread
+  name: recruitment
+  sub-menu:
+  - title:
+    menuitems:
+    - text: Internal Career Opportunities
+      icon: dot-circled
+      url: 
+    - text: Refer Someone for a Position
+      icon: chat
+      url: 
+    - text: My Applications
+      icon: docs-1
+      url: 
+- title: Safety
+  icon: shield
+  name: safety
+  sub-menu:
+  - title:
+    menuitems:
+    - text: Scoreboard
+      icon: chart-bar
+      url: 
+    - text: Safety Licences
+      icon: doc-text
+      url: 
+    - text: Emergency Personnel
+      icon: police
+      url: 
+  - title: Incident
+    menuitems:
+    - text: Report A Non-Injury Incident
+      icon: flag-filled
+      url: 
+    - text: Report An Injury Incident
+      icon: hospital-1
+      url: 
+    - text: Submitted Incidents
+      icon: archive
+      url: 
+    - text: Owned Incidents
+      icon: bookmark-3
+      url: 
+    - text: Investigations
+      icon: clipboard
+      url: 
+    - text: Compensation Claims
+      icon: megaphone-2
+      url: 
+    - text: Rehabilitation Plans
+      icon: map
+      url: 
+  - title: Hazard / Action
+    menuitems:
+    - text: Hazard Identification
+      icon: resize-small-4
+      url: 
+    - text: Exposure
+      icon: hail
+      url: 
+    - text: Hazard Management
+      icon: target-1
+      url: 
+    - text: View Hazards
+      icon: eye-1
+      url: 
+    - text: Raise an Action
+      icon: forward-2
+      url: 
+    - text: Owned Actions
+      icon: bookmark-3 
+      url: 
+    - text: Review Actions
+      icon: edit
+      url: 
+- title: Custom Forms
+  icon: tools
+  name: custom-forms
+  sub-menu:
+  - title:
+    menuitems:
+    - text: Aris Form
+      icon: doc-text
+      url: 
+
+---
+
+<div class="heading">
+  <div class="media">
+    <div class="media-left">
+      <img src="{{ site.baseur }}/Images/avatar.png" class="img-circle media-object" width="96" height="96">
+      <a class="btn btn-link btn-block btn-sm" href="">Change Photo</a>
+    </div>
+    <div class="media-body media-middle">
+      <h1 style="margin-top: 0; margin-bottom: 0;" class="h3 heading-title">Jasper Lepardo</h1>
+      <p class="heading-subtitle" style="margin-top: 0;">Senior UI/UX Designer, Product &amp; Engineering</p>
+      <ul class="list-unstyled" style="margin-bottom: 12px; margin-top: 4px;">
+        <li><span class="ec-icon icon-map" style="margin-right: 8px; width: 24px; text-align: center;"></span>148 P. Ferma St., Anuling Cerca I, Mendez-Nuñez, Cavite, Philippines - 4121</li>
+        <li><span class="ec-icon icon-email" style="margin-right: 8px;width: 24px;text-align: center;"></span><a href="">jasper.lepardo@employeeconnect.com</a></li>
+        <li><span class="ec-icon icon-phone-1" style="margin-right: 8px; width: 24px; text-align: center;"></span><a href="">0920 983 5937</a></li>
+      </ul>
+      <button class="btn btn-default" type="button">Edit Profile</button>
+      <button class="btn btn-primary" type="button">More<span class="fa fa-caret-down" style="margin-left: 8px;"></span></button>
+    </div>
+  </div>
+</div>
+
+{% include nav-menu.html %}
+
+{{ content }}

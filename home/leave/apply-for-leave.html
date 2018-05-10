@@ -1,0 +1,104 @@
+---
+layout: cirrus/home/default
+
+heading-title: Leave Request
+---
+
+<form class="form-horizontal">
+
+  <fieldset class="form-group form-required">
+    <label class="col-sm-3 col-md-2 control-label" for="">Leave Type</label>
+    <div class="col-sm-5 col-md-4">
+      <select class="form-control" name="" id="">
+        <option value="" selected="" disabled="">Select Leave Type</option>
+        <option value="">Annual Leave</option>
+        <option value="">Sick Leave</option>
+        <option value="">Parental Leave</option>
+      </select>
+    </div>
+  </fieldset>
+
+  <fieldset class="form-group form-required">
+    <label class="col-sm-3 col-md-2 control-label" for="">Start Date</label>
+    <div class="col-sm-5 col-md-4">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Enter Start Date">
+        <span class="input-group-btn">
+          <button class="btn btn-primary" type="button"><i class="fa fa-calendar-o"></i></button>
+        </span>
+      </div>
+    </div>
+  </fieldset>
+
+  <fieldset class="form-group form-required">
+    <label class="col-sm-3 col-md-2 control-label" for="">End Date</label>
+    <div class="col-sm-5 col-md-4">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Enter End Date">
+        <span class="input-group-btn">
+          <button class="btn btn-primary" type="button"><i class="fa fa-calendar-o"></i></button>
+        </span>
+      </div>
+    </div>
+  </fieldset>
+
+  <fieldset class="form-group form-required">
+    <label class="col-sm-3 col-md-2 control-label" for="">Leave Unit</label>
+    <div class="col-sm-5 col-md-4">
+      <select class="form-control" name="" id="">
+        <option value="" selected="" disabled="">Select Leave Unit</option>
+        <option value="">Hours</option>
+        <option value="">Days</option>
+      </select>
+    </div>
+  </fieldset>
+
+  <fieldset class="form-group form-required">
+    <label class="col-sm-3 col-md-2 control-label" for="">Leave Taken</label>
+    <div class="col-sm-5 col-md-4">
+      <input type="number" class="form-control" placeholder="Enter Leave Taken">
+    </div>
+  </fieldset>
+
+  <fieldset class="form-group">
+    <label class="col-sm-3 col-md-2 control-label" for="">Comments</label>
+    <div class="col-sm-5 col-md-4">
+      <textarea class="form-control" placeholder="Enter Comments"></textarea>
+    </div>
+  </fieldset>
+
+  <fieldset class="form-group">
+    <div class="col-sm-5 col-md-4 col-sm-push-3 col-md-push-2">
+      <div class="checkbox">
+        <label><input class="form-check-input" type="checkbox">Pay in advance</label>
+      </div>
+      <div class="checkbox">
+        <label><input class="form-check-input" type="checkbox">Certificate Provided</label>
+      </div>
+    </div>
+  </fieldset>
+
+  <fieldset class="form-group">
+    <label class="col-sm-3 col-md-2 control-label" for="">Attachement</label>
+    <div class="col-sm-5 col-md-4">
+      <input type="file" class="form-control">
+    </div>
+  </fieldset>
+
+  <fieldset class="form-group">
+    <label class="col-sm-3 col-md-2 control-label" for="">Sumitted</label>
+    <div class="col-sm-5 col-md-4">
+      <p class="form-control-static">Display Current Date</p>
+    </div>
+  </fieldset>
+  
+  <hr class="dashed" />
+  
+  <div class="row">
+    <div class="col-sm-5 col-sm-push-3 col-md-4 col-md-push-2">
+      <button type="submit" class="btn btn-success btn-wide">Submit</button>
+    </div>
+  </div>
+
+
+</form>

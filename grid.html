@@ -1,0 +1,119 @@
+---
+layout: base
+
+theme: ecCirrusEx
+---
+
+<div class="ec-container">
+  <div class="ec-headerpanel">
+    <header class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="row">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navigation" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="navbar-header">
+            <a class="navbar-brand" href="{{ site.baseurl }}/">
+              <img src="{{ site.baseurl }}/Images/ec-logo-light.svg" alt="" width="220" height="48">
+            </a>
+          </div>
+
+          <nav class="collapse navbar-collapse" id="main-navigation">
+            <ul class="nav navbar-nav" id="navbar-main-menu">  
+              <li>
+                <a href="{{ baseurl }}/"><i class="ec-icon icon-home"></i>Home</a>
+              </li>
+              <li>
+                <a href="{{ baseurl }}/manager/"><i class="ec-icon icon-user-1"></i>Manager</a>
+              </li>
+              <li class="dropdown">
+                <a href="" data-toggle="dropdown"><i class="ec-icon icon-users"></i>HR</a>
+                <ul class="dropdown-menu">
+                  <li><a href="{{ baseurl }}/hr/people/">People</a></li>
+                  <li><a href="">Organisation</a></li>
+                  <li><a href="">Development</a></li>
+                  <li><a href="{{ baseurl }}/hr/recruitment/">Recruitment</a></li>
+                  <li><a href="">Succession</a></li>
+                  <li><a href="">Performance</a></li>
+                  <li><a href="">Remuneration</a></li>
+                  <li><a href="">Safety</a></li>
+                  <li><a href="">Payroll</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="" data-toggle="dropdown"><i class="ec-icon icon-chart"></i>Reports</a>
+                <ul class="dropdown-menu">
+                  <li><a href="">HR</a></li>
+                  <li><a href="">Manager</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="" data-toggle="dropdown">Advanced</a>
+                <ul class="dropdown-menu">
+                  <li><a href="">System Management</a></li>
+                  <li><a href="">Workflow</a></li>
+                  <li><a href="{{ baseurl }}/advanced/communication/">Communication</a></li>
+                  <li><a href="">Integration</a></li>
+                  <li><a href="">Developer Toolkit</a></li>
+                  <li><a href="">Custom Forms</a></li>
+                  <li><a href="">Change Log</a></li>
+                  <li><a href="">Beta</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right" id="navbar-user-menu">  
+              <li>
+                <a class="media" href="{{ baseurl }}/login.html" data-toggle="dropdown">
+                  <div class="media-left">
+                    <img class="media-object img-circle" src="{{ site.baseurl }}/Images/avatar.png" width="32" height="32">
+                  </div>
+                  <div class="media-body media-middle">
+                    <span class="user-profile-name">Jasper Lepardo</span>
+                  </div>              
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right">
+                  <li><a href="">Preferences</a></li>
+                  <li><a href="">Help</a></li>
+                  <li><a href="">Change Password</a></li>
+                  <li><a href="{{ site.baseurl }}/login.html">Sign Out</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right" id="navbar-toolbar-menu">  
+              <li>
+                <a href=""><i class="ec-icon icon-pencil-1"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="ec-icon icon-star-8"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="ec-icon icon-mail-8"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="ec-icon icon-star-8"></i></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    
+  </div>
+  <div class="ec-leftpanel"></div>
+  <div class="ec-mainpanel">
+    <div class="heading">
+      <h1 class="heading-title h3">Welcome back, Jasper!</h1>
+    </div>
+  </div>
+  <div class="ec-rightpanel"></div>
+  <div class="ec-footerpanel">
+    <footer class="footer footer-inverse">
+      <div class="container-fluid full-screen">
+        <p class="footer-text">Copyright © EmployeeConnect Pty Ltd. <br> All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+</div>

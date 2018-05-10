@@ -1,0 +1,7 @@
+<ul class="nav nav-default nav-tabs-two">
+  {% for tabs in page.nav-menu %}
+    <li class="{% if page.url == tabs.url %} active {% endif %}">
+      <a href="{{ site.baseurl }}{{ tabs.url }}">{{tabs.text}}</a>
+    </li>
+  {% endfor %}
+</ul>

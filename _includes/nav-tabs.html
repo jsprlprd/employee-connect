@@ -1,0 +1,7 @@
+<ul class="nav nav-default nav-tabs-two">
+  {% for tabs in page.nav-tabs %}
+    <li>
+      <a href="#{{ tabs.url }}-tab" data-toggle="tab">{{tabs.text}}</a>
+    </li>
+  {% endfor %}
+</ul>

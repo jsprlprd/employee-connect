@@ -1,0 +1,92 @@
+---
+layout: base
+
+theme: ecCirrusEx
+
+side-menu-header: Onboarding
+
+side-menu:
+- text: Introduction
+  icon: 
+  url: introduction
+- text: Key Indicators
+  icon: 
+  url: key-indicators
+- text: Objectives
+  icon: 
+  url: objectives
+- text: Skills
+  icon: 
+  url: skills
+- text: Goals
+  icon: 
+  url: goals
+- text: Competence
+  icon: 
+  url: competence
+- text: Development
+  icon: 
+  url: development
+- text: Overall
+  icon: 
+  url: overall
+- text: Strategic Goals
+  icon: 
+  url: strategic-goals
+- text: Training Plan
+  icon: 
+  url: training-plan
+
+---
+
+<table id="ecContainer">
+  <tbody>
+    <tr>
+      <td colspan="2" id="HEADERPANEL">
+        {% include header.html %}
+      </td>
+    </tr>
+    <tr>
+      <td rowspan="2" id="LEFTPANEL">
+        {% include onboarding-side-navigation.html %}
+      </td>
+      <td id="MAINPANEL">
+        <main class="container-fluid full-screen">
+          <div class="heading">
+            <div class="row">
+              <div class="col-md-12 col-lg-9 col-xl-6">
+                <h1 class="heading-title h3">{{ page.heading-title }}</h1>
+                <p class="heading-subtitle">{{ page.heading-subtitle }}</p>
+              </div>
+              <div class="col-md-12 col-lg-3 col-xl-6 text-right">{{ page.heading-button }}</div>
+            </div>
+          </div>
+          {{ content }}
+        </main>      
+      </td>
+      <td id="RIGHTPANEL">
+        <a class="btn btn-link" id="advance-search-close" type="button">
+          <i class="fa fa-close"></i>
+        </a>
+        <p class="h5">Advance Search</p>
+        <a class="btn btn-primary" href="">Apply Filter</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" id="FOOTERPANEL">
+        <footer class="footer footer-default">
+          <div class="container-fluid full-screen">
+            <div class="row">
+              <div class="col-xs-6 col-sm-3">
+                <a class="btn btn-default btn-lg btn-block" href="{{ site.baseurl }}/onboarding/{{ page.prev-page }}">Back</a>
+              </div>
+              <div class="col-xs-6 col-sm-3 col-sm-push-6 text-right">
+                <a class="btn btn-default btn-lg btn-block" href="{{ site.baseurl }}/onboarding/{{ page.next-page }}">Next Step</a>
+              </div>
+            </div>  
+          </div>
+        </footer>
+      </td>
+    </tr>
+  </tbody>
+</table>

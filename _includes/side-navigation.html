@@ -1,0 +1,36 @@
+<div class="heading">
+  <a class="heading-title h5" href="{{ site.baseurl }}/{{ layout.side-menu-index }}">
+    <i class="ec-icon icon-{{ layout.side-menu-icon }}"></i>
+    {{ layout.side-menu-header }}
+  </a>
+  <div class="form-group has-icon-right">
+    <input class="form-control" type="search" placeholder="Filter Menu">
+    <span class="form-control-icon">
+      <i class="ec-icon icon-search-8"></i>
+    </span>
+  </div>
+</div>
+<ul class="nav nav-inverse nav-pills nav-stacked" id="side-menu">
+  {% for parent-menu in layout.side-menu %}
+    <li class="collapsible">
+      <a data-toggle="collapse" data-parent="#side-menu" href="#{{ parent-menu.name }}-menu">
+        <i class="ec-icon icon-{{ parent-menu.icon }}"></i>
+        <span>{{ parent-menu.title }}</span>
+        <!-- <i class="material-icons" style="display: inline-block; float: right;">keyboard_arrow_left</i> -->
+      </a>
+      <ul class="nav nav-inverse nav-pills nav-stacked sub-nav-pills collapse" id="{{ parent-menu.name }}-menu">
+        {% for child-menu in parent-menu.sub-menu %}
+          <li class="nav-header">{{ child-menu.title }}</li>
+          {% for menu in child-menu.menuitems %}
+            <li class="{% if page.url == /layout.side-menu-index/menu.url %} active {% endif %}">
+              <a href="{{ site.baseurl }}/{{ layout.side-menu-index }}/{{ menu.url }}">
+                <i class="ec-icon icon-{{ menu.icon }}"></i>
+                <span>{{ menu.text }}</span>
+              </a>
+            </li>
+          {% endfor %}
+        {% endfor %}
+      </ul>
+    </li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,28 @@
+#LEFTPANEL {
+  background-color: #FAFAFA;
+  border-right: 1px solid #D8D8D8;
+  padding-top: 112px;
+}
+
+@media (min-width: 992px) {
+  #LEFTPANEL {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #LEFTPANEL {
+    padding-top: 120px;
+  }
+}
+
+@media (min-width: 1600px) {
+  #LEFTPANEL {
+    padding-top: 126px;
+  }
+}
+
+#MAINPANEL {
+  height: calc(100vh - 76px);
+}

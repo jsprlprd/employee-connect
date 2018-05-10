@@ -1,0 +1,9 @@
+// footer vertical align
+//
+// Vertically center elements in the footer.
+// Example: an element has a height of 30px, so write out `.footer-vertical-align(30px);` to calculate the appropriate top margin.
+
+@mixin footer-vertical-align($element-height) {
+  margin-top: (($footer-height - $element-height) / 2);
+  margin-bottom: (($footer-height - $element-height) / 2);
+}
