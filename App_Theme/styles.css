@@ -1,8 +1,17 @@
 #ecContainer {
   width: 100%;
+
+  position: relative;
+  overflow: hidden;
+  padding-top: 96px;
+  height: 100vh;
 }
 
-
+@media (min-width: 992px) {
+  #ecContainer {
+    padding-top: 64px;
+  }
+}
 
 
 
@@ -53,7 +62,7 @@
   #main-navigation {
     padding-left: 40px;
     padding-right: 40px;
-    margin-left: 292px !important;
+    margin-left: 300px !important;
     clear: none;
   }
 }
@@ -305,40 +314,84 @@
 
 
 #LEFTPANEL {
-  display: none;
-}
-
-#LEFTPANEL {
-  background-color: #506174;
-  padding-top: 88px;
-  padding-bottom: 32px;
-  width: 256px;
-}
-
-@media (min-width: 567px) {
-  #LEFTPANEL {
-    padding-bottom: 48px;
-  }
-}
-
-@media (min-width: 768px) {
-  #LEFTPANEL {
-    padding-bottom: 64px;
-  }
+  /* display: none; */
+  background-color:#2E4052;
+  width: 300px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  padding-top: 56px;
+  -webkit-box-shadow: 6px 0px 12px 0px rgba(0,0,0,0.25);
+     -moz-box-shadow: 6px 0px 12px 0px rgba(0,0,0,0.25);
+          box-shadow: 6px 0px 12px 0px rgba(0,0,0,0.25);
+  z-index: 1090;
 }
 
 @media (min-width: 992px) {
   #LEFTPANEL {
-    display: table-cell;
-    width: 292px;
+    display: block;
+    background-color: #506174;
     padding-top: 64px;
-    padding-bottom: 80px;
+    z-index: unset;
+    -webkit-box-shadow: none;
+       -moz-box-shadow: none;
+            box-shadow: none;
   }
 }
 
-@media (min-width: 1200px) {
-  #LEFTPANEL {
-    padding-bottom: 96px;
+#LEFTPANEL .navbar {
+  max-width: 300px;
+  border-bottom: 1px solid #253342;
+}
+
+@media (min-width: 992px) {
+  #LEFTPANEL .navbar {
+    max-width: 300px;
+    border-bottom: 0;
+  }
+}  
+
+#LEFTPANEL .content-scrollable {
+  overflow: hidden;
+  overflow-y: overlay;
+  height: calc(100vh - 54px);
+}
+
+@media (min-width: 992px) {
+  #LEFTPANEL .content-scrollable {
+    min-height: calc(100vh - 64px);
+  }
+}
+
+#LEFTPANEL .content-scrollable::-webkit-scrollbar{
+  height:8px;
+  width:8px;
+  padding: 2px;
+  border-radius: 4px;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+#LEFTPANEL .content-scrollable::-webkit-scrollbar:hover{
+  background: #c6c7ca;
+}
+
+#LEFTPANEL .content-scrollable::-webkit-scrollbar-thumb{
+  background:#777779;
+}
+
+.content-wrapper {
+  padding-bottom: 114px;
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  min-height: calc(100vh - 56px);
+}
+
+@media (min-width: 992px) {
+  .content-wrapper {
+    min-height: calc(100vh - 64px);
   }
 }
 
@@ -377,7 +430,13 @@
 }
 
 #side-menu > .active {
-  background-color: #313B47;
+  background-color: #1C2731;
+}
+
+@media (min-width: 992px) {
+  #side-menu > .active {
+    background-color: #3B4856;
+  }
 }
 
 #side-menu > .active > a {
@@ -388,7 +447,6 @@
 #side-menu > li > a > .ec-icon {
   margin-right: 16px;
   display: inline-block;
-  float: left;
 }
 
 #side-menu > li > a > .ec-icon:before {
@@ -441,7 +499,14 @@
 
 .sub-nav-pills > li > a:hover,
 .sub-nav-pills > li > a:focus {
-  background-color: #3B4856 !important;
+  background-color: #253342 !important;
+}
+
+@media (min-width: 992px) {
+  .sub-nav-pills > li > a:hover,
+  .sub-nav-pills > li > a:focus {
+    background-color: #465465 !important;
+  }
 }
 
 .sub-nav-pills > li.active > a,
@@ -465,6 +530,31 @@
 
 
 
+#LEFTPANEL .footer {
+  padding-top: 40px;
+  padding-bottom: 24px;
+  background-color: transparent;
+}
+
+@media (min-width: 1200px) {
+  #LEFTPANEL .footer {
+    padding-top: 48px;
+ }
+}
+
+#LEFTPANEL .footer .container {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+#LEFTPANEL .footer-text {
+  text-align: left;
+}
+
+
+
+
+
 .nav-header:empty {
   display: none;
 }
@@ -474,9 +564,12 @@
 
 
 #MAINPANEL {
-  padding-top: 96px;
+  /* padding-top: 96px; */
   padding-bottom: 32px;
   height: calc(100vh - 53px);
+
+  margin-left: 0;
+  overflow-y: auto;
 }
 
 @media (min-width: 567px) {
@@ -493,7 +586,8 @@
 
 @media (min-width: 992px) {
   #MAINPANEL {
-    padding-top: 64px;
+    margin-left: 300px;
+    /* padding-top: 64px; */
     padding-bottom: 80px;
   }
 }
@@ -673,6 +767,25 @@
     display: none;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

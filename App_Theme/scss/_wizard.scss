@@ -13,6 +13,81 @@
   @include clearfix;
 }
 
+
+.wizard-default {
+
+  .wizard-item {
+    &::before {
+      background-color: $ec-gray-300;
+    }
+
+    &.active,
+    &.visited,
+    &.completed {
+      .wizard-link {
+        &,
+        &:hover,
+        &:focus {
+          color: $wizard-default-link-hover-color;
+        }
+      }
+    }
+
+  }
+
+  .wizard-indicator {
+    background-color: $ec-gray-200;
+    color: $ec-gray-800;
+  }
+
+  .wizard-link {
+    color: $wizard-default-link-color;
+    &:hover,
+    &:focus {
+      color: $wizard-default-link-hover-color;
+    }
+  }
+
+}
+
+.wizard-inverse {
+
+  .wizard-item {
+    &::before {
+      background-color: #3B4856;
+    }
+
+    &.active,
+    &.visited,
+    &.completed {
+      .wizard-link {
+        &,
+        &:hover,
+        &:focus {
+          color: $wizard-inverse-link-hover-color;
+        }
+      }
+    }
+  }
+
+  .wizard-indicator {
+    background-color: #313B47;
+    color: $ec-gray-100;
+  }
+
+  .wizard-link {
+    color: $wizard-inverse-link-color;
+    &:hover,
+    &:focus {
+      color: $wizard-inverse-link-hover-color;
+    }
+  }
+}
+
+
+
+
+
 .wizard-item {
   position: relative;
   display: block;
@@ -21,93 +96,49 @@
     content: "";
     display: block;
     position: relative;
-    background-color: #d8d8d8;
   }
-  
+
   &:first-child::before {
     display: none;
   }
-  
-
-
 
   &.active {
-
-    &::before {
-      background-color: #005d84;
-    }
-
     .wizard-indicator {
       background-color: #4CADCF;
-      border: 0;
     }
-
-    .wizard-link {
-      &,
-      &:hover,
-      &:focus {
-        color: #4CADCF;
-        @include transition (all .1s ease-in-out);
-      }    
-
-    }
-
-    &,
-    &.complete {
-      
-      .wizard-indicator {
-        color: #fff;        
-      }
-
-    }
-
   }
 
-  &.complete {
-
-    .wizard-link {
-      &,
-      &:hover,
-      &:focus {
-        color: #005d84;            
-        @include transition (all .1s ease-in-out);
-      }
-    }
-
-    &::before {
-      background-color: #005d84;
-    }
-
+  &.visited {
     .wizard-indicator {
-      background-color: #005D84;
-      border: 0;
-      color: #fff;        
-      
-      // &::before {
-      //   font-family: "FontAwesome";
-      //   position: absolute;
-      //   left: 0px;
-      //   width: 24px;
-      //   height: 24px;
-      //   line-height: 24px;
-      //   font-size: 12px;
-      //   text-align: center;
-      //   content: "\f00c";
-      // }
+      background-color: #F58220;
+    }
+  }
+
+  &.completed {
+    .wizard-indicator {
+      background-color: #57C1A5;
     }
   }
 
 }
+
+
+
+
+
+
+
+
 
 .wizard-link {
   position: relative;
   display: block;
   padding: $wizard-link-padding;
 
-  color: $wizard-link-color;
+  // color: $wizard-link-color;
 
-  font-size: 16px;
-  font-weight: 500;
+  // font-size: 16px;
+  // font-weight: 500;
 
   &:hover,
   &:focus {
@@ -130,13 +161,19 @@
 
 .wizard-indicator {
   position: absolute;
-  border: 0 solid #d8d8d8;
-  background-color: #fefefe;
   display: inline-block;
   border-radius: 9999px;
   text-align: center;
   z-index: 1;
 }
+
+
+
+
+
+
+
+
 
 
 .wizard-tab {
@@ -154,9 +191,19 @@
       left: -50%;
     }
 
-    &.complete {
+    &.active,
+    &.visited,
+    &.completed {
+      &::before {
+        background-color: #005D84;
+      }
+    }
+
+    &.completed {
 
       .wizard-indicator {
+        color: $ec-gray-100;
+
         &::before {
           font-family: "FontAwesome";
           position: absolute;
@@ -188,6 +235,15 @@
   }
 
 }
+
+
+
+
+
+
+
+
+
 
 // Justified wizard links
 // -------------------------
@@ -238,14 +294,6 @@
       height: 16px;
       left: 18px;
     }
-
-    &.active,
-    &.complete {
-      .wizard-indicator {
-        line-height: 40px;        
-      }
-    }
-
   }
 
   .wizard-link {
@@ -258,9 +306,30 @@
     left: 0;
     width: 40px;
     height: 40px;
-    border-width: 2px;
-    line-height: 36px;
-    font-size: 16px;
+    padding: 8px;
   }
 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.wizard-lg > .wizard-item > .wizard-link {
+  font-size: $font-size-large;
 }

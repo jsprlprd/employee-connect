@@ -14,47 +14,47 @@ body {
   }
 }
 
-.login {
+.login-wrapper {
   padding-top: 16px;
   padding-bottom: 32px;
 }
 
 @media (min-width: 567px) {
-  .login {
+  .login-wrapper {
     padding-top: 24px;
     padding-bottom: 48px;
   }
 }
 
 @media (min-width: 768px) {
-  .login {
+  .login-wrapper {
     padding-top: 32px;
     padding-bottom: 64px;
   }
 }
 
 @media (min-width: 992px) {
-  .login {
+  .login-wrapper {
     padding-top: 40px;
     padding-bottom: 80px;
   }
 }
 
 @media (min-width: 1200px) {
-  .login {
+  .login-wrapper {
     padding-top: 48px;
     padding-bottom: 96px;
   }
 }
 
-@media (min-width: 1200px) {
-  .login {
+@media (min-width: 1600px) {
+  .login-wrapper {
     padding-top: 56px;
     padding-bottom: 112px;
   }
 }
 
-.login form {
+.login-form {
   background-color: #FFFFFF;
   margin: 0 auto;
   padding: 24px;
@@ -62,19 +62,19 @@ body {
 }
 
 @media (min-width: 567px) {
-  .login form {
+  .login-form {
     padding: 36px;
   }
 }
 
 @media (min-width: 768px) {
-  .login form {
+  .login-form {
     padding: 48px;
   }
 }
 
 @media (min-width: 992px) {
-  .login form {
+  .login-form {
     -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
   }
@@ -84,6 +84,39 @@ body {
   max-width: 250px;
 }
 
-.login .heading {
+.login-form .form-group {
+  margin-bottom: 8px;
+}
+
+.login-form .button-group {
   margin-top: 40px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.login-form .button-group {
+  margin-top: 36px;
+}
+
+/* 
+@media (min-width: 1200px) {
+  .login-form .button-group {
+    margin-top: 48px;
+ }
+}
+
+@media (min-width: 1600px) {
+  .login-form .button-group {
+    margin-top: 54px;
+  }
+} */

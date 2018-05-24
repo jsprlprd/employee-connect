@@ -695,7 +695,12 @@ $nav-pills-active-link-hover-color:         $component-active-color !default;
 //##
 
 //=== Shared nav styles
-$wizard-link-color:                            $ec-gray-600 !default;
+$wizard-default-link-color:                            $ec-gray-600 !default;
+$wizard-default-link-hover-color:                      $ec-gray-800 !default;
+
+$wizard-inverse-link-color:                            $ec-enterprise-100 !default;
+$wizard-inverse-link-hover-color:                      $ec-gray-100 !default;
+
 $wizard-link-padding:                          $padding-base-vertical $padding-base-horizontal !default;
 $wizard-link-hover-bg:                         $ec-gray-200 !default;
 
