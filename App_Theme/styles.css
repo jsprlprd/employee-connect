@@ -1,9 +1,10 @@
 #ecContainer {
   width: 100%;
-  position: relative;
+  position: absolute;
   overflow: hidden;
   padding-top: 96px;
-  height: 100vh;
+  top: 0;
+  bottom: 0;
 }
 
 @media (min-width: 992px) {
