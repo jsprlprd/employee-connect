@@ -1,7 +1,7 @@
 #ecContainer {
   width: 100%;
   position: absolute;
-  overflow: hidden;
+  /* overflow: hidden; */
   /* padding-top: 96px; */
   top: 0;
   bottom: 0;
@@ -322,7 +322,7 @@
 
 
 .content-wrapper {
-  position: relative;
+  /* position: relative; */
 }
 
 
@@ -622,7 +622,7 @@
 
 @media (min-width: 992px) {
   #MAINPANEL .content-scrollable {
-    height: calc(100vh - 108px);
+    height: calc(100vh - 109px);
   }
 }
 
