@@ -5,11 +5,13 @@
   padding-top: 96px;
   top: 0;
   bottom: 0;
+  padding-bottom: 44px;
 }
 
 @media (min-width: 992px) {
   #ecContainer {
     padding-top: 64px;
+    padding-bottom: 0;
   }
 }
 
