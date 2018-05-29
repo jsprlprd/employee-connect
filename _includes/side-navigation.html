@@ -16,7 +16,6 @@
       <a data-toggle="collapse" data-parent="#side-menu" href="#{{ parent-menu.name }}-menu">
         <i class="ec-icon icon-{{ parent-menu.icon }}"></i>
         <span>{{ parent-menu.title }}</span>
-        <!-- <i class="material-icons" style="display: inline-block; float: right;">keyboard_arrow_left</i> -->
       </a>
       <ul class="nav nav-inverse nav-pills nav-stacked sub-nav-pills collapse" id="{{ parent-menu.name }}-menu">
         {% for child-menu in parent-menu.sub-menu %}

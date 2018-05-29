@@ -1042,12 +1042,12 @@ $card-danger-heading-bg:     $state-danger-bg !default;
 
 $panel-bg:                    $white !default;
 $panel-body-padding:          $padding-base-horizontal !default;
-$panel-heading-padding:       $padding-base-vertical $padding-base-horizontal !default;
-$panel-footer-padding:        $panel-heading-padding !default;
+$panel-heading-padding:       $padding-base-horizontal !default;
+$panel-footer-padding:        $padding-base-vertical $padding-base-horizontal !default;
 $panel-border-radius:         $border-radius-base !default;
 
 //** Border color for elements within panels
-$panel-inner-border:          $ec-gray-400 default;
+$panel-inner-border:          $ec-gray-400 !default;
 $panel-footer-bg:             #f5f5f5 !default;
 
 $panel-default-text:          $ec-gray-800 !default;

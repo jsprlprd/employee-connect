@@ -5,7 +5,7 @@
 
 // Base class
 .section {
-  margin-bottom: $line-height-computed;
+  margin-bottom: ($line-height-computed / 1.25);
   // background-color: $section-bg;
   // border: 1px solid transparent;
   // border-radius: $section-border-radius;

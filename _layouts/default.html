@@ -19,17 +19,15 @@ theme: ecCirrusEx
       <div id="LEFTPANEL">
         <div class="objectContainer">
           <div id="placeholderLEFTPANEL">
-            <div style="position: relative;">
-              {% include side-navigation-header.html %}
-              <div class="content-scrollable">
-                <div class="content-wrapper">
-                  {% include side-navigation.html %}
-                  <footer class="footer footer-inverse footer-bottom">
-                    <div class="container">
-                      <p class="footer-text">Copyright © EmployeeConnect Pty Ltd. <br> All rights reserved.</p>
-                    </div>
-                  </footer>
-                </div>
+            {% include side-navigation-header.html %}
+            <div class="content-scrollable">
+              <div class="content-wrapper">
+                {% include side-navigation.html %}
+                <footer class="footer footer-inverse footer-bottom">
+                  <div class="container">
+                    <p class="footer-text">Copyright © EmployeeConnect Pty Ltd. <br> All rights reserved.</p>
+                  </div>
+                </footer>
               </div>
             </div>
           </div>
@@ -38,7 +36,7 @@ theme: ecCirrusEx
       <div id="MAINPANEL">
         <div class="objectContainer">
           <div id="placeholderMAINPANEL">
-            <div class="row" style="margin: 0;">
+            <div class="row hidden visible-md" style="margin: 0;">
               <div class="col-md-6 col-lg-8" style="padding: 0;">
                 <ol class="breadcrumb full-screen">
                   <li><a href="#">li a</a></li>
@@ -58,9 +56,13 @@ theme: ecCirrusEx
                 </a>
               </div>
             </div>
-            <main class="container-fluid full-screen">
-              {{ content }}
-            </main>
+            <div class="content-scrollable">
+              <div class="content-wrapper">
+                <main class="container-fluid full-screen">
+                  {{ content }}
+                </main>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -1,0 +1,67 @@
+// Lists
+// -------------------------
+
+// Unordered and Ordered lists
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: ($line-height-computed / 1.25);
+  ul,
+  ol {
+    margin-bottom: 0;
+  }
+}
+
+
+
+
+
+.list {
+  margin-top: -4px;
+  margin-bottom: -4px;
+  > li {
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+}
+
+
+
+
+
+
+
+// List options
+
+// [converter] extracted from `.list-unstyled` for libsass compatibility
+@mixin list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+// [converter] extracted as `@mixin list-unstyled` for libsass compatibility
+.list-unstyled {
+  @include list-unstyled;
+}
+
+
+// Inline turns list items into inline-block
+.list-inline {
+  @include list-unstyled;
+  margin-left: -4px;
+
+  > li {
+    display: inline-block;
+    padding-left: 4px;
+    padding-right: 4px;
+
+    &.divider {
+      &::before {
+        content: "\2022";
+      }
+    }
+    
+    > a {
+      color: inherit;
+    }
+  }
+}

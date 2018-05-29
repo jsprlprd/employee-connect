@@ -4,8 +4,8 @@ layout: login
 page-style: login
 ---
 
-<main class="login">
-  <form>
+<main class="login-wrapper">
+  <form class="login-form">
     <img class="login-brand" src="{{ site.baseurl }}/Images/ec-logo-dark.svg" alt="" height="72">
     <div class="heading">
       <h1 class="heading-title h3">Create your EmployeeConnect Account</h1>
@@ -40,7 +40,9 @@ page-style: login
         <i class="fa fa-key"></i> 
       </span>
     </fieldset>
-    <a class="btn btn-primary btn-lg btn-block btn-pills" href="{{ site.baseurl }}/onboarding/">Create Account</a>
+    <div class="button-group">
+      <a class="btn btn-primary btn-lg btn-block btn-pills" href="{{ site.baseurl }}/onboarding/">Create Account</a>
+    </div>
     <hr class="dashed">
     <div class="row">
       <div class="col-xs-6 text-muted">

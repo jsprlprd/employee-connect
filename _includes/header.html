@@ -24,14 +24,13 @@
           </div>
         </a>
         <ul class="dropdown-menu dropdown-menu-right">
-          <!-- <li class="dropdown-header">My Account</li> -->
           <li><a href=""><i class="ec-icon icon-cog-alt"></i>Preferences</a></li>
           <li><a href=""><i class="ec-icon icon-help-3"></i>Help</a></li>
           <li><a href=""><i class="ec-icon icon-key-1"></i>Change Password</a></li>
           <li><a href="{{ site.baseurl }}/login.html"><i class="ec-icon icon-logout"></i>Sign Out</a></li>
         </ul>
       </div>
-      <ul class="nav navbar-nav navbar-right" id="navbar-toolbar-menu">  
+      <ul class="nav navbar-nav navbar-right hidden visible-md" id="navbar-toolbar-menu">  
         <li>
           <a class="ripple" data-ripple-color="#C6CDD7" href="">
             <i class="ec-icon icon-pencil-1"></i>
@@ -112,7 +111,6 @@
               <span>HR</span>
             </a>
             <ul class="dropdown-menu">
-              <!-- <li class="dropdown-header">HR</li> -->
               <li class="{% if 
                 page.url contains '/hr/people/' or
                 page.url contains '/hr/people/corporate/position.html' or
@@ -142,7 +140,6 @@
               <span>Reports</span>
             </a>
             <ul class="dropdown-menu">
-              <!-- <li class="dropdown-header">Reports</li> -->
               <li><a href="">HR</a></li>
               <li><a href="">Manager</a></li>
             </ul>
@@ -159,7 +156,6 @@
               <span>Advanced</span>
             </a>
             <ul class="dropdown-menu">
-              <!-- <li class="dropdown-header">Advanced</li> -->
               <li><a href="">System Management</a></li>
               <li><a href="">Workflow</a></li>
               <li class="{% if 

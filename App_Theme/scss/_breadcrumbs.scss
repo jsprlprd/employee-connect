@@ -6,12 +6,14 @@
 .breadcrumb {
   padding: $breadcrumb-padding-vertical $breadcrumb-padding-horizontal;
   // margin-bottom: $line-height-computed;
+  margin-bottom: 0;
   list-style: none;
   background-color: $breadcrumb-bg;
   // border-radius: $border-radius-base;
 
   > li {
     display: inline-block;
+    line-height: $line-height-computed;
 
     + li:before {
       // [converter] Workaround for https://github.com/sass/libsass/issues/1115
