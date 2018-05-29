@@ -291,13 +291,17 @@
 }
 
 
-
 .content-scrollable {
   overflow: hidden;
-  overflow-y: overlay;
+  overflow-y: auto;
 }
 
+
 @media (min-width: 992px) {
+  .content-scrollable {
+    overflow-y: overlay;
+  }
+
   .content-scrollable::-webkit-scrollbar{
     height:8px;
     width:8px;
