@@ -4,12 +4,12 @@ html {
 }
 
 body {
-  margin-bottom: 404px;
+  margin-bottom: 442px;
 }
 
 @media (min-width: 768px) {
   body {
-    margin-bottom: 308px;
+    margin-bottom: 346px;
   }
 }
 
@@ -19,15 +19,19 @@ body {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-bottom: 221px;
+    margin-bottom: 259px;
   }
 }
 
 @media (min-width: 1200px) {
   body {
-    margin-bottom: 173px;
+    margin-bottom: 219px;
   }
 }
+
+
+
+
 
 .login-wrapper {
   padding-top: 16px;
@@ -69,6 +73,10 @@ body {
   }
 }
 
+
+
+
+
 .login-form {
   background-color: #FFFFFF;
   margin: 0 auto;
@@ -95,23 +103,31 @@ body {
   }
 }
 
-.login-brand {
-  max-width: 250px;
-}
+
+
+
 
 .login-form .form-group {
   margin-bottom: 8px;
 }
 
+
+
+
+
 .login-form .button-group {
   margin-top: 40px;
 }
+
+
+
+
 
 /********** Diverseco Affiliates **********/
 
 #diverseco-affiliates {
   position: absolute;
-  bottom: 171px;
+  bottom: 209px;
   width: 100%;
   padding: 20px 0;
   border-top: 1px solid #D8D8D8;
@@ -120,7 +136,13 @@ body {
 
 @media (min-width: 992px) {
   #diverseco-affiliates {
-    bottom: 84px;
+    bottom: 122px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #diverseco-affiliates {
+    bottom: 130px;
   }
 }
 

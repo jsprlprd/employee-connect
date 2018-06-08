@@ -1,0 +1,171 @@
+---
+layout: design-system/default
+
+heading-title: Nav
+
+page-menu:
+- text: Code
+  url: 
+- text: Usage
+  url: 
+- text: Style
+  url: 
+
+---
+
+<div class="js-html-inspector" data-remove-target="p:first">
+  <p><strong>ul.nav.nav-tabs</strong></p>
+  <ul class="nav nav-tabs">
+    <li class="active">
+      <a href="#">li.active a</a>
+    </li>
+    <li class="disabled">
+      <a href="#">li.disabled a</a>
+    </li>
+    <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+        li.dropdown <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu dropdown-menu-right">
+        <li><a href="#">Link #1</a></li>
+        <li><a href="#">Link #2</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+<div class="js-html-inspector" data-remove-target='["p:first","br"]'>
+  <br><p><strong>ul.nav.nav-pills</strong></p>
+  <ul class="nav nav-pills">
+    <li class="active">
+      <a href="#">li.active a</a>
+    </li>
+    <li class="disabled">
+      <a href="#">li.disabled a</a>
+    </li>
+    <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+        li.dropdown <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu dropdown-menu-right">
+        <li><a href="#">Link #1</a></li>
+        <li><a href="#">Link #2</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+<div class="js-html-inspector" data-remove-target='["p:first","br"]'>
+  <br><p><strong>ul.nav.nav-pills.nav-stacked</strong></p>
+  <ul class="nav nav-pills nav-stacked">
+    <li class="active">
+      <a href="#">
+        li.active a
+        <span class="badge pull-right">.badge.pull-right</span>
+      </a>
+    </li>
+    <li class="disabled">
+      <a href="#">li.disabled a</a>
+    </li>
+    <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+        li.dropdown <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Link #1</a></li>
+        <li><a href="#">Link #2</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+<div class="js-html-inspector" data-remove-target='["p:first","br"]'>
+  <br><p><strong>ul.nav.nav-tabs.nav-justified</strong></p>
+  <ul class="nav nav-tabs nav-justified">
+    <li class="active">
+      <a href="#">
+        li.active a
+        <span class="badge">.badge</span>
+      </a>
+    </li>
+    <li><a href="#">Link #2</a></li>
+    <li><a href="#">Link #3</a></li>
+  </ul>
+</div>
+
+<div class="js-html-inspector" data-remove-target='["p:first","br"]'>
+  <br><p><strong>ul.nav.nav-pills.nav-justified</strong></p>
+  <ul class="nav nav-pills nav-justified">
+    <li class="active">
+      <a href="#">
+        li.active a
+        <span class="badge">.badge</span>
+      </a>
+    </li>
+    <li><a href="#">Link #2</a></li>
+    <li><a href="#">Link #3</a></li>
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Javascript -->
+
+<p>Via data attributes: <code>data-toggle="tab"</code></p>
+
+<div class="js-html-inspector">
+  <ul class="nav nav-tabs">
+    <li class="active">
+      <a data-toggle="tab" href="#js-tab-pane1">Tab #1</a>
+    </li>
+    <li>
+      <a data-toggle="tab" href="#js-tab-pane2">Tab #2</a>
+    </li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane active" id="js-tab-pane1">
+      <p>Content #1: .table-content .tab-pane.active</p>
+    </div>
+    <div class="tab-pane" id="js-tab-pane2">
+      <p>Content #2: .table-content .tab-pane</p>
+    </div>
+  </div>
+</div>
+
+<p>Via Javascript: <code>$(this).tab('show')</code></p>
+
+<div class="js-html-inspector">
+  <ul class="nav nav-tabs">
+    <li class="active">
+      <a href="#js-tab-pane3" onclick="$(this).tab('show'); return false;">Tab #1</a>
+    </li>
+    <li>
+      <a href="#js-tab-pane4" onclick="$(this).tab('show'); return false;">Tab #2</a>
+    </li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane fade in active" id="js-tab-pane3">
+      <p>Content #1: .table-content .tab-pane.fade.in.active</p>
+    </div>
+    <div class="tab-pane fade" id="js-tab-pane4">
+      <p>Content #2: .table-content .tab-pane.fade</p>
+    </div>
+  </div>
+</div>
+
+<p>Events: <code>show.bs.tab</code> <code>shown.bs.tab</code></p>

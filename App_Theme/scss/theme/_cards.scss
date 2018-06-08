@@ -1,0 +1,24 @@
+//
+// Panels
+// --------------------------------------------------
+
+
+// Contextual variations
+.card-default {
+  @include card-variant($card-default-border, $card-default-text, $card-default-heading-bg, $card-default-border);
+}
+.card-primary {
+  @include card-variant($card-primary-border, $card-primary-text, $card-primary-heading-bg, $card-primary-border);
+}
+.card-success {
+  @include card-variant($card-success-border, $card-success-text, $card-success-heading-bg, $card-success-border);
+}
+.card-info {
+  @include card-variant($card-info-border, $card-info-text, $card-info-heading-bg, $card-info-border);
+}
+.card-warning {
+  @include card-variant($card-warning-border, $card-warning-text, $card-warning-heading-bg, $card-warning-border);
+}
+.card-danger {
+  @include card-variant($card-danger-border, $card-danger-text, $card-danger-heading-bg, $card-danger-border);
+}

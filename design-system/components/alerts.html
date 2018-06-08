@@ -1,0 +1,81 @@
+---
+layout: design-system/default
+
+heading-title: Alert
+
+page-menu:
+- text: Code
+  url: 
+- text: Usage
+  url: 
+- text: Style
+  url: 
+
+---
+<div class="js-html-inspector">
+  <!-- The misspelled .alert-dismissable was deprecated in 3.2.0. -->
+  <div class="alert alert-dismissible">
+    <button class="close" data-dismiss="alert" type="button">&times;</button>
+    .alert.alert-dismissible
+  </div>
+</div>
+
+<div class="row js-html-inspector" data-replace-target="> div">
+  <div class="col-sm-6">
+    <div class="alert alert-success">
+      .alert.alert-success
+      <a class="alert-link" href="#">a.alert-link</a>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="alert alert-info">
+      .alert.alert-info
+      <a class="alert-link" href="#">a.alert-link</a>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="alert alert-warning">
+      .alert.alert-warning
+      <a class="alert-link" href="#">a.alert-link</a>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="alert alert-danger">
+      .alert.alert-danger
+      <a class="alert-link" href="#">a.alert-link</a>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Javascript -->
+
+
+
+<p>Via data attributes (close button): <code>data-dismiss="alert"</code></p>
+
+<div class="js-html-inspector">
+  <div class="alert alert-danger fade in">
+    <button class="close" data-dismiss="alert" type="button">&times;</button>
+    .alert.alert-danger.fade.in
+  </div>
+</div>
+
+<p>Via Javascript: <code>$('.alert').alert()</code></p>
+<p>Methods: <code>.alert('close')</code></p>
+<p>Events: <code>close.bs.alert</code> <code>closed.bs.alert</code></p>

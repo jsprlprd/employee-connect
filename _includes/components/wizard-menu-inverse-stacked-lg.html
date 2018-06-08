@@ -1,0 +1,12 @@
+<div class="wizard-wrapper">
+  <ul class="wizard wizard-inverse wizard-stacked wizard-lg">
+    {% for menu in layout.side-menu %}
+      <li class="wizard-item {% if page.url == menu.url %} active {% endif %}">
+        <a class="wizard-link" href="{{ site.baseurl }}{{ menu.url }}">
+          <div class="wizard-indicator"><span class="ec-icon icon-{{ menu.icon }}"></span></div>
+          {{ menu.text }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

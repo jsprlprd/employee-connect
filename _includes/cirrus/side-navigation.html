@@ -1,0 +1,13 @@
+<div class="heading">
+  <a class="heading-title h5" href="{{ site.baseurl }}/{{ layout.side-menu-index }}">
+    <i class="ec-icon icon-{{ layout.side-menu-icon }}"></i>
+    {{ layout.side-menu-header }}
+  </a>
+  <div class="form-group has-icon-right">
+    <input class="form-control" type="search" placeholder="Filter Menu">
+    <span class="form-control-icon">
+      <i class="ec-icon icon-search-8"></i>
+    </span>
+  </div>
+</div>
+{% include components/multi-nav-pills-inverse-stacked.html %}

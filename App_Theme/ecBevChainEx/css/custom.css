@@ -1,0 +1,194 @@
+.icon-bar-wrapper {
+  margin: 6px 2px;
+  display: block;
+}
+
+
+.navbar-inverse {
+  background-color: #474C54;
+}
+
+
+@media (min-width: 992px) {
+  .navbar-inverse {
+    background-image: url(/App_Theme/ecBevChainEx/Images/header-background.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navbar-toggle {
+  padding: 8px;
+  margin: 8px;
+  border-radius: 9999px;
+}
+
+@media (min-width: 992px) {
+  .navbar-toggle {
+    margin: 12px 16px;
+  }
+}
+
+.navbar-toggle .icon-bar {
+  width: 20px;
+}
+
+.navbar-toggle .icon-bar + .icon-bar {
+  margin-top: 3px;
+}
+
+.navbar-header {
+  margin-left: -8px;
+}
+
+
+
+
+
+.nav-header:empty {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+.wizard-wrapper {
+  padding: 16px;
+}
+
+.wizard-link {
+  font-size: 15px;
+}
+
+.wizard-indicator .ec-icon::before {
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  margin-left: 0;
+  margin-right: 0;
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.item {
+  margin-bottom: 4px;
+}
+
+
+
+
+
+.lead {
+  margin-bottom: 16px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+
+
+
+
+.full-screen {
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+@media (min-width: 576px) {
+  .full-screen {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media (min-width: 768px) {
+  .full-screen {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (min-width: 992px) {
+  .full-screen {
+    padding-left: 56px;
+    padding-right: 56px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .full-screen {
+    padding-left: 72px;
+    padding-right: 72px;
+  }
+}
+
+/* @media (min-width: 1600px) {
+  .full-screen {
+    padding-left: 56px;
+    padding-right: 56px;
+  }
+}
+ */
+
+
+
+
+
+.ripple{
+  overflow:hidden;
+}
+
+.ripple-effect{
+  position: absolute;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background: white;
+  animation: ripple-animation 2s;
+}
+
+@keyframes ripple-animation {
+  from {
+    transform: scale(1);
+    opacity: 0.4;
+  } to {
+    transform: scale(100);
+    opacity: 0;
+  }
+}

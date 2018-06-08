@@ -95,7 +95,7 @@ a.btn {
 // Make a button look and behave like a link
 .btn-link {
   color: $link-color;
-  font-weight: normal;
+  // font-weight: normal;
   border-radius: 0;
 
   &,
@@ -133,15 +133,15 @@ a.btn {
 // --------------------------------------------------
 
 .btn-lg {
-  // line-height: ensure even-numbered height of button next to large input
-  @include button-size($padding-large-vertical, $padding-large-horizontal, $font-size-base, $line-height-computed, $btn-border-radius-large);
+  // line-height: ensure even-numbered height of button next to lg input
+  @include button-size($padding-lg-vertical, $padding-lg-horizontal, $font-size-base, $line-height-computed, $btn-border-radius-lg);
 }
 .btn-sm {
   // line-height: ensure proper height of button next to small input
-  @include button-size($padding-small-vertical, $padding-small-horizontal, $font-size-small, $line-height-computed, $btn-border-radius-small);
+  @include button-size($padding-sm-vertical, $padding-sm-horizontal, $font-size-sm, $line-height-computed, $btn-border-radius-sm);
 }
 .btn-xs {
-  @include button-size($padding-xs-horizontal, $padding-xs-horizontal, $font-size-small, 1, $btn-border-radius-small);
+  @include button-size($padding-xs-horizontal, $padding-xs-horizontal, $font-size-sm, 1, $btn-border-radius-sm);
 }
 
 
