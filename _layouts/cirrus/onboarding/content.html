@@ -1,112 +1,52 @@
 ---
-layout: cirrus
+layout: cirrus/default
 
-side-menu-header: Onboarding
+header: onboarding
+side-navigation-type: onboarding
+breadcrumbs: false
 
+footer: true
+
+side-menu-index: onboarding
+side-menu-heading-title: Onboarding
 side-menu:
 - text: Induction Checklist
   icon: doc-text
-  url: /onboarding/induction-checklist.html
+  url: induction-checklist.html
 - text: Training Plan
   icon: map
-  url: /onboarding/training-plan.html
+  url: training-plan.html
 - text: Personal Information
   icon: inbox-alt
-  url: /onboarding/personal-information.html
+  url: personal-information.html
 - text: Emergency Contact
   icon: lifebuoy
-  url: /onboarding/emergency-contact.html
+  url: emergency-contact.html
 - text: Tax Declaration
   icon: doc-text
-  url: /onboarding/tax-declaration.html
+  url: tax-declaration.html
 - text: Banking
   icon: inbox-alt
-  url: /onboarding/banking.html
+  url: banking.html
 - text: Superannuation
   icon: blind
-  url: /onboarding/superannuation.html
+  url: superannuation.html
 - text: Medical
   icon: medkit
-  url: /onboarding/medical.html
+  url: medical.html
 - text: Nationality &amp; Visas
   icon: globe-6
-  url: /onboarding/nationality-and-visas.html
+  url: nationality-and-visas.html
 - text: Professional Membership
   icon: empire
-  url: /onboarding/professional-membership.html
+  url: professional-membership.html
 - text: Licence
   icon: cab
-  url: /onboarding/licence.html
+  url: licence.html
 - text: Property
   icon: laptop
-  url: /onboarding/property.html
+  url: property.html
 
 ---
 
-
-<div id="ecContainer">
-  <div>
-    <div>
-      <div id="HEADERPANEL">
-        <div class="objectContainer">
-          <div id="placeholderHEADERPANEL">
-            {% include cirrus/onboarding/header.html %}
-          </div>
-        </div>
-      </div>
-    </div>
-    <div>
-      <div id="LEFTPANEL">
-        <div class="objectContainer">
-          <div id="placeholderLEFTPANEL">
-            {% include components/side-navigation/header.html %}
-            <div class="content-scrollable">
-              <div class="content-wrapper">
-                {% include components/wizard-menu-inverse-stacked-lg.html %}
-                {% include components/side-navigation/footer.html %}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="MAINPANEL">
-        <div class="objectContainer">
-          <div id="placeholderMAINPANEL">
-            {% include cirrus/breadcrumbs.html %}
-            <div class="content-scrollable">
-              <div class="content-wrapper">
-                <main class="container-fluid full-screen">
-                  {% include cirrus/heading.html %}
-                  {{ content }}
-                </main>
-                <footer class="footer footer-default footer-bottom">
-                  <div class="container-fluid full-screen">
-                    <div class="row">
-                      <div class="col-xs-6 col-sm-3">
-                        <a class="btn btn-default btn-lg btn-block" href="{{ site.baseurl }}/onboarding/{{ page.prev-page }}">Back</a>
-                      </div>
-                      <div class="col-xs-6 col-sm-3 col-sm-push-6 text-right">
-                        <a class="btn btn-default btn-lg btn-block" href="{{ site.baseurl }}/onboarding/{{ page.next-page }}">Next Step</a>
-                      </div>
-                    </div>  
-                  </div>
-                </footer>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="RIGHTPANEL">
-        <div class="objectContainer">
-          <div id="placeholderRIGHTPANEL">
-            <a class="btn btn-link" id="advance-search-close" type="button">
-              <i class="fa fa-close"></i>
-            </a>
-            <p class="h5">Advance Search</p>
-            <a class="btn btn-primary" href="">Apply Filter</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+{{ content }}

@@ -1,12 +1,10 @@
-<div class="wizard-wrapper">
-  <ul class="wizard wizard-inverse wizard-stacked wizard-lg">
-    {% for tabs in page.wizard-stacked %}
-      <li class="wizard-item">
-        <a class="wizard-link" href="#{{ tabs.url }}-tab" data-toggle="tab">
-          <div class="wizard-indicator"><span class="{{ tab.icon }}"></span></div>
-          <span>{{ tabs.text }}</span>
-        </a>
-      </li>
-    {% endfor %}
-  </ul>
-</div>
+<ul class="wizard wizard-inverse wizard-stacked wizard-lg">
+  {% for tabs in layout.side-menu %}
+    <li class="wizard-item">
+      <a class="wizard-link" href="#{{ tabs.url }}-tab" data-toggle="tab">
+        <div class="wizard-indicator"><span class="{{ tab.icon }}"></span></div>
+        <span>{{ tabs.text }}</span>
+      </a>
+    </li>
+  {% endfor %}
+</ul>

@@ -1,12 +1,9 @@
 ---
 layout: bevchain/default
 
-side-menu-header: Home
-
+side-menu-index: home
 side-menu-icon: home
-
-side-menu-index: bevchain/home
-
+side-menu-heading-title: Home
 side-menu:
 - title: My Activities
   icon: th-large-3
@@ -14,29 +11,20 @@ side-menu:
   sub-menu:
   - title:
     menuitems:
-    - text: Newsfeed <span class="label label-success">New</span>
-      icon: note
-      url: my-activities/newsfeed.html
-    - text: Workflow <span class="label label-success">New</span>
-      icon: shuffle-3
-      url: my-activities/workflow/
     - text: Workflow Active
       icon: shuffle-3
       url: 
     - text: Workflow History
       icon: archive
       url:
-    - text: Time &amp; Attendance
-      icon: stopwatch
+    - text: Leave Request
+      icon: suitcase
       url:
   - title: Manager
     menuitems:
     - text: Leave Approval
       icon: ok-circled-2
       url: 
-    - text: Timesheet Approval
-      icon: thumbs-up-alt
-      url:
   - title: Admin / Payroll
     menuitems:
     - text: Leave Validate
@@ -44,9 +32,6 @@ side-menu:
       url:
     - text: Bulk Update
       icon: box
-      url:
-    - text: Timesheet Verify
-      icon: back-in-time
       url:
     - text: Change Request Validate
       icon: progress-0 
@@ -60,30 +45,51 @@ side-menu:
     - text: Notice Board
       icon: desktop
       url:
-    - text: Company Directory
-      icon: address-book
-      url:
-    - text: Organisation Chart
-      icon: flow-tree
-      url:
-    - text: Support
-      icon: phone-outline
-      url:
+    - text: About BevChain
+      icon: map
+      url: 
+    - text: Featured News
+      icon: bell-alt
+      url: 
+    - text: HomeSafe
+      icon: shield
+      url: 
+    - text: Job Opportunities
+      icon: dot-circled
+      url: 
     - text: Documents
       icon: doc-7
       url:
     - text: Search Documents
       icon: search-8
       url:
+    - text: Support
+      icon: phone-outline
+      url:
+- title: People &amp; Places
+  icon: list
+  name: people-and-places
+  sub-menu:
+  - title:
+    menuitems:
+    - text: Company Directory
+      icon: address-book
+      url: people-and-places/company-directory/
+    - text: Organisation Chart
+      icon: flow-tree
+      url:
+    - text: BevChain Sites
+      icon: building
+      url: people-and-places/sites/
+    - text: BevChain Departments
+      icon: cube
+      url: people-and-places/departments/
 - title: Personal
   icon: leaf
   name: personal
   sub-menu:
   - title:
     menuitems:
-    - text: My Profile <span class="label label-success">New</span>
-      icon: leaf
-      url: my-profile/
     - text: Biographical
       icon: child
       url: personal/biographical.html
@@ -156,6 +162,9 @@ side-menu:
     - text: Position Assignment
       icon: right-5 
       url: 
+    - text: Commentary
+      icon: comment-4 
+      url: 
     - text: Property
       icon: laptop 
       url: 
@@ -177,15 +186,6 @@ side-menu:
   sub-menu:
   - title:
     menuitems:
-    - text: Payslip Print
-      icon: print-3 
-      url: 
-    - text: Pay History
-      icon: archive 
-      url: payment/pay-history.html
-    - text: Annual Pay Summary
-      icon: calendar-alt-1 
-      url: 
     - text: Salary
       icon: dollar 
       url: 
@@ -207,12 +207,6 @@ side-menu:
     - text: Expense Claim
       icon: dollar-1 
       url: 
-    - text: Travel Request
-      icon: plane 
-      url: 
-    - text: Expense &amp; Travel History
-      icon: plane 
-      url: 
 - title: Leave
   icon: calendar-2
   name: leave
@@ -231,196 +225,12 @@ side-menu:
     - text: Cancel Leave
       icon: cancel-alt
       url: 
-    - text: Leave Paid
+    - text: Leave History
       icon: layers 
       url: 
     - text: Leave Balance
       icon: calc 
       url: 
-    - text: Accrual Projection
-      icon: signal-1
-      url: 
-    - text: Leave Exchange
-      icon: exchange 
-      url: 
-- title: Recognition
-  icon: trophy
-  name: recognition
-  sub-menu:
-  - title:
-    menuitems:
-    - text: P2P Recognition
-      icon: users-3 
-      url: 
-    - text: Team Recognition
-      icon: users 
-      url: 
-    - text: Recognition Received
-      icon: thumbs-up-alt
-      url: 
-    - text: Recognition Sent
-      icon: ok 
-      url: 
-- title: Development
-  icon: wind-1
-  name: development
-  sub-menu:
-  - title:
-    menuitems:
-    - text: Development Plan
-      icon: map 
-      url: 
-    - text: Skill Gap
-      icon: resize-small
-      url: 
-  - title: Goals
-    menuitems:
-    - text: Strategic Goals
-      icon: target-1 
-      url: 
-    - text: Self-Evaluation
-      icon: tag-4
-      url: 
-    - text: Goal History
-      icon: archive 
-      url: 
-  - title: Registration
-    menuitems:
-    - text: Training Plan
-      icon: map
-      url: 
-    - text: Course Registration
-      icon: login-1 
-      url: 
-    - text: External Registration
-      icon: login-1 
-      url: 
-    - text: Online Training
-      icon: monitor 
-      url: 
-  - title: CPD
-    menuitems:
-    - text: CPD Activity Report
-      icon: gauge-1
-      url: 
-    - text: Add CPD Activity
-      icon: eyedropper
-      url: 
-  - title: Review
-    menuitems:
-    - text: Training History
-      icon: archive
-      url: 
-    - text: Completion Review
-      icon: clipboard
-      url: 
-    - text: Skills Acquired
-      icon: library
-      url: 
-- title: Recruitment
-  icon: spread
-  name: recruitment
-  sub-menu:
-  - title:
-    menuitems:
-    - text: Internal Career Opportunities
-      icon: dot-circled
-      url: 
-    - text: Refer Someone for a Position
-      icon: chat
-      url: 
-    - text: My Applications
-      icon: docs-1
-      url: 
-- title: Performance
-  icon: chart-line-1
-  name: performance
-  sub-menu:
-  - title:
-    menuitems:
-    - text: Appraisal
-      icon: archive
-      url: performance/
-    - text: Current Review
-      icon: eye-1
-      url: performance/current-review.html
-    - text: Appraisal History
-      icon: archive
-      url: 
-    - text: 360 Reviews ( 0 )
-      icon: cw
-      url: 
-- title: Safety
-  icon: shield
-  name: safety
-  sub-menu:
-  - title:
-    menuitems:
-    - text: Scoreboard
-      icon: chart-bar
-      url: 
-    - text: Safety Licences
-      icon: doc-text
-      url: 
-    - text: Emergency Personnel
-      icon: police
-      url: 
-  - title: Incident
-    menuitems:
-    - text: Report A Non-Injury Incident
-      icon: flag-filled
-      url: 
-    - text: Report An Injury Incident
-      icon: hospital-1
-      url: 
-    - text: Submitted Incidents
-      icon: archive
-      url: 
-    - text: Owned Incidents
-      icon: bookmark-3
-      url: 
-    - text: Investigations
-      icon: clipboard
-      url: 
-    - text: Compensation Claims
-      icon: megaphone-2
-      url: 
-    - text: Rehabilitation Plans
-      icon: map
-      url: 
-  - title: Hazard / Action
-    menuitems:
-    - text: Hazard Identification
-      icon: resize-small-4
-      url: 
-    - text: Exposure
-      icon: hail
-      url: 
-    - text: Hazard Management
-      icon: target-1
-      url: 
-    - text: View Hazards
-      icon: eye-1
-      url: 
-    - text: Raise an Action
-      icon: forward-2
-      url: 
-    - text: Owned Actions
-      icon: bookmark-3 
-      url: 
-    - text: Review Actions
-      icon: edit
-      url: 
-- title: Custom Forms
-  icon: tools
-  name: custom-forms
-  sub-menu:
-  - title:
-    menuitems:
-    - text: Aris Form
-      icon: doc-text
-      url: 
-
 ---
 
 {{ content }}

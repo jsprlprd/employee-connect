@@ -9,8 +9,8 @@
         {% for child-menu in parent-menu.sub-menu %}
           <li class="nav-header">{{ child-menu.title }}</li>
           {% for menu in child-menu.menuitems %}
-            <li class="{% if page.url == /layout.side-menu-index/menu.url %} active {% endif %}">
-              <a href="{{ site.baseurl }}/{{ layout.side-menu-index }}/{{ menu.url }}">
+            <li class="{% if page.url contains menu.url %} active {% endif %}">
+              <a href="{{ site.baseurl }}{{ layout.base-url }}{{ layout.side-menu-index }}/{{ menu.url }}">
                 <i class="ec-icon icon-{{ menu.icon }}"></i>
                 <span>{{ menu.text }}</span>
               </a>

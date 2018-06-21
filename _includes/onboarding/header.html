@@ -1,0 +1,28 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <button class="navbar-toggle" type="button">
+    <span style="margin: 6px 2px;display: block;">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </span>
+  </button>
+  <div class="navbar-header">
+    <a class="navbar-brand" href="{{ site.baseurl }}{{ layout.base-url }}onboarding/">
+      <img src="{{ site.baseurl }}/App_Themes/{{ layout.base-theme }}/Images/logos/header-logo.png" alt="">
+    </a>
+  </div>
+  <div class="dropdown" id="navbar-user-menu">
+    <a class="media ripple" data-toggle="dropdown" data-ripple-color="#C6CDD7" href="{{ site.baseurl }}/login.html">
+      <div class="media-left">
+        <img class="media-object img-circle" src="{{ site.baseurl }}/Images/avatar.png" width="32" height="32">
+      </div>
+      <div class="media-body media-middle">
+        <span class="user-profile-name">Jasper Lepardo</span>
+      </div>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-right">
+      <li><a href="{{ site.baseurl }}/onboarding/login.html"><i class="fa fa-sign-out"></i> Logout &amp; Finish Later</a></li>
+    </ul>
+  </div>
+</nav>

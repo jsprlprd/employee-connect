@@ -1,44 +1,9 @@
 ---
-layout: cirrus
+layout: cirrus/default
+
+header: onboarding
+side-navigation: false
+breadcrumbs: false
 ---
 
-<div id="ecContainer">
-  <div>
-    <div>
-      <div id="HEADERPANEL">
-        <div class="objectContainer">
-          <div id="placeholderHEADERPANEL">
-            {% include cirrus/onboarding/header.html %}
-          </div>
-        </div>
-      </div>
-    </div>
-    <div>
-      <div id="MAINPANEL">
-        <div class="objectContainer">
-          <div id="placeholderMAINPANEL">
-            {% include cirrus/breadcrumbs.html %}
-            <div>
-              <div class="content-wrapper">
-                <main class="container-fluid full-screen">
-                  {{ content }}
-                </main>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="RIGHTPANEL">
-        <div class="objectContainer">
-          <div id="placeholderRIGHTPANEL">
-            <a class="btn btn-link" id="advance-search-close" type="button">
-              <i class="fa fa-close"></i>
-            </a>
-            <p class="h5">Advance Search</p>
-            <a class="btn btn-primary" href="">Apply Filter</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+{{ content}}

@@ -1,7 +1,7 @@
 <ul class="nav nav-default nav-tabs-two">
   {% for menu in page.nav-menu %}
     <li class="{% if page.url == menu.url %} active {% endif %}">
-      <a href="{{ site.baseurl }}/{{ menu.url }}">{{menu.text}}</a>
+      <a href="{{ site.baseurl }}{{ layout.base-url }}{{ layout.side-menu-index }}/{{ menu.url }}">{{menu.text}}</a>
     </li>
   {% endfor %}
 </ul>
