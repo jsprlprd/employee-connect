@@ -1,5 +1,7 @@
 ---
 layout: cirrus/home/default
+
+heading: employee-pay-advice
 ---
 
 <style id="payslip_style">
@@ -11,21 +13,6 @@ layout: cirrus/home/default
     margin-bottom: 80px;
     border-radius: 16px;
     margin-left: 0;
-  }
-
-  #payslip .heading {
-    margin-bottom: 25px;
-  }
-
-  #payslip .heading-title {
-    margin-top: 40px;
-    margin-bottom: 25px;
-    font-size: 32px;
-  }
-
-  #payslip .heading-image {
-    text-align: right;
-    margin-top: -25px;
   }
 
   .lead {
@@ -63,277 +50,265 @@ layout: cirrus/home/default
 </style>
 
 
-<div class="container box-container" id="payslip">
 
-  <div class="heading">
-    <div class="row">
-      <div class="col-md-8">
-        <h1 class="heading-title">Employee Pay Advice</h1>
-      </div>
-      <div class="col-md-4 text-right">
-        <img class="heading-image" src="{{ site.baseurl }}/Images/jamies-logo.jpg" alt="">
-      </div>
-    </div>
+
+<table class="table table-bordered text-center" id="pay-details">
+  <tbody>
+    <tr>
+      <td class="col-xs-4">
+        <p class="text-muted">Pay Advice No.</p>
+        <p>191152</p>
+      </td>
+      <td class="col-xs-4">
+        <p class="text-muted">Period Ending</p>
+        <p>22-OCT-2017</p>
+      </td>
+      <td class="col-xs-4">
+        <p class="text-muted">Pay Date</p>
+        <p>25-OCT-2017</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="row">
+  <div class="col-md-8">
+    <div>
+      <h2 class="lead">Pay Details</h2>
+      <table class="table payslip">
+        <thead>
+          <tr>
+            <th class="col-xs-6">Item</th>
+            <th class="col-xs-1">Unit</th>
+            <th class="col-xs-1">Rate</th>
+            <th class="col-xs-2">Amount</th>
+            <th class="col-xs-2">YTD</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Gross</strong></td>
+            <td><strong></strong></td>
+            <td><strong></strong></td>
+            <td><strong></strong></td>
+            <td><strong></strong></td>
+          </tr>
+          <tr>
+            <td><strong>Payment</strong></td>
+            <td><strong></strong></td>
+            <td><strong></strong></td>
+            <td><strong>$2,604.28</strong></td>
+            <td><strong>$23,570.95</strong></td>
+          </tr>
+          <tr class="details">
+            <td>- TIL Payout [Jamie's Italian - Parramatta - Kitchen]</td>
+            <td>3.17</td>
+            <td>$32.98</td>
+            <td>$104.28</td>
+            <td></td>
+          </tr>
+          <tr class="details">
+            <td>- Normal Pay [Jamie's Italian - Parramatta - Kitchen]</td>
+            <td>76.00</td>
+            <td>$32.98</td>
+            <td>$2,500.00</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><strong>Additional Before Tax</strong></td>
+            <td><strong></strong></td>
+            <td><strong></strong></td>
+            <td><strong></strong></td>
+            <td><strong></strong></td>
+          </tr>
+          <tr>
+            <td><strong>Deduction Before Tax</strong></td>
+            <td><strong></strong></td>
+            <td><strong></strong></td>
+            <td><strong>$567.00</strong></td>
+            <td><strong></strong></td>
+          </tr>
+          <tr class="details">
+            <td>- Employee Super (Post-Tax)</td>
+            <td></td>
+            <td></td>
+            <td>$0.00</td>
+            <td></td>
+          </tr>
+          <tr class="details">
+            <td>- PAYG Withheld</td>
+            <td></td>
+            <td></td>
+            <td>$567.00</td>
+            <td></td>
+          </tr>
+          <tr class="details">
+            <td>- Superannuation Sacrifice</td>
+            <td></td>
+            <td></td>
+            <td>$0.00</td>
+            <td></td>
+          </tr>
+          <tr class="details">
+            <td>- Worker's Compensation</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="details">
+            <td>- Fringe Benefits Tax - LAFHA</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="details">
+            <td>- Fringe Benefits Tax - Car</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="details">
+            <td>- Hourly Administration Fees</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><strong>Taxable Income</strong></td>
+            <td><strong></strong></td>
+            <td><strong></strong></td>
+            <td><strong></strong></td>
+            <td><strong></strong></td>
+          </tr>
+          <tr>
+            <td><strong>Tax</strong></td>
+            <td><strong></strong></td>
+            <td><strong></strong></td>
+            <td><strong></strong></td>
+            <td><strong></strong></td>
+          </tr>
+          <tr>
+            <td><strong>Additional After Tax</strong></td>
+            <td><strong></strong></td>
+            <td><strong></strong></td>
+            <td><strong></strong></td>
+            <td><strong></strong></td>
+          </tr>
+          <tr>
+            <td><strong>Deduction After Tax</strong></td>
+            <td><strong></strong></td>
+            <td><strong></strong></td>
+            <td><strong>$576.00</strong></td>
+            <td><strong></strong></td>
+          </tr>
+          <tr>
+            <td><strong>Net Pay</strong></td>
+            <td><strong></strong></td>
+            <td><strong></strong></td>
+            <td><strong></strong></td>
+            <td><strong></strong></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2 class="lead">Account</h2>
+      <table class="table payslip">
+        <thead>
+          <tr>
+            <th class="col-xs-8">Item</th>
+            <th class="col-xs-2">Amount</th>
+            <th class="col-xs-2">YTD</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Disbursements</strong></td>
+            <td><strong>$2,028.28</strong></td>
+            <td><strong></strong></td>
+          </tr>
+          <tr class="details">
+            <td>- XXXXX5625</td>
+            <td>$2,028.28</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><strong>Superannuation</strong></td>
+            <td><strong></strong></td>
+            <td><strong></strong></td>
+          </tr>
+          <tr class="details">
+            <td>- Superannuation</td>
+            <td>$237.50</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>						
   </div>
 
-  <table class="table table-bordered text-center" id="pay-details">
-    <tbody>
-      <tr>
-        <td class="col-xs-4">
-          <p class="text-muted">Pay Advice No.</p>
-          <p>191152</p>
-        </td>
-        <td class="col-xs-4">
-          <p class="text-muted">Period Ending</p>
-          <p>22-OCT-2017</p>
-        </td>
-        <td class="col-xs-4">
-          <p class="text-muted">Pay Date</p>
-          <p>25-OCT-2017</p>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-
-  <div class="row">
-    <div class="col-md-8">
-      <div>
-        <h2 class="lead">Pay Details</h2>
-        <table class="table payslip">
-          <thead>
-            <tr>
-              <th class="col-xs-6">Item</th>
-              <th class="col-xs-1">Unit</th>
-              <th class="col-xs-1">Rate</th>
-              <th class="col-xs-2">Amount</th>
-              <th class="col-xs-2">YTD</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>Gross</strong></td>
-              <td><strong></strong></td>
-              <td><strong></strong></td>
-              <td><strong></strong></td>
-              <td><strong></strong></td>
-            </tr>
-            <tr>
-              <td><strong>Payment</strong></td>
-              <td><strong></strong></td>
-              <td><strong></strong></td>
-              <td><strong>$2,604.28</strong></td>
-              <td><strong>$23,570.95</strong></td>
-            </tr>
-            <tr class="details">
-              <td>- TIL Payout [Jamie's Italian - Parramatta - Kitchen]</td>
-              <td>3.17</td>
-              <td>$32.98</td>
-              <td>$104.28</td>
-              <td></td>
-            </tr>
-            <tr class="details">
-              <td>- Normal Pay [Jamie's Italian - Parramatta - Kitchen]</td>
-              <td>76.00</td>
-              <td>$32.98</td>
-              <td>$2,500.00</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td><strong>Additional Before Tax</strong></td>
-              <td><strong></strong></td>
-              <td><strong></strong></td>
-              <td><strong></strong></td>
-              <td><strong></strong></td>
-            </tr>
-            <tr>
-              <td><strong>Deduction Before Tax</strong></td>
-              <td><strong></strong></td>
-              <td><strong></strong></td>
-              <td><strong>$567.00</strong></td>
-              <td><strong></strong></td>
-            </tr>
-            <tr class="details">
-              <td>- Employee Super (Post-Tax)</td>
-              <td></td>
-              <td></td>
-              <td>$0.00</td>
-              <td></td>
-            </tr>
-            <tr class="details">
-              <td>- PAYG Withheld</td>
-              <td></td>
-              <td></td>
-              <td>$567.00</td>
-              <td></td>
-            </tr>
-            <tr class="details">
-              <td>- Superannuation Sacrifice</td>
-              <td></td>
-              <td></td>
-              <td>$0.00</td>
-              <td></td>
-            </tr>
-            <tr class="details">
-              <td>- Worker's Compensation</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr class="details">
-              <td>- Fringe Benefits Tax - LAFHA</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr class="details">
-              <td>- Fringe Benefits Tax - Car</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr class="details">
-              <td>- Hourly Administration Fees</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td><strong>Taxable Income</strong></td>
-              <td><strong></strong></td>
-              <td><strong></strong></td>
-              <td><strong></strong></td>
-              <td><strong></strong></td>
-            </tr>
-            <tr>
-              <td><strong>Tax</strong></td>
-              <td><strong></strong></td>
-              <td><strong></strong></td>
-              <td><strong></strong></td>
-              <td><strong></strong></td>
-            </tr>
-            <tr>
-              <td><strong>Additional After Tax</strong></td>
-              <td><strong></strong></td>
-              <td><strong></strong></td>
-              <td><strong></strong></td>
-              <td><strong></strong></td>
-            </tr>
-            <tr>
-              <td><strong>Deduction After Tax</strong></td>
-              <td><strong></strong></td>
-              <td><strong></strong></td>
-              <td><strong>$576.00</strong></td>
-              <td><strong></strong></td>
-            </tr>
-            <tr>
-              <td><strong>Net Pay</strong></td>
-              <td><strong></strong></td>
-              <td><strong></strong></td>
-              <td><strong></strong></td>
-              <td><strong></strong></td>
-            </tr>
-          </tbody>
-        </table>
-
-        <h2 class="lead">Account</h2>
-        <table class="table payslip">
-          <thead>
-            <tr>
-              <th class="col-xs-8">Item</th>
-              <th class="col-xs-2">Amount</th>
-              <th class="col-xs-2">YTD</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>Disbursements</strong></td>
-              <td><strong>$2,028.28</strong></td>
-              <td><strong></strong></td>
-            </tr>
-            <tr class="details">
-              <td>- XXXXX5625</td>
-              <td>$2,028.28</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td><strong>Superannuation</strong></td>
-              <td><strong></strong></td>
-              <td><strong></strong></td>
-            </tr>
-            <tr class="details">
-              <td>- Superannuation</td>
-              <td>$237.50</td>
-              <td></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>						
-    </div>
-
-    <div class="col-md-4">
-      <div class="well">
-        <h3>Darwin Abobo</h3>
-        <p>Position</p>
-        <table class="table">
-          <tbody>
-            <tr>
-              <td class="text-muted">Company</td>
-              <td>Jamie Oliver Resturant Group</td>
-            </tr>
-            <tr>
-              <td class="text-muted">ABN</td>
-              <td>6716272809</td>
-            </tr>
-            <tr>
-              <td class="text-muted">Location</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td class="text-muted">Address</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td class="text-muted">Tax Code</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td class="text-muted">Rate</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td class="text-muted">Annual Pay</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td colspan="2">
-                <h4>Account</h4>
-              </td>
-            </tr>
-            <tr>
-              <td colspan="2">
-                <h4>Message</h4>
-              </td>
-            </tr>
-            <tr>
-              <td colspan="2">
-                <strong>Leave Balances</strong>
-              </td>
-            </tr>
-            <tr>
-              <td>Leave Type 1</td>
-              <td>10</td>
-            </tr>
-            <tr>
-              <td>Leave Type 2</td>
-              <td>10</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+  <div class="col-md-4">
+    <div class="well">
+      <h3>Darwin Abobo</h3>
+      <p>Position</p>
+      <table class="table">
+        <tbody>
+          <tr>
+            <td class="text-muted">Company</td>
+            <td>Jamie Oliver Resturant Group</td>
+          </tr>
+          <tr>
+            <td class="text-muted">ABN</td>
+            <td>6716272809</td>
+          </tr>
+          <tr>
+            <td class="text-muted">Location</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="text-muted">Address</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="text-muted">Tax Code</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="text-muted">Rate</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="text-muted">Annual Pay</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <h4>Account</h4>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <h4>Message</h4>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <strong>Leave Balances</strong>
+            </td>
+          </tr>
+          <tr>
+            <td>Leave Type 1</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>Leave Type 2</td>
+            <td>10</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </div>

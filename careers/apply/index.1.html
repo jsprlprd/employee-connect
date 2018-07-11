@@ -1,0 +1,290 @@
+---
+layout: careers/default
+
+page-layout: full-page
+
+nav-tabs:
+- text: Privacy Statement
+  url: privacy-statement
+- text: Application
+  url: application
+- text: Personal Details
+  url: personal-details
+- text: Additional Info
+  url: additional-info
+- text: Education &amp; Employment
+  url: education-and-employment
+- text: Referees
+  url: referees
+- text: Search Consent
+  url: search-consent
+- text: Declaration Finish
+  url: declaration-and-authorisation
+---
+
+<main>
+
+  <div class="container">
+    <div class="heading">
+      {% include components/nav-tabs-default-two.html %}
+    </div>
+    <form class="form-horizontal" action="">
+
+      <div class="tab-content">
+
+        <div class="tab-pane active" id="privacy-statement-tab">
+
+          <p class="lead">Privacy Statement</p>
+
+          <p>To Apply for Casual Harvest Jobs - WA - Manager Testing, please read the following privacy statement:</p>
+
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"> I acknowledge that I have read, understood and agree to the terms of the privacy statement
+            </label>
+          </div>
+
+        </div>
+
+
+        <div class="tab-pane" id="application-tab">
+          <p class="lead">Employment Application</p>
+
+          <p>This form is designed to assess your suitability for employment and is to be completed in full by you. You may attach a covering letter and your Curriculum Vitae as supporting documents. You must meet eligibility to work criteria ie: Citizenship, Residency and/or valid work permit.</p>
+
+          {% include components/molecules/static-field-horizontal.html 
+            label="Position Applied for"
+            name="position-applied-for"
+            text="Contract Administrator"
+            label-size="col-sm-4 col-lg-3 col-xl-2"
+            input-size="col-sm-5 col-lg-4 col-xl-3"
+          %}
+
+          {% include components/molecules/select-field-horizontal.html 
+            label="Source"
+            name="source"
+            placeholder="Select Source"
+            list-value-name=site.data.list-value.application-source
+            label-size="col-sm-4 col-lg-3 col-xl-2"
+            input-size="col-sm-5 col-lg-4 col-xl-3"
+          %}
+
+
+          {% include components/molecules/input-field-horizontal.html 
+            label="Email Address"
+            name="email-address"
+            type="email"
+            placeholder="Enter Email Address"
+            isRequired="form-required"
+            label-size="col-sm-4 col-lg-3 col-xl-2"
+            input-size="col-sm-5 col-lg-4 col-xl-3"
+            hasHelpBlock="help-block"
+            help-block="<b>NEW APPLICANTS</b>: Be sure to enter your email address correctly, as communication about your job application will be sent here.<br>
+            <b>EXISTING APPLICANTS</b>: If you have previously applied for a position with us, please enter the same email address as your previous application. This will assist us in processing your application as quickly as possible"
+          %}
+
+          {% include components/molecules/input-field-horizontal.html 
+            label="Last Name"
+            name="last-name"
+            type="text"
+            placeholder="Enter Last Name"
+            label-size="col-sm-4 col-lg-3 col-xl-2"
+            input-size="col-sm-5 col-lg-4 col-xl-3"
+            isRequired="form-required"
+          %}
+
+          {% include components/molecules/static-field-horizontal.html 
+            label="Submitted on"
+            name="submitted-on"
+            text="2/07/2018 2:03:36 PM"
+            label-size="col-sm-4 col-lg-3 col-xl-2"
+            input-size="col-sm-5 col-lg-4 col-xl-3"
+          %}
+        </div>
+
+        <div class="tab-pane" id="personal-details-tab">
+            <p class="lead">Personal Details</p>
+
+            <p><b>Applican Details</b></p>
+      
+            {% include components/molecules/select-field-horizontal.html 
+              label="Title"
+              name="title"
+              placeholder="Select Title"
+              list-value-name=site.data.list-value.salutation
+              label-size="col-sm-4 col-lg-3 col-xl-2"
+              input-size="col-sm-5 col-lg-4 col-xl-3"
+            %}
+          
+            {% include components/molecules/input-field-horizontal.html 
+              label="First Name"
+              name="first-name"
+              placeholder="Enter First Name"
+              label-size="col-sm-4 col-lg-3 col-xl-2"
+              input-size="col-sm-5 col-lg-4 col-xl-3"
+              isRequired="form-required"
+            %}
+      
+            {% include components/molecules/input-field-horizontal.html 
+              label="Last Name"
+              name="last-name"
+              value="Lepardo"
+              placeholder="Enter Last Name"
+              label-size="col-sm-4 col-lg-3 col-xl-2"
+              input-size="col-sm-5 col-lg-4 col-xl-3"
+              isRequired="form-required"
+            %}
+      
+            {% include components/molecules/input-field-horizontal.html 
+              label="Preferred Name"
+              name="preferred-name"
+              type="text"
+              placeholder="Enter Preferred Name (Optional)"
+              label-size="col-sm-4 col-lg-3 col-xl-2"
+              input-size="col-sm-5 col-lg-4 col-xl-3"
+            %}
+      
+            {% include components/molecules/input-field-horizontal.html 
+              label="Email Address"
+              name="email-address"
+              type="email"
+              value="jasper.lepardo@employeeconnect.com"
+              placeholder="Enter Email Address"
+              label-size="col-sm-4 col-lg-3 col-xl-2"
+              input-size="col-sm-5 col-lg-4 col-xl-3"
+            %}
+      
+            <p><b>Residential Address</b></p>
+      
+            {% include components/organisms/primary-address-form-horizontal.html %}
+      
+            <p><b>Contact</b></p>
+      
+            {% include components/molecules/input-field-horizontal.html 
+              label="Home Phone"
+              name="home-phone"
+              type="tel"
+              placeholder="Home Phone"
+              label-size="col-sm-4 col-lg-3 col-xl-2"
+              input-size="col-sm-5 col-lg-4 col-xl-3"
+              isRequired="form-required"
+            %}
+          
+            {% include components/molecules/input-field-horizontal.html 
+              label="Mobile Phone"
+              name="mobile-phone"
+              type="tel"
+              placeholder="Mobile Phone"
+              label-size="col-sm-4 col-lg-3 col-xl-2"
+              input-size="col-sm-5 col-lg-4 col-xl-3"
+            %}
+      
+        </div>
+        <div class="tab-pane" id="additional-info-tab">
+            <p class="lead">Additional Information</p>
+
+            <p>Your current resume must be uploaded to complete your application. Documents can be upload in .doc, docx, .rtf and .pdf format.<p>
+      
+            <p><b>Resume</b></p>
+      
+            {% include components/molecules/input-field-horizontal.html 
+              label="Attach Resume"
+              name="attach-resume"
+              type="file"
+              label-size="col-sm-4 col-lg-3 col-xl-2"
+              input-size="col-sm-5 col-lg-4 col-xl-3"
+              isRequired="form-required"
+            %}
+            <p><b>Cover Letter</b></p>
+      
+            {% include components/molecules/input-field-horizontal.html 
+              label="Attach Cover Letter"
+              name="attach-cover-letter"
+              type="file"
+              label-size="col-sm-4 col-lg-3 col-xl-2"
+              input-size="col-sm-5 col-lg-4 col-xl-3"
+            %}
+      
+            <p><b>Citizenship / Residensy Status</b></p>
+            {% include components/molecules/select-field-horizontal.html 
+              label="Are you currently eligible to work in this country?"
+              name=""
+              placeholder="Select Eligibility"
+              list-value-name=site.data.list-value.eligibility
+              label-size="col-sm-4 col-lg-3 col-xl-2"
+              input-size="col-sm-5 col-lg-4 col-xl-3"
+            %}
+      
+        </div>
+        <div class="tab-pane" id="education-and-employment-tab">
+      <p class="lead">Education and Employment History</p>
+
+      {% include components/molecules/textarea-field-horizontal.html
+        label="Please List your Education Qualifications"
+        name="education-qualifications"
+        placeholder="Enter Education Qualification"
+        label-size="col-sm-4 col-lg-3 col-xl-2"
+        input-size="col-sm-5 col-lg-4 col-xl-3"
+      %}
+
+      {% include components/molecules/textarea-field-horizontal.html
+        label="Please List the Details of your Employment History"
+        name="employment-history"
+        placeholder="Enter Employment History"
+        label-size="col-sm-4 col-lg-3 col-xl-2"
+        input-size="col-sm-5 col-lg-4 col-xl-3"
+      %}
+
+        </div>
+        <div class="tab-pane" id="referees-tab">
+            <p class="lead">Referees</p>
+
+            <p>Please provide contact details for at least two referees that you authorise us to contact. Referees must be people who have line managed or supervised your work practice. We do not accept personal references.<p>
+      
+            <p><b>Referee 1</b></p>
+      
+            {% include components/organisms/referee-form-horizontal.html %}
+      
+            <p><b>Referee 2</b></p>
+      
+            {% include components/organisms/referee-form-horizontal.html %}
+            <p><b>Referee 3</b></p>
+      
+            {% include components/organisms/referee-form-horizontal.html %}
+      
+        </div>
+        <div class="tab-pane" id="pre-employment-screening-tab">
+            <p class="lead">Pre-Employment Screening</p>
+
+            {% include components/molecules/select-field-horizontal.html 
+              label="Are you willing to complete pre-employment checks if required?"
+              name=""
+              placeholder=""
+              list-value-name=site.data.list-value.yes-no
+              label-size="col-sm-4 col-lg-3 col-xl-2"
+              input-size="col-sm-5 col-lg-4 col-xl-3"
+            %}
+      
+        </div>
+        <div class="tab-pane" id="declaration-and-authorisation-tab">
+      <p class="lead">Declaration and Authorisation</p>
+      
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> I declare that to the best of my knowledge the information supplied in this application and any supporting documents is correct  
+        </label>
+      </div>
+
+        </div>
+      </div>
+
+    </form>
+  </div>
+</main>
+<footer class="footer footer-inverse">
+  <div class="container">
+    <p class="footer-text">Copyright © EmployeeConnect Pty Ltd. <br/> All rights reserved.</p>
+  </div>
+</footer>
+
+

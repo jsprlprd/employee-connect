@@ -1,0 +1,8 @@
+- name: Annual Leave
+  value: annual-leave
+
+- name: Sick Leave
+  value: sick-leave
+
+- name: Parental Leave
+  value: parental-leave

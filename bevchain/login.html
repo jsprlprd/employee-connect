@@ -8,7 +8,13 @@ page-style: login
 
 <main class="login-wrapper">
   <form class="login-form">
-    <img class="login-brand" src="{{ site.baseurl }}/App_Themes/{{ layout.base-theme }}/Images/logos/login-logo.png" alt="" height="72">
+    {% include components/atoms/image.html
+      class="login-brand"
+      src="/App_Themes/ecBevChainEx/Images/logos/login-logo.png"
+      alt=""
+      width=""
+      height="72"
+    %}
     <div class="heading">
       <h1 class="heading-title h3">Sign In</h1>
       <p class="heading-subtitle">with your EmployeeConnect account</p>
@@ -30,11 +36,17 @@ page-style: login
       <label><input type="checkbox">Rembember me</label>
     </fieldset>
     <div class="button-group">
-      <a class="btn btn-success btn-lg btn-block" href="{{ site.baseurl }}{{ layout.base-url }}home/">Login</a>
-      <a class="btn btn-link btn-lg btn-block"  href="{{ site.baseurl }}{{ layout.base-url }}forgot-password.html">Forgot Password?</a>  
+      <a class="btn btn-success btn-lg btn-block" href="{{ site.baseurl }}/bevchain/home/">Login</a>
+      <a class="btn btn-link btn-lg btn-block"  href="{{ site.baseurl }}/bevchain/forgot-password.html">Forgot Password?</a>  
     </div>
     <hr class="dashed">
-    <img src="{{ site.baseurl }}/Images/powered-ec-logo.png" alt="">
+    {% include components/atoms/image.html
+      class=""
+      src="/Images/powered-ec-logo.png"
+      alt=""
+      width=""
+      height=""
+    %}
     <hr class="dashed">
     <div class="row">
       <div class="col-xs-6 text-muted">EC6.1.0434</div>

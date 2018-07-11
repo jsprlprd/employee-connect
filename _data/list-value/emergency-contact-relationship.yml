@@ -1,0 +1,14 @@
+- name: Doctor
+  value: Doctor
+
+- name: Family
+  value: Family
+
+- name: Friend
+  value: Friend
+
+- name: Lawyer
+  value: Lawyer
+
+- name: Spouse
+  value: Spouse

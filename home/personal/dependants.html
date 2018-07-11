@@ -4,142 +4,54 @@ layout: cirrus/home/default
 heading-title: Dependants
 ---
 
-
 <form class="form-horizontal">
 
-  <fieldset class="form-group">
-    <label class="col-sm-3 col-md-2 control-label" for="">Family Member Name</label>
-    <div class="col-sm-5 col-md-4">
-      <input type="text" class="form-control" placeholder="Enter Family Member Name">
-    </div>
-  </fieldset>
+  {% include components/molecules/input-field-horizontal.html 
+    label="Family Member Name"
+    name="family-member-name"
+    type="text"
+    placeholder="Enter Family Member Name"
+    label-size="col-sm-4 col-lg-3 col-xl-2"
+    input-size="col-sm-5 col-lg-4 col-xl-3"
+  %}
 
-  <fieldset class="form-group">
-    <label class="col-sm-3 col-md-2 control-label" for="">Relationship</label>
-    <div class="col-sm-5 col-md-4">
-      <select class="form-control" name="" id="">
-        <option value="" selected="" disabled="">Select Relationship</option>
-        <option value="">Child</option>
-        <option value="">Parent</option>
-        <option value="">Sibling</option>
-        <option value="">Spouse</option>
-      </select>
-    </div>
-  </fieldset>
+  {% include components/molecules/select-field-horizontal.html 
+    label="Relationship"
+    name="relationship"
+    placeholder="Select Relationship"
+    list-value-name=site.data.list-value.dependants-relationship
+    label-size="col-sm-4 col-lg-3 col-xl-2"
+    input-size="col-sm-5 col-lg-4 col-xl-3"
+  %}
 
-  <fieldset class="form-group">
-    <label class="col-sm-3 col-md-2 control-label" for="">Birth Date</label>
-    <div class="col-sm-5 col-md-4">
-      <div class="form-inline">
-        <select class="form-control" name="" id="" style="width: 40%;margin-right: -4px;">
-          <option value="" selected="" disabled="">Month</option>
-          <option value="">Januar</option>
-          <option value="">February</option>
-          <option value="">March</option>
-          <option value="">April</option>
-          <option value="">May</option>
-          <option value="">June</option>
-          <option value="">July</option>
-          <option value="">August</option>
-          <option value="">September</option>
-          <option value="">October</option>
-          <option value="">November</option>
-          <option value="">December</option>
-        </select>
-        <select class="form-control" name="" id="" style="width: 25%; margin-left: 2.5%; margin-right: -4px;">
-          <option value="" selected="" disabled="">Day</option>
-          <option value="">01</option>
-          <option value="">02</option>
-          <option value="">03</option>
-          <option value="">04</option>
-          <option value="">05</option>
-          <option value="">06</option>
-          <option value="">07</option>
-          <option value="">08</option>
-          <option value="">09</option>
-          <option value="">10</option>
-          <option value="">11</option>
-          <option value="">12</option>
-          <option value="">13</option>
-          <option value="">14</option>
-          <option value="">15</option>
-          <option value="">16</option>
-          <option value="">17</option>
-          <option value="">18</option>
-          <option value="">19</option>
-          <option value="">20</option>
-          <option value="">21</option>
-          <option value="">22</option>
-          <option value="">23</option>
-          <option value="">24</option>
-          <option value="">25</option>
-          <option value="">26</option>
-          <option value="">27</option>
-          <option value="">28</option>
-          <option value="">29</option>
-          <option value="">30</option>
-          <option value="">31</option>
-        </select>
-        <select class="form-control" name="" id="" style="width: 30%; margin-left: 2.5%;">
-          <option value="" selected="" disabled="">Year</option>
-          <option value="">1990</option>
-          <option value="">1991</option>
-          <option value="">1992</option>
-          <option value="">1993</option>
-          <option value="">1994</option>
-          <option value="">1995</option>
-          <option value="">1996</option>
-          <option value="">1997</option>
-          <option value="">1998</option>
-          <option value="">1999</option>
-          <option value="">2000</option>
-          <option value="">2001</option>
-          <option value="">2002</option>
-          <option value="">2003</option>
-          <option value="">2004</option>
-          <option value="">2005</option>
-          <option value="">2006</option>
-          <option value="">2007</option>
-          <option value="">2008</option>
-          <option value="">2009</option>
-          <option value="">2010</option>
-          <option value="">2011</option>
-          <option value="">2012</option>
-          <option value="">2013</option>
-          <option value="">2014</option>
-          <option value="">2015</option>
-          <option value="">2016</option>
-          <option value="">2017</option>
-        </select>
-      </div>
-    </div>
-  </fieldset>
+  {% include components/molecules/birthday-select.html 
+    label="Birthay"
+    name="birthday"
+    label-size="col-sm-4 col-lg-3 col-xl-2"
+    input-size="col-sm-5 col-lg-4 col-xl-3"
+  %}
 
-  <fieldset class="form-group">
-    <label class="col-sm-3 col-md-2 control-label" for="">Gender</label>
-    <div class="col-sm-5 col-md-4">
-      <label class="radio-inline">
-        <input type="radio" name="gender" value="Male" checked="">Male
-      </label>
-      <label class="radio-inline">
-        <input type="radio" name="gender" value="Female">Female
-      </label>
-    </div>
-  </fieldset>
-  
-  <fieldset class="form-group">
-    <label class="col-sm-3 col-md-2 control-label" for="">Comments</label>
-    <div class="col-sm-5 col-md-4">
-      <textarea class="form-control" placeholder="Enter Comments"></textarea>
-    </div>
-  </fieldset>
+  {% include components/molecules/gender-select.html 
+    label="Gender"
+    name="gender"
+    label-size="col-sm-4 col-lg-3 col-xl-2"
+    input-size="col-sm-5 col-lg-4 col-xl-3"
+  %}
+
+  {% include components/molecules/textarea-field-horizontal.html 
+    label="Comments"
+    name="comments"
+    placeholder="Enter Comments"
+    label-size="col-sm-4 col-lg-3 col-xl-2"
+    input-size="col-sm-5 col-lg-4 col-xl-3"
+  %}
 
   <hr class="dashed" />
   
   <div class="row">
-    <div class="col-sm-3 col-md-2"></div>
-    <div class="col-sm-5 col-md-4">
-      <button type="submit" class="btn btn-primary btn-wide">Save</button>        
+    <div class="col-sm-4 col-lg-3 col-xl-2"></div>
+    <div class="col-sm-5 col-lg-4 col-xl-3">
+      <button type="submit" class="btn btn-primary btn-wide">Save</button>
     </div>
   </div>
 

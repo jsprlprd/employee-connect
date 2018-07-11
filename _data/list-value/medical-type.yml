@@ -1,0 +1,8 @@
+- name: Medical
+  value: medical
+
+- name: Notification
+  value: notification
+
+- name: Vaccination
+  value: vaccination

@@ -13,7 +13,13 @@ layout: bevchain/home/default
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
-      <img src="https://dummyimage.com/5:1x1075/E4E4E4/000000.png&text=+" alt="First slide" width="100%">
+      {% include components/atoms/image.html
+        class=""
+        src="https://dummyimage.com/5:1x1075/E4E4E4/000000.png&text=+"
+        alt="First slide"
+        width="100%"
+        height=""
+      %}
       <div class="carousel-caption">
         <h3>.carousel-caption h3</h3>
         <p>Paragraph</p>
@@ -21,12 +27,24 @@ layout: bevchain/home/default
     </div>
     <div class="item">
       <a href="#">
-        <img src="https://dummyimage.com/5:1x1075/D8D8D8/000000.png&text=+" alt="Second slide" width="100%">
+        {% include components/atoms/image.html
+          class=""
+          src="https://dummyimage.com/5:1x1075/D8D8D8/000000.png&text=+"
+          alt="Second slide"
+          width="100%"
+          height=""
+        %}
       </a>
     </div>
     <div class="item">
       <a href="#">
-        <img src="https://dummyimage.com/5:1x1075/BEBEBE/000000.png&text=+" alt="Third slide" width="100%">
+        {% include components/atoms/image.html
+          class=""
+          src="https://dummyimage.com/5:1x1075/BEBEBE/000000.png&text=+"
+          alt="Third slide"
+          width="100%"
+          height=""
+        %}
       </a>
     </div>
   </div>
@@ -46,7 +64,13 @@ layout: bevchain/home/default
   <div class="row">
     <div class="col-md-4">
       <div class="panel panel-default">
-        <img src="https://dummyimage.com/16:9x1080/BEBEBE/000000.png&text=+" alt="Third slide" width="100%">
+        {% include components/atoms/image.html
+          class=""
+          src="https://dummyimage.com/16:9x1080/BEBEBE/000000.png&text=+"
+          alt="Third slide"
+          width="100%"
+          height=""
+        %}
         <div class="panel-body">
           <h6 class="h4">Test</h6>
           <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.</p>
@@ -88,7 +112,13 @@ layout: bevchain/home/default
         <li>
           <a class="media" href="">
             <div class="media-left">
-              <img class="media-object" src="{{ site.baseurl }}/App_Themes/{{ layout.base-theme }}/Images/quick-links-icon/home-base.png" alt="" width="32" height="32" />
+              {% include components/atoms/image.html
+                class="media-object"
+                src="/App_Themes/ecBevChainEx/Images/quick-links-icon/home-base.png"
+                alt=""
+                width="32"
+                height="32"
+              %}
             </div>
             <div class="media-body media-middle">Home Base</div>
           </a>
@@ -96,7 +126,13 @@ layout: bevchain/home/default
         <li>
           <a class="media" href="">
             <div class="media-left">
-              <img class="media-object" src="{{ site.baseurl }}/App_Themes/{{ layout.base-theme }}/Images/quick-links-icon/workflow-inbox.png" alt="" width="32" height="32" />
+              {% include components/atoms/image.html
+                class="media-object"
+                src="/App_Themes/ecBevChainEx/Images/quick-links-icon/workflow-inbox.png"
+                alt=""
+                width="32"
+                height="32"
+              %}
             </div>
             <div class="media-body media-middle">Workflow Inbox</div>
           </a>
@@ -104,7 +140,13 @@ layout: bevchain/home/default
         <li>
           <a class="media" href="">
             <div class="media-left">
-              <img class="media-object" src="{{ site.baseurl }}/App_Themes/{{ layout.base-theme }}/Images/quick-links-icon/hr-forms.png" alt="" width="32" height="32" />
+              {% include components/atoms/image.html
+                class="media-object"
+                src="/App_Themes/ecBevChainEx/Images/quick-links-icon/hr-forms.png"
+                alt=""
+                width="32"
+                height="32"
+              %}
             </div>
             <div class="media-body media-middle">HR Forms</div>
           </a>
@@ -112,7 +154,13 @@ layout: bevchain/home/default
         <li>
           <a class="media" href="">
             <div class="media-left">
-              <img class="media-object" src="{{ site.baseurl }}/App_Themes/{{ layout.base-theme }}/Images/quick-links-icon/faq.png" alt="" width="32" height="32" />
+              {% include components/atoms/image.html
+                class="media-object"
+                src="/App_Themes/ecBevChainEx/Images/quick-links-icon/faq.png"
+                alt=""
+                width="32"
+                height="32"
+              %}
             </div>
             <div class="media-body media-middle">FAQs</div>
           </a>
@@ -120,7 +168,13 @@ layout: bevchain/home/default
         <li>
           <a class="media" href="">
             <div class="media-left">
-              <img class="media-object" src="{{ site.baseurl }}/App_Themes/{{ layout.base-theme }}/Images/quick-links-icon/homesafe.png" alt="" width="32" height="32" />
+              {% include components/atoms/image.html
+                class="media-object"
+                src="/App_Themes/ecBevChainEx/Images/quick-links-icon/homesafe.png"
+                alt=""
+                width="32"
+                height="32"
+              %}
             </div>
             <div class="media-body media-middle">HomeSafe</div>
           </a>
@@ -128,7 +182,13 @@ layout: bevchain/home/default
         <li>
           <a class="media" href="">
             <div class="media-left">
-              <img class="media-object" src="{{ site.baseurl }}/App_Themes/{{ layout.base-theme }}/Images/quick-links-icon/helpdesk-support.png" alt="" width="32" height="32" />
+              {% include components/atoms/image.html
+                class="media-object"
+                src="/App_Themes/ecBevChainEx/Images/quick-links-icon/helpdesk-support.png"
+                alt=""
+                width="32"
+                height="32"
+              %}
             </div>
             <div class="media-body media-middle">Help Desk/Support</div>
           </a>

@@ -6,91 +6,90 @@ heading-title: Leave Request
 
 <form class="form-horizontal">
 
-  <fieldset class="form-group form-required">
-    <label class="col-sm-3 col-md-2 control-label" for="">Leave Type</label>
-    <div class="col-sm-5 col-md-4">
-      <select class="form-control" name="" id="">
-        <option value="" selected="" disabled="">Select Leave Type</option>
-        <option value="">Annual Leave</option>
-        <option value="">Sick Leave</option>
-        <option value="">Parental Leave</option>
-      </select>
-    </div>
-  </fieldset>
+  {% include components/molecules/select-field-horizontal.html 
+    label="Leave Type"
+    name="leave-type"
+    placeholder="Select Leave Type"
+    list-value-name=site.data.list-value.leave-type
+    label-size="col-sm-4 col-lg-3 col-xl-2"
+    input-size="col-sm-5 col-lg-4 col-xl-3"
+    isRequired="form-required"
+  %}
 
-  <fieldset class="form-group form-required">
-    <label class="col-sm-3 col-md-2 control-label" for="">Start Date</label>
-    <div class="col-sm-5 col-md-4">
-      <div class="input-group">
-        <input type="text" class="form-control" placeholder="Enter Start Date">
-        <span class="input-group-btn">
-          <button class="btn btn-primary" type="button"><i class="fa fa-calendar-o"></i></button>
-        </span>
-      </div>
-    </div>
-  </fieldset>
+  {% include components/molecules/datepicker-horizontal.html 
+    label="Start Date"
+    name="start-date"
+    type="text"
+    placeholder="Enter Start Date"
+    label-size="col-sm-4 col-lg-3 col-xl-2"
+    input-size="col-sm-5 col-lg-4 col-xl-3"
+    isRequired="form-required"
+  %}
 
-  <fieldset class="form-group form-required">
-    <label class="col-sm-3 col-md-2 control-label" for="">End Date</label>
-    <div class="col-sm-5 col-md-4">
-      <div class="input-group">
-        <input type="text" class="form-control" placeholder="Enter End Date">
-        <span class="input-group-btn">
-          <button class="btn btn-primary" type="button"><i class="fa fa-calendar-o"></i></button>
-        </span>
-      </div>
-    </div>
-  </fieldset>
+  {% include components/molecules/datepicker-horizontal.html 
+    label="End Date"
+    name="end-date"
+    type="text"
+    placeholder="Enter End Date"
+    label-size="col-sm-4 col-lg-3 col-xl-2"
+    input-size="col-sm-5 col-lg-4 col-xl-3"
+    isRequired="form-required"
+  %}
 
-  <fieldset class="form-group form-required">
-    <label class="col-sm-3 col-md-2 control-label" for="">Leave Unit</label>
-    <div class="col-sm-5 col-md-4">
-      <select class="form-control" name="" id="">
-        <option value="" selected="" disabled="">Select Leave Unit</option>
-        <option value="">Hours</option>
-        <option value="">Days</option>
-      </select>
-    </div>
-  </fieldset>
+  {% include components/molecules/select-field-horizontal.html 
+    label="Leave Unit"
+    name="leave-unit"
+    placeholder="Select Leave Unit"
+    list-value-name=site.data.list-value.leave-unit
+    label-size="col-sm-4 col-lg-3 col-xl-2"
+    input-size="col-sm-5 col-lg-4 col-xl-3"
+    isRequired="form-required"
+  %}
 
-  <fieldset class="form-group form-required">
-    <label class="col-sm-3 col-md-2 control-label" for="">Leave Taken</label>
-    <div class="col-sm-5 col-md-4">
-      <input type="number" class="form-control" placeholder="Enter Leave Taken">
-    </div>
-  </fieldset>
+  {% include components/molecules/input-field-horizontal.html 
+    label="Leave Taken"
+    name="leave-taken"
+    type="number"
+    placeholder="Enter Leave Taken"
+    label-size="col-sm-4 col-lg-3 col-xl-2"
+    input-size="col-sm-5 col-lg-4 col-xl-3"
+    isRequired="form-required"
+  %}
 
-  <fieldset class="form-group">
-    <label class="col-sm-3 col-md-2 control-label" for="">Comments</label>
-    <div class="col-sm-5 col-md-4">
-      <textarea class="form-control" placeholder="Enter Comments"></textarea>
-    </div>
-  </fieldset>
+  {% include components/molecules/textarea-field-horizontal.html 
+    label="Comments"
+    name="comments"
+    placeholder="Enter Comments"
+    label-size="col-sm-4 col-lg-3 col-xl-2"
+    input-size="col-sm-5 col-lg-4 col-xl-3"
+  %}
 
-  <fieldset class="form-group">
-    <div class="col-sm-5 col-md-4 col-sm-push-3 col-md-push-2">
-      <div class="checkbox">
-        <label><input class="form-check-input" type="checkbox">Pay in advance</label>
-      </div>
-      <div class="checkbox">
-        <label><input class="form-check-input" type="checkbox">Certificate Provided</label>
-      </div>
-    </div>
-  </fieldset>
+  {% include components/molecules/checkbox-horizontal.html 
+    label="Pay in advance"
+    name="pay-in-advance"
+    input-size="col-sm-5 col-md-4 col-sm-push-3 col-md-push-2"
+  %}
 
-  <fieldset class="form-group">
-    <label class="col-sm-3 col-md-2 control-label" for="">Attachement</label>
-    <div class="col-sm-5 col-md-4">
-      <input type="file" class="form-control">
-    </div>
-  </fieldset>
+  {% include components/molecules/checkbox-horizontal.html 
+    label="Certificate Provided"
+    name="certificate-provided"
+    input-size="col-sm-5 col-md-4 col-sm-push-3 col-md-push-2"
+  %}
 
-  <fieldset class="form-group">
-    <label class="col-sm-3 col-md-2 control-label" for="">Sumitted</label>
-    <div class="col-sm-5 col-md-4">
-      <p class="form-control-static">Display Current Date</p>
-    </div>
-  </fieldset>
+  {% include components/molecules/input-field-horizontal.html 
+    label="Attachement"
+    name="attachement"
+    type="file"
+    label-size="col-sm-4 col-lg-3 col-xl-2"
+    input-size="col-sm-5 col-lg-4 col-xl-3"
+  %}
+
+  {% include components/molecules/static-field-horizontal.html 
+    label="Sumitted"
+    text="Display Current Date"
+    label-size="col-sm-4 col-lg-3 col-xl-2"
+    input-size="col-sm-5 col-lg-4 col-xl-3"
+  %}
   
   <hr class="dashed" />
   

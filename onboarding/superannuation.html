@@ -10,176 +10,218 @@ next-page: medical.html
 
 <form class="form-horizontal">
 
-  <fieldset class="form-group">
-    <label class="col-sm-3 col-lg-2 control-label" for="">Type</label>
-    <div class="col-sm-6 col-lg-5 col-xl-3">
-      <input type="text" class="form-control" placeholder="Enter Type">
-    </div>
-  </fieldset>
+  {% include components/molecules/select-field-horizontal.html
+    label="Type"
+    name="type"
+    placeholder="Select Type"
+    list-value-name=site.data.list-value.superannuation-type
+    label-size="col-sm-4 col-lg-3 col-xl-2"
+    input-size="col-sm-5 col-lg-4 col-xl-3"
+    isRequired="form-required"
+  %}
 
-  <fieldset class="form-group">
-    <label class="col-sm-3 col-lg-2 control-label" for="">Fund ID</label>
-    <div class="col-sm-6 col-lg-5 col-xl-3">
-      <input type="text" class="form-control" placeholder="Enter Fund ID">
-    </div>
-  </fieldset>
+  {% include components/molecules/input-field-horizontal.html
+    label="Fund ID"
+    name="fund-id"
+    type="text"
+    placeholder="Enter Fund ID"
+    label-size="col-sm-4 col-lg-3 col-xl-2"
+    input-size="col-sm-5 col-lg-4 col-xl-3"
+  %}
 
-  <fieldset class="form-group">
-    <label class="col-sm-3 col-lg-2 control-label" for="">Member ID</label>
-    <div class="col-sm-6 col-lg-5 col-xl-3">
-      <input type="text" class="form-control" placeholder="Enter Member ID">
-    </div>
-  </fieldset>
+  {% include components/molecules/input-field-horizontal.html 
+    label="Member ID"
+    name="member-id"
+    type="text"
+    placeholder="Enter Member ID"
+    label-size="col-sm-4 col-lg-3 col-xl-2"
+    input-size="col-sm-5 col-lg-4 col-xl-3"
+  %}
 
-  <fieldset class="form-group">
-    <label class="col-sm-3 col-lg-2 control-label" for="">Fund Name</label>
-    <div class="col-sm-6 col-lg-5 col-xl-3">
-      <input type="text" class="form-control" placeholder="Enter Fund Name">
-    </div>
-  </fieldset>
+  {% include components/molecules/input-field-horizontal.html 
+    label="Fund Name"
+    name="fund-name"
+    type="text"
+    placeholder="Enter Fund Name"
+    label-size="col-sm-4 col-lg-3 col-xl-2"
+    input-size="col-sm-5 col-lg-4 col-xl-3"
+    isRequired="form-required"
+  %}
 
-  <fieldset class="form-group">
-    <label class="col-sm-3 col-lg-2 control-label" for="">Spin ID</label>
-    <div class="col-sm-6 col-lg-5 col-xl-3">
-      <input type="text" class="form-control" placeholder="Enter Spin ID">
-    </div>
-  </fieldset>
+  {% include components/molecules/input-field-horizontal.html 
+    label="Spin ID"
+    name="spin-id"
+    type="text"
+    placeholder="Enter Spin ID"
+    label-size="col-sm-4 col-lg-3 col-xl-2"
+    input-size="col-sm-5 col-lg-4 col-xl-3"
+  %}
 
-  <fieldset class="form-group">
-    <label class="col-sm-3 col-lg-2 control-label" for="">ABN / Govt ID</label>
-    <div class="col-sm-6 col-lg-5 col-xl-3">
-      <input type="text" class="form-control" placeholder="Enter ABN / Govt ID">
-    </div>
-  </fieldset>
+  {% include components/molecules/input-field-horizontal.html 
+    label="ABN / Govt ID"
+    name="abn-govt-id"
+    type="text"
+    placeholder="Enter ABN / Govt I"
+    label-size="col-sm-4 col-lg-3 col-xl-2"
+    input-size="col-sm-5 col-lg-4 col-xl-3"
+  %}
 
-  <fieldset class="form-group">
-    <label class="col-sm-3 col-lg-2 control-label" for="">Attach Form</label>
-    <div class="col-sm-6 col-lg-5 col-xl-3">
-      <input type="text" class="form-control" placeholder="Enter Attach Form">
-    </div>
-  </fieldset>
+  {% include components/molecules/input-field-horizontal.html 
+    label="Attach Form"
+    name="attach-form"
+    type="file"
+    placeholder="Enter Attach Form"
+    label-size="col-sm-4 col-lg-3 col-xl-2"
+    input-size="col-sm-5 col-lg-4 col-xl-3"
+  %}
 
   <hr class="dashed">
 
-  <fieldset class="form-group">
-    <label class="col-sm-3 col-lg-2 control-label" for="">Effective Date</label>
-    <div class="col-sm-6 col-lg-5 col-xl-3">
-      <input type="text" class="form-control" placeholder="Enter Effective Date">
-    </div>
-  </fieldset>
+  {% include components/molecules/datepicker-horizontal.html 
+    label="Effective Date"
+    name="effective-date"
+    type="text"
+    placeholder="Enter Start Date"
+    label-size="col-sm-4 col-lg-3 col-xl-2"
+    input-size="col-sm-5 col-lg-4 col-xl-3"
+  %}
 
-  <fieldset class="form-group">
-    <label class="col-sm-3 col-lg-2 control-label" for="">Initial Financial year</label>
-    <div class="col-sm-6 col-lg-5 col-xl-3">
-      <input type="text" class="form-control" placeholder="Enter Initial Financial year">
-    </div>
-  </fieldset>
+  {% include components/molecules/input-field-horizontal.html 
+    label="Initial Financial Year"
+    name="initial-financial-year"
+    type="text"
+    placeholder="Enter Initial Financial Year"
+    label-size="col-sm-4 col-lg-3 col-xl-2"
+    input-size="col-sm-5 col-lg-4 col-xl-3"
+  %}
 
-  <fieldset class="form-group">
-    <label class="col-sm-3 col-lg-2 control-label" for="">Bank Name</label>
-    <div class="col-sm-6 col-lg-5 col-xl-3">
-      <input type="text" class="form-control" placeholder="Enter Bank Name">
-    </div>
-  </fieldset>
+  {% include components/molecules/input-field-horizontal.html 
+    label="Bank Name"
+    name="bank-name"
+    type="text"
+    placeholder="Enter Bank Name"
+    label-size="col-sm-4 col-lg-3 col-xl-2"
+    input-size="col-sm-5 col-lg-4 col-xl-3"
+  %}
 
-  <fieldset class="form-group">
-    <label class="col-sm-3 col-lg-2 control-label" for="">Category</label>
-    <div class="col-sm-6 col-lg-5 col-xl-3">
-      <input type="text" class="form-control" placeholder="Enter Category">
-    </div>
-  </fieldset>
+  {% include components/molecules/input-field-horizontal.html 
+    label="Category"
+    name="category"
+    type="text"
+    placeholder="Enter Category"
+    label-size="col-sm-4 col-lg-3 col-xl-2"
+    input-size="col-sm-5 col-lg-4 col-xl-3"
+  %}
+  
+  {% include components/molecules/checkbox-horizontal.html 
+    label="Compliance"
+    name="compliance"
+    label-spacer-size="col-sm-push-4 col-lg-push-3 col-xl-push-2"
+    input-size="col-sm-5 col-lg-4 col-xl-3"
+  %}
 
-  <fieldset class="form-group">
-    <label class="col-sm-3 col-lg-2 control-label" for="">Compliance</label>
-    <div class="col-sm-6 col-lg-5 col-xl-3">
-      <input type="text" class="form-control" placeholder="Enter Compliance">
-    </div>
-  </fieldset>
-
-  <fieldset class="form-group">
-    <label class="col-sm-3 col-lg-2 control-label" for="">Acceptance</label>
-    <div class="col-sm-6 col-lg-5 col-xl-3">
-      <input type="text" class="form-control" placeholder="Enter Acceptance">
-    </div>
-  </fieldset>
+  {% include components/molecules/checkbox-horizontal.html 
+    label="Acceptance"
+    name="acceptance"
+    label-spacer-size="col-sm-push-4 col-lg-push-3 col-xl-push-2"
+    input-size="col-sm-5 col-lg-4 col-xl-3"
+  %}
 
   <hr class="dashed">
 
   <p class="lead">Private Fund Bank Detail</p>
 
-  <fieldset class="form-group">
-    <label class="col-sm-3 col-lg-2 control-label" for="">Bank/BSB Code</label>
-    <div class="col-sm-6 col-lg-5 col-xl-3">
-      <input type="text" class="form-control" placeholder="Enter Bank/BSB Code">
-    </div>
-  </fieldset>
+  {% include components/molecules/input-field-horizontal.html 
+    label="Bank/BSB Code"
+    name="bank-bsb-code"
+    type="text"
+    placeholder="Enter Bank/BSB Code"
+    label-size="col-sm-4 col-lg-3 col-xl-2"
+    input-size="col-sm-5 col-lg-4 col-xl-3"
+  %}
 
-  <fieldset class="form-group">
-    <label class="col-sm-3 col-lg-2 control-label" for="">Account Number</label>
-    <div class="col-sm-6 col-lg-5 col-xl-3">
-      <input type="text" class="form-control" placeholder="Enter Account Number">
-    </div>
-  </fieldset>
+  {% include components/molecules/input-field-horizontal.html 
+    label="Account Number"
+    name="account-number"
+    type="text"
+    placeholder="Enter Account Number"
+    label-size="col-sm-4 col-lg-3 col-xl-2"
+    input-size="col-sm-5 col-lg-4 col-xl-3"
+  %}
 
-  <fieldset class="form-group">
-    <label class="col-sm-3 col-lg-2 control-label" for="">Account Name</label>
-    <div class="col-sm-6 col-lg-5 col-xl-3">
-      <input type="text" class="form-control" placeholder="Enter Account Name">
-    </div>
-  </fieldset>
+  {% include components/molecules/input-field-horizontal.html 
+    label="Account Name"
+    name="account-name"
+    type="text"
+    placeholder="Enter Account Name"
+    label-size="col-sm-4 col-lg-3 col-xl-2"
+    input-size="col-sm-5 col-lg-4 col-xl-3"
+  %}
 
-  <fieldset class="form-group">
-    <label class="col-sm-3 col-lg-2 control-label" for="">Currency</label>
-    <div class="col-sm-6 col-lg-5 col-xl-3">
-      <input type="text" class="form-control" placeholder="Enter Currency">
-    </div>
-  </fieldset>
+  {% include components/molecules/select-field-horizontal.html 
+    label="Currency"
+    name="currency"
+    placeholder="Select Currency"
+    list-value-name=site.data.list-value.currency
+    label-size="col-sm-4 col-lg-3 col-xl-2"
+    input-size="col-sm-5 col-lg-4 col-xl-3"
+  %}
 
-  <fieldset class="form-group">
-    <label class="col-sm-3 col-lg-2 control-label" for="">Electronic Service Address (ESA)</label>
-    <div class="col-sm-6 col-lg-5 col-xl-3">
-      <input type="text" class="form-control" placeholder="Enter Electronic Service Address (ESA)">
-    </div>
-  </fieldset>
+  {% include components/molecules/input-field-horizontal.html 
+    label="Electronic Service Address (ESA)"
+    name="electronic-service-address"
+    type="text"
+    placeholder="Enter Electronic Service Address (ESA)"
+    label-size="col-sm-4 col-lg-3 col-xl-2"
+    input-size="col-sm-5 col-lg-4 col-xl-3"
+  %}
 
   <hr class="dashed">
 
   <p class="lead">Employee Contribution</p>
 
-  <fieldset class="form-group">
-    <label class="col-sm-3 col-lg-2 control-label" for="">Type</label>
-    <div class="col-sm-6 col-lg-5 col-xl-3">
-      <input type="text" class="form-control" placeholder="Enter Type">
-    </div>
-  </fieldset>
+  {% include components/molecules/select-field-horizontal.html 
+    label="Type"
+    name="type"
+    placeholder="Select Type"
+    list-value-name=site.data.list-value.contribution-type
+    label-size="col-sm-4 col-lg-3 col-xl-2"
+    input-size="col-sm-5 col-lg-4 col-xl-3"
+  %}
 
-  <fieldset class="form-group">
-    <label class="col-sm-3 col-lg-2 control-label" for="">Amount</label>
-    <div class="col-sm-6 col-lg-5 col-xl-3">
-      <input type="text" class="form-control" placeholder="Enter Amount">
-    </div>
-  </fieldset>
+  {% include components/molecules/input-field-horizontal.html 
+    label="Amount"
+    name="amount"
+    type="text"
+    placeholder="Enter Amount"
+    label-size="col-sm-4 col-lg-3 col-xl-2"
+    input-size="col-sm-5 col-lg-4 col-xl-3"
+  %}
 
-  <fieldset class="form-group">
-    <label class="col-sm-3 col-lg-2 control-label" for="">Initial YTD</label>
-    <div class="col-sm-6 col-lg-5 col-xl-3">
-      <input type="text" class="form-control" placeholder="Enter Initial YTD">
-    </div>
-  </fieldset>
+  {% include components/molecules/input-field-horizontal.html 
+    label="Initial YTD"
+    name="initial-ytd"
+    type="text"
+    placeholder="Enter Initial YTD"
+    label-size="col-sm-4 col-lg-3 col-xl-2"
+    input-size="col-sm-5 col-lg-4 col-xl-3"
+  %}
 
-  <fieldset class="form-group">
-    <label class="col-sm-3 col-lg-2 control-label" for="">Initial Sum</label>
-    <div class="col-sm-6 col-lg-5 col-xl-3">
-      <input type="text" class="form-control" placeholder="Enter Initial Sum">
-    </div>
-  </fieldset>
+  {% include components/molecules/input-field-horizontal.html 
+    label="Initial Sum"
+    name="initial-sum"
+    type="text"
+    placeholder="Enter Initial Sum"
+    label-size="col-sm-4 col-lg-3 col-xl-2"
+    input-size="col-sm-5 col-lg-4 col-xl-3"
+  %}
 
   <hr class="dashed" />
   
   <div class="row">
     <div class="col-sm-3 col-md-2"></div>
     <div class="col-sm-5 col-md-4">
-      <button type="submit" class="btn btn-primary btn-wide">Save</button>        
+      <button type="submit" class="btn btn-primary btn-wide">Save</button>
     </div>
   </div>
 

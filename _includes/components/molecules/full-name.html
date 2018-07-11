@@ -1,0 +1,13 @@
+<fieldset class="form-group form-name-group {{include.isLarge }} {{ include.isRequired }}">
+  {% include components/atoms/label.html %}
+  <div class="{{ include.input-size}}">
+    {% include components/atoms/input.html 
+      type="text"
+      placeholder="First Name"
+    %}
+    {% include components/atoms/input.html
+      type="text"
+      placeholder="Last Name"
+    %}
+  </div>
+</fieldset>

@@ -1,0 +1,20 @@
+- name: AUD
+  value: AUD
+
+- name: NZD
+  value: NZD
+
+- name: HKD
+  value: HKD
+
+- name: SGD
+  value: SGD
+
+- name: USD
+  value: USD
+
+- name: EUR
+  value: EUR
+
+- name: GBP
+  value: GBP

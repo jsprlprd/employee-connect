@@ -1,0 +1,5 @@
+- name: Hours
+  value: hours
+
+- name: Days
+  value: days

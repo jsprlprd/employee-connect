@@ -1,0 +1,17 @@
+- name: Join Company Default Superannuation Fund
+  value: join-company-default-superannuation-fund
+
+- name: KiwiSaver
+  value: kiwisaver
+
+- name: MPF
+  value: mpd
+
+- name: My Own Self-Managed Superannuation Fund
+  value: my-own-self-managed-superannuation-fund
+
+- name: My Own Superannuation Fund
+  value: my-own-superannuation-fund
+
+- name: Superannuation
+  value: superannuation

@@ -1,0 +1,20 @@
+- name: Mr
+  value: mr
+
+- name: Mrs
+  value: mrs
+
+- name: Ms
+  value: ms
+
+- name: Dr
+  value: dr
+
+- name: Lady
+  value: lady
+
+- name: Sir
+  value: sir
+
+- name: Prof
+  value: prof

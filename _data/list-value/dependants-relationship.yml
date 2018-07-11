@@ -1,0 +1,11 @@
+- name: Child
+  value: child
+
+- name: Parent
+  value: parent
+
+- name: Sibling
+  value: sibling
+
+- name: Spouse
+  value: spouse

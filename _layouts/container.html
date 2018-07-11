@@ -4,98 +4,111 @@ layout: base
 
 {% if page.page-layout == "blank" %}
   {{ content }}
-  {% else %}
+  <!-- {% include footer.html %} -->
+{% else %}
   <div id="ecContainer">
     <div id="HEADERPANEL">
       <div class="objectContainer">
         <div id="placeholderHEADERPANEL">
           {% if layout.header == "onboarding" %}
             {% include onboarding/header.html %}
-            {% elsif layout.header == "careers" %}
+          {% elsif layout.header == "careers" %}
             {% include careers/header.html %}
-            {% else %}
-              {% include header.html %}
+          {% else %}
+            {% include header.html %}
           {% endif %}
         </div>
       </div>
     </div>
-  {% if page.page-layout == "full-page" %}
-    <div id="CAREERS" style="margin-left: 0 !important">
-      <div class="objectContainer">
-        <div id="placeholderCAREERS">
-          <div>
-            <div class="content-wrapper">
-              {{ content }}
+    {% if page.page-layout == "full-page" %}
+      <div id="CAREERS" style="margin-left: 0 !important;padding-top: 64px;">
+        <div class="objectContainer">
+          <div id="placeholderCAREERS">
+            <div style="position: relative;">
+              <div class="content-wrapper">
+                {{ content }}
+              </div>
             </div>
+            <footer class="footer footer-inverse">
+              <div class="container">
+                <p class="footer-text">Copyright © EmployeeConnect Pty Ltd. <br/> All rights reserved.</p>
+              </div>
+            </footer>
           </div>
         </div>
       </div>
-    </div>
     {% else %}
-    {% if layout.side-navigation %}
-      <div id="LEFTPANEL">
-        <div class="objectContainer">
-          <div id="placeholderLEFTPANEL">
-            {% include side-navigation/header.html %}
-            <div class="content-scrollable">
-              <div class="content-wrapper">
-              {% if layout.side-navigation-type == "onboarding" %}
-                {% include onboarding/side-navigation.html %}
-                {% elsif layout.side-navigation-type == "performance" %}
-                  {% include performance/side-navigation.html %}
-                {% elsif layout.side-navigation-type == "design-system" %}
-                  {% include design-system/side-navigation.html %}
-                {% else %}
-                  {% include side-navigation.html %}
-              {% endif %}
-              {% include side-navigation/footer.html %}
+      {% if layout.side-navigation %}
+        <div id="LEFTPANEL">
+          <div class="objectContainer">
+            <div id="placeholderLEFTPANEL">
+              {% include side-navigation/header.html %}
+              <div class="content-scrollable">
+                <div class="content-wrapper">
+                  {% if layout.side-navigation-type == "onboarding" %}
+                    {% include onboarding/side-navigation.html %}
+                  {% elsif layout.side-navigation-type == "performance" %}
+                    {% include home/performance/side-navigation.html %}
+                  {% elsif layout.side-navigation-type == "design-system" %}
+                    {% include design-system/side-navigation.html %}
+                  {% else %}
+                    {% include side-navigation.html %}
+                  {% endif %}
+                  {% include side-navigation/footer.html %}
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    {% endif %}
-    <div id="MAINPANEL">
-      <div class="objectContainer">
-        <div id="placeholderMAINPANEL">
-          {% if layout.breadcrumbs %}
-            {% include breadcrumbs.html %}
-          {% endif %}
-          <div>
-            <div class="content-wrapper">
-              <main class="container-fluid full-screen">
-                {% include heading.html %}
-                {{ content }}
-              </main>
-            </div>
-            {% if layout.footer %}
-              <footer class="footer footer-default footer-bottom">
-                <div class="container-fluid full-screen">
-                  <div class="row">
-                    <div class="col-xs-6 col-sm-3">
-                      <a class="btn btn-default btn-lg btn-block" href="{{ site.baseurl }}/onboarding/{{ page.prev-page }}">Back</a>
-                    </div>
-                    <div class="col-xs-6 col-sm-3 col-sm-push-6 text-right">
-                      <a class="btn btn-default btn-lg btn-block" href="{{ site.baseurl }}/onboarding/{{ page.next-page }}">Next Step</a>
+      {% endif %}
+      <div id="MAINPANEL">
+        <div class="objectContainer">
+          <div id="placeholderMAINPANEL">
+            {% if layout.breadcrumbs %}
+              {% include breadcrumbs.html %}
+            {% endif %}
+            <div style="position: relative;">
+              <div class="content-wrapper">
+                <main class="container-fluid full-screen">
+                  {% if layout.heading == "my-profile" %}
+                    {% include home/my-profile/heading.html %}
+                  {% elsif page.heading == "employee-pay-advice" %}
+                    {% include home/payment/pay-history/heading.html %}
+                  {% else %}
+                    {% include heading.html %}
+                  {% endif %}
+                  {{ content }}
+                </main>
+              </div>
+              {% if layout.footer %}
+                <footer class="footer footer-default footer-bottom">
+                  <div class="container-fluid full-screen">
+                    <div class="row">
+                      <div class="col-xs-6 col-sm-3">
+                        <a class="btn btn-default btn-lg btn-block" href="{{ site.baseurl }}/onboarding/{{ page.prev-page }}">Back</a>
+                      </div>
+                      <div class="col-xs-6 col-sm-3 col-sm-push-6 text-right">
+                        <a class="btn btn-default btn-lg btn-block" href="{{ site.baseurl }}/onboarding/{{ page.next-page }}">Next Step</a>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </footer>
-            {% endif %}
+                </footer>
+              {% endif %}
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div id="RIGHTPANEL">
-      <div class="objectContainer">
-        <div id="placeholderRIGHTPANEL">
-          <a class="btn btn-link" id="advance-search-close" type="button">
-            <i class="fa fa-close"></i>
-          </a>
-          <p class="h5">Advance Search</p>
-          <a class="btn btn-primary" href="">Apply Filter</a>
+      <div id="RIGHTPANEL">
+        <div class="objectContainer">
+          <div id="placeholderRIGHTPANEL">
+            <a class="btn btn-link" id="advance-search-close" type="button">
+              <i class="fa fa-close"></i>
+            </a>
+            <p class="h5">Advance Search</p>
+            <a class="btn btn-primary" href="">Apply Filter</a>
+          </div>
         </div>
       </div>
-    </div>
-  {% endif %}
+    {% endif %}
+  </div>
 {% endif %}

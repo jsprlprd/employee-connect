@@ -1,0 +1,8 @@
+- name: Yes I am a permanent Resident or Citizen
+  value:
+
+- name: Yes I have a work permit or Visa
+  value:
+
+- name: No I will require a Sponsor
+  value:

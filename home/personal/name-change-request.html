@@ -66,45 +66,30 @@ heading-title: Name Change Request
     </div>
   </fieldset>
 
-  <fieldset class="form-group">
-    <label class="col-sm-3 col-md-2 control-label" for="">Title</label>
-    <div class="col-sm-5 col-md-4">
-      <select class="form-control" name="" id="">
-        <option value="" selected="" disabled="">Select Title</option>
-        <option value="">Mr</option>
-        <option value="">Mrs</option>
-        <option value="">Ms</option>
-        <option value="">Dr</option>
-        <option value="">Lady</option>
-        <option value="">Sir</option>
-        <option value="">Prof</option>
-      </select>
-    </div>
-  </fieldset>
+  {% include components/molecules/select-field-horizontal.html 
+    label="Title"
+    name="title"
+    placeholder="Select Title"
+    list-value-name=site.data.list-value.salutation
+    label-size="col-sm-4 col-lg-3 col-xl-2"
+    input-size="col-sm-5 col-lg-4 col-xl-3"
+  %}
 
-  <fieldset class="form-group">
-    <label class="col-sm-3 col-md-2 control-label" for="">Marital Status</label>
-    <div class="col-sm-5 col-md-4">
-      <select class="form-control" name="" id="">
-        <option value="" selected="" disabled="">Select Marital Status</option>
-        <option value="">Married</option>
-        <option value="">Single</option>
-        <option value="">Divorced</option>
-        <option value="">De-facto</option>
-        <option value="">Separated</option>
-        <option value="">Widowed</option>
-        <option value="">Other</option>
-        <option value="">Unknown</option>
-      </select>
-    </div>
-  </fieldset>
+  {% include components/molecules/select-field-horizontal.html 
+    label="Marital Status"
+    name="marital-status"
+    placeholder="Select Marital Status"
+    list-value-name=site.data.list-value.marital-status
+    label-size="col-sm-4 col-lg-3 col-xl-2"
+    input-size="col-sm-5 col-lg-4 col-xl-3"
+  %}
 
   <hr class="dashed" />
   
   <div class="row">
     <div class="col-sm-3 col-md-2"></div>
     <div class="col-sm-5 col-md-4">
-      <button type="submit" class="btn btn-primary btn-wide">Save</button>        
+      <button type="submit" class="btn btn-primary btn-wide">Save</button>
     </div>
   </div>
 
