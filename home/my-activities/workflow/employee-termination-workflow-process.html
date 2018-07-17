@@ -2,34 +2,20 @@
 layout: cirrus/home/default
 
 heading-title: Employee Termination Workflow Process
+
+nav-menu:
+- text: Workflow Submitted
+  url: start
+- text: HR Validates
+  url: position-details
+- text: Notify Manager
+  url: remuneration-and-benefits
+- text: Done
+  url: recruitment-roles-and-status
+
 ---
 
-<ul class="wizard wizard-default wizard-tab wizard-lg">
-  <li class="wizard-item complete">
-    <a class="wizard-link" data-toggle="tab" href="#start">
-      <div class="wizard-indicator"></div>
-      Submit User
-    </a>
-  </li>
-  <li class="wizard-item active">
-    <a class="wizard-link" data-toggle="tab" href="#position-details">
-      <div class="wizard-indicator"></div>
-      HR Validates
-    </a>
-  </li>
-  <li class="wizard-item">
-    <a class="wizard-link" data-toggle="tab" href="#remuneration-and-benefits">
-      <div class="wizard-indicator"></div>
-      Notify Manager
-    </a>
-  </li>
-  <li class="wizard-item">
-    <a class="wizard-link" data-toggle="tab" href="#recruitment-roles-and-status">
-      <div class="wizard-indicator"></div>
-      Done
-    </a>
-  </li>
-</ul>
+{% include components/wizard-tab-default-lg.html %}
 
 <div class="row">
   <div class="col-md-8">

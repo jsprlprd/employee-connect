@@ -2,7 +2,7 @@
   {% for parent-menu in layout.side-menu %}
     <li class="nav-header">{{ parent-menu.title }}</li>
     {% for menu in parent-menu.menuitems %}
-      <li class="{% if page.url == layout.side-menu-index/menu.url %} active {% endif %}">
+      <li class="{% if page.url contains menu.url %} active {% endif %}">
         <a href="{{ site.baseurl }}{{ layout.base-url }}{{ layout.side-menu-index }}/{{ menu.url }}">{{ menu.text }}</a>
       </li>
     {% endfor %}

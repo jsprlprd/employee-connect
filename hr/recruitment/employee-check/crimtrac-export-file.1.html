@@ -1,0 +1,151 @@
+---
+layout: cirrus/hr/recruitment
+
+heading-title: Nationally Coordinated Criminal History Check
+heading-subtitle: Application and Information Consent Form 
+---
+
+<form class="form-horizontal" action="">
+
+  {% include components/molecules/static-field-horizontal.html 
+    label="Name"
+    text="[APP_NAME]"
+    label-size="col-sm-4 col-lg-3 col-xl-2"
+    input-size="col-sm-5 col-lg-4 col-xl-3"
+  %}
+
+  {% include components/molecules/static-field-horizontal.html 
+    label="Date"
+    text="[APP_CREATE_DATE]"
+    label-size="col-sm-4 col-lg-3 col-xl-2"
+    input-size="col-sm-5 col-lg-4 col-xl-3"
+  %}
+
+  <hr class="dashed" />
+
+  <p class="lead">Applicant</p>
+  
+  <p><b>Check</b></p>
+
+  {% include components/molecules/static-field-horizontal.html 
+    label="Check Category"
+    text="[CRIMTRAC_CATEGORY]"
+    label-size="col-sm-4 col-lg-3 col-xl-2"
+    input-size="col-sm-5 col-lg-4 col-xl-3"
+  %}
+
+  {% include components/molecules/static-field-horizontal.html 
+    label="Check Type	"
+    text="[CRIMTRAC_TYPE]"
+    label-size="col-sm-4 col-lg-3 col-xl-2"
+    input-size="col-sm-5 col-lg-4 col-xl-3"
+  %}
+
+  {% include components/molecules/static-field-horizontal.html 
+    label="Identity Confirmed"
+    text="[APP_VERIFY_IDENTITY]"
+    label-size="col-sm-4 col-lg-3 col-xl-2"
+    input-size="col-sm-5 col-lg-4 col-xl-3"
+  %}
+
+  {% include components/molecules/static-field-horizontal.html 
+    label="Informed Consent"
+    text="[APP_VERIFY_CONSENT]"
+    label-size="col-sm-4 col-lg-3 col-xl-2"
+    input-size="col-sm-5 col-lg-4 col-xl-3"
+  %}
+
+  <p><b>Role</b></p>
+
+  {% include components/molecules/static-field-horizontal.html 
+    label="Role"
+    text="[APP_ROLE]"
+    label-size="col-sm-4 col-lg-3 col-xl-2"
+    input-size="col-sm-5 col-lg-4 col-xl-3"
+  %}
+
+  {% include components/molecules/static-field-horizontal.html 
+    label="Location"
+    text="[APP_LOCATION_ID]"
+    label-size="col-sm-4 col-lg-3 col-xl-2"
+    input-size="col-sm-5 col-lg-4 col-xl-3"
+  %}
+
+  <p><b>Children / Vulnerable Groups</b></p>
+
+  {% include components/molecules/static-field-horizontal.html 
+    label="Direct -or- Indirect Contact"
+    text="[CHILDREN_CONTACT]"
+    label-size="col-sm-4 col-lg-3 col-xl-2"
+    input-size="col-sm-5 col-lg-4 col-xl-3"
+  %}
+
+  {% include components/molecules/static-field-horizontal.html 
+    label="Superision Required"
+    text="[CHILDREN_SUPERVISION]"
+    label-size="col-sm-4 col-lg-3 col-xl-2"
+    input-size="col-sm-5 col-lg-4 col-xl-3"
+  %}
+
+  <hr class="dashed" />
+
+  <p class="lead">Name</p>
+
+  {% include components/molecules/static-field-horizontal.html 
+    label="Last Name"
+    text="[APP_LAST_NAME]"
+    label-size="col-sm-4 col-lg-3 col-xl-2"
+    input-size="col-sm-5 col-lg-4 col-xl-3"
+  %}
+
+  {% include components/molecules/static-field-horizontal.html 
+    label="First Name	"
+    text="[APP_FIRST_NAME]"
+    label-size="col-sm-4 col-lg-3 col-xl-2"
+    input-size="col-sm-5 col-lg-4 col-xl-3"
+  %}
+
+  {% include components/molecules/static-field-horizontal.html 
+    label="Second Name"
+    text="[APP_SECOND_NAME]"
+    label-size="col-sm-4 col-lg-3 col-xl-2"
+    input-size="col-sm-5 col-lg-4 col-xl-3"
+  %}
+
+  {% include components/molecules/static-field-horizontal.html 
+    label="Preferred Name"
+    text="[APP_PREFERRED_NAME]"
+    label-size="col-sm-4 col-lg-3 col-xl-2"
+    input-size="col-sm-5 col-lg-4 col-xl-3"
+  %}
+
+  <p><b>Previous Names</b></p>
+
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Last Name</th>
+        <th>First Name</th>
+        <th>Second Name</th>
+        <th>Preferred Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Preferred</td>
+        <td>MacDonald</td>
+        <td>Craig</td>
+        <td></td>
+        <td>BigDog</td>
+      </tr>
+      <tr>
+        <td>Maiden</td>
+        <td>Alan</td>
+        <td>Craig</td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</form>

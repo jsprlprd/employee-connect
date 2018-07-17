@@ -470,27 +470,27 @@ $grid-float-breakpoint-max: ($grid-float-breakpoint - 1) !default;
 //## Define the maximum width of `.container` for different screen sizes.
 
 // Extra Small screen / phone
-$container-phone:             (516 + $grid-gutter-width) !default;
+$container-phone:             (516px + $grid-gutter-width) !default;
 //** For `$screen-sm-min` and up.
 $container-xs:                 $container-phone !default;
 
 // Small screen / tablet
-$container-tablet:             (720px + $grid-gutter-width) !default;
+$container-tablet:             (696px + $grid-gutter-width) !default;
 //** For `$screen-sm-min` and up.
 $container-sm:                 $container-tablet !default;
 
 // Medium screen / desktop
-$container-desktop:            (940px + $grid-gutter-width) !default;
+$container-desktop:            (936px + $grid-gutter-width) !default;
 //** For `$screen-md-min` and up.
 $container-md:                 $container-desktop !default;
 
 // Large screen / wide desktop
-$container-lg-desktop:      (1140px + $grid-gutter-width) !default;
+$container-lg-desktop:      (1116px + $grid-gutter-width) !default;
 //** For `$screen-lg-min` and up.
 $container-lg:                 $container-lg-desktop !default;
 
 // Extra Large screen / retina desktop
-$container-xl-desktop:      (1440px + $grid-gutter-width) !default;
+$container-xl-desktop:      (1416px + $grid-gutter-width) !default;
 //** For `$screen-lg-min` and up.
 $container-xl:                 $container-xl-desktop !default;
 

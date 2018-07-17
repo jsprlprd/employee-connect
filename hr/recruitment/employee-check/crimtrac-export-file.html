@@ -1,0 +1,163 @@
+---
+layout: cirrus/hr/recruitment
+
+heading-title: Nationally Coordinated Criminal History Check
+heading-subtitle: Application and Information Consent Form 
+---
+
+<form action="">
+
+  <div class="row">
+    <div class="col-md-8">
+      {% include components/molecules/static-field.html
+        label="Name"
+        text="[APP_NAME]"
+      %}
+    </div>
+    <div class="col-md-4">
+      {% include components/molecules/static-field.html
+        label="Date"
+        text="[APP_CREATE_DATE]"
+      %}
+    </div>
+  </div>
+
+
+  <hr class="dashed" />
+
+  <p class="lead">Applicant</p>
+  
+  <p class="text-lg">Check</p>
+
+  <div class="row">
+    <div class="col-md-4">
+      {% include components/molecules/static-field.html
+        label="Check Category"
+        text="[CRIMTRAC_CATEGORY]"
+      %}
+    </div>
+    <div class="col-md-4">
+      {% include components/molecules/static-field.html
+        label="Check Type	"
+        text="[CRIMTRAC_TYPE]"
+      %}
+    </div>
+    <div class="col-md-4">
+      {% include components/molecules/static-field.html
+        label="Identity Confirmed"
+        text="[APP_VERIFY_IDENTITY]"
+      %}
+    </div>
+    <div class="col-md-4">
+      {% include components/molecules/static-field.html
+        label="Informed Consent"
+        text="[APP_VERIFY_CONSENT]"
+      %}
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <p class="text-lg">Role</p>
+
+  <div class="row">
+    <div class="col-md-4">
+      {% include components/molecules/static-field.html
+        label="Role"
+        text="[APP_ROLE]"
+      %}
+    </div>
+    <div class="col-md-4">
+      {% include components/molecules/static-field.html
+        label="Location"
+        text="[APP_LOCATION_ID]"
+      %}
+    </div>
+  </div>
+
+
+
+
+
+  <p class="text-lg">Children / Vulnerable Groups</p>
+
+  <div class="row">
+    <div class="col-md-4">
+      {% include components/molecules/static-field.html
+        label="Direct -or- Indirect Contact"
+        text="[CHILDREN_CONTACT]"
+      %}
+    </div>
+    <div class="col-md-4">
+      {% include components/molecules/static-field.html
+        label="Superision Required"
+        text="[CHILDREN_SUPERVISION]"
+      %}
+    </div>
+  </div>
+
+  <hr class="dashed" />
+
+  <p class="lead">Name</p>
+
+  <div class="row">
+    <div class="col-md-4">
+      {% include components/molecules/static-field.html
+        label="Last Name"
+        text="[APP_LAST_NAME]"
+      %}
+    </div>
+    <div class="col-md-4">
+      {% include components/molecules/static-field.html
+        label="First Name	"
+        text="[APP_FIRST_NAME]"
+      %}
+    </div>
+    <div class="col-md-4">
+      {% include components/molecules/static-field.html
+        label="Second Name"
+        text="[APP_SECOND_NAME]"
+      %}
+    </div>
+    <div class="col-md-4">
+      {% include components/molecules/static-field.html
+        label="Preferred Name"
+        text="[APP_PREFERRED_NAME]"
+      %}
+    </div>
+  </div>
+
+  <p class="text-lg">Previous Names</p>
+
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Last Name</th>
+        <th>First Name</th>
+        <th>Second Name</th>
+        <th>Preferred Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Preferred</td>
+        <td>MacDonald</td>
+        <td>Craig</td>
+        <td></td>
+        <td>BigDog</td>
+      </tr>
+      <tr>
+        <td>Maiden</td>
+        <td>Alan</td>
+        <td>Craig</td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</form>
