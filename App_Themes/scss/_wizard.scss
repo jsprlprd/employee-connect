@@ -108,15 +108,21 @@
     }
   }
 
-  &.visited {
+  &.success {
+    .wizard-indicator {
+      background-color: #57C1A5;
+    }
+  }
+
+  &.pending {
     .wizard-indicator {
       background-color: #F58220;
     }
   }
 
-  &.completed {
+  &.failed {
     .wizard-indicator {
-      background-color: #57C1A5;
+      background-color: #E11E3C;
     }
   }
 
@@ -192,14 +198,16 @@
     }
 
     &.active,
-    &.visited,
-    &.completed {
+    &.success,
+    &.pending,
+    &.failed {
       &::before {
-        background-color: #005D84;
+        background-color: #57C1A5;
       }
     }
 
-    &.completed {
+    &.success,
+    &.failed {
 
       .wizard-indicator {
         color: $ec-gray-100;
@@ -213,13 +221,19 @@
           line-height: 24px;
           font-size: 12px;
           text-align: center;
-          content: "\f00c";
         }
 
       }
 
     }
 
+    &.success .wizard-indicator::before {
+      content: "\f00c";
+    }
+
+    &.failed .wizard-indicator::before {
+      content: "\f00d";
+    }
   }
 
   .wizard-link {
@@ -255,7 +269,7 @@
     float: none;
     > a {
       text-align: center;
-      margin-bottom: 5px;
+      margin-bottom: 4px;
     }
   }
 

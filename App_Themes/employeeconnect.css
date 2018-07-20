@@ -1818,10 +1818,10 @@ abbr[data-original-title] {
 }
 
 blockquote {
-  padding: 10px 20px;
-  margin: 0 0 20px;
-  font-size: 17.5px;
-  border-left: 5px solid #E4E4E4;
+  padding: 8px 16px;
+  margin: 0;
+  margin-bottom: 16px;
+  border-left: 4px solid #E4E4E4;
 }
 blockquote p:last-child,
 blockquote ul:last-child,
@@ -7853,11 +7853,14 @@ button.close {
 .wizard-item.active .wizard-indicator {
   background-color: #4CADCF;
 }
-.wizard-item.visited .wizard-indicator {
+.wizard-item.success .wizard-indicator {
+  background-color: #57C1A5;
+}
+.wizard-item.pending .wizard-indicator {
   background-color: #F58220;
 }
-.wizard-item.completed .wizard-indicator {
-  background-color: #57C1A5;
+.wizard-item.failed .wizard-indicator {
+  background-color: #E11E3C;
 }
 
 .wizard-link {
@@ -7892,13 +7895,13 @@ button.close {
   height: 4px;
   left: -50%;
 }
-.wizard-tab .wizard-item.active::before, .wizard-tab .wizard-item.visited::before, .wizard-tab .wizard-item.completed::before {
-  background-color: #005D84;
+.wizard-tab .wizard-item.active::before, .wizard-tab .wizard-item.success::before, .wizard-tab .wizard-item.pending::before, .wizard-tab .wizard-item.failed::before {
+  background-color: #57C1A5;
 }
-.wizard-tab .wizard-item.completed .wizard-indicator {
+.wizard-tab .wizard-item.success .wizard-indicator, .wizard-tab .wizard-item.failed .wizard-indicator {
   color: #FAFAFA;
 }
-.wizard-tab .wizard-item.completed .wizard-indicator::before {
+.wizard-tab .wizard-item.success .wizard-indicator::before, .wizard-tab .wizard-item.failed .wizard-indicator::before {
   font-family: "FontAwesome";
   position: absolute;
   left: 0px;
@@ -7907,7 +7910,12 @@ button.close {
   line-height: 24px;
   font-size: 12px;
   text-align: center;
+}
+.wizard-tab .wizard-item.success .wizard-indicator::before {
   content: "";
+}
+.wizard-tab .wizard-item.failed .wizard-indicator::before {
+  content: "";
 }
 .wizard-tab .wizard-link {
   padding: 36px 8px 12px;
@@ -7928,7 +7936,7 @@ button.close {
 }
 .wizard-justified .wizard-item > a {
   text-align: center;
-  margin-bottom: 5px;
+  margin-bottom: 4px;
 }
 @media (min-width: 768px) {
   .wizard-justified > li {

@@ -1,0 +1,166 @@
+---
+layout: cirrus/home/default
+
+heading: workflow
+
+nav-menu:
+- text: Submission
+  status: success
+  url: workflow-submit
+- text: Approval
+  status: failed
+  url: workflow-approval
+- text: Validation
+  status:
+  url: workflow-validation
+- text: Complete
+  status:
+  url: workflow-complete
+
+---
+
+<div class="heading">
+  <h1 class="heading-title h3">Workflow Summary</h1>
+</div>
+<div class="row">
+  <div class="col-md-7">
+    <ul class="list-unstyled list-bordered">
+      <li class="media">
+        <div class="media-left">
+          <img class="media-object img-circle" src="https://ui-avatars.com/api/?name=Hunt+Owen&font-size=0.4x&rounded=true&background=E11E3C&color=fff" alt="" width="32" height="32" />
+        </div>
+        <div class="media-body media-middle">
+          <p>
+            <span class="text-lg">Owen Hunt submitted a leave request</span>
+            <br>
+            <span class="text-muted">July 2, 2018</span>
+          </p>
+          <blockquote>
+            <div class="row item">
+              <div class="col-sm-5 text-muted">Leave Request ID</div>
+              <div class="col-sm-7">1124</div>
+            </div>
+            <div class="row item">
+              <div class="col-sm-5 text-muted">Leave Type</div>
+              <div class="col-sm-7">Annual</div>
+            </div>
+            <div class="row item">
+              <div class="col-sm-5 text-muted">Date</div>
+              <div class="col-sm-7">July 16 to 20, 2018 (5 days)</div>
+            </div>
+            <div class="row item">
+              <div class="col-sm-5 text-muted">Comments</div>
+              <div class="col-sm-7">-</div>
+            </div>
+            <div class="row item">
+              <div class="col-sm-5 text-muted">Pay in Advance</div>
+              <div class="col-sm-7">Yes</div>
+            </div>
+            <div class="row item">
+              <div class="col-sm-5 text-muted">Certificate Provided</div>
+              <div class="col-sm-7">None</div>
+            </div>
+            <div class="row item">
+              <div class="col-sm-5 text-muted">Attachement</div>
+              <div class="col-sm-7">-</div>
+            </div>
+            <div class="row item">
+              <div class="col-sm-5 text-muted">Submit Date</div>
+              <div class="col-sm-7">2018-01-16</div>
+            </div>
+          </blockquote>
+        </div>
+      </li>
+      <li class="media">
+        <div class="media-left">
+          <img class="media-object img-circle" src="{{ site.baseurl }}/Images/avatar.png" alt="" width="32" height="32" />
+        </div>
+        <div class="media-body media-middle">
+          {% include components/molecules/textarea-field.html 
+            placeholder="Comments (Optional)"
+            hasLabel="no-label"
+          %}
+          <a class="btn btn-success" href="">Approve</a>
+          <a class="btn btn-danger" href="">Reject</a>
+          <a class="btn btn-default" href="">Resubmit</a>
+          <hr class="dashed">
+          {% include components/molecules/select-field.html 
+            label="Redirect"
+            name="redirect"
+            placeholder="Select Manager"
+          %}
+          <a class="btn btn-default" href="">Cancel</a>
+          <a class="btn btn-primary" href="">Redirect</a>
+          <br>
+          <br>
+        </div>
+      </li>
+      <li class="media">
+        <div class="media-left">
+          <img class="media-object img-circle" src="{{ site.baseurl }}/Images/avatar.png" alt="" width="32" height="32" />
+        </div>
+        <div class="media-body media-middle">
+          <p>
+            <span class="text-lg">Jasper Lepardo (You) has <span class="text-success">approved</span> the request and redirect it to Ari Kopoulos.</span>
+            <br>
+            <span class="text-muted">July 2, 2018</span>
+          </p>
+          <p>I'm good with this. Please confirm Ari.</p>
+        </div>
+      </li>
+    </ul>
+
+  </div>
+  <div class="col-md-5">
+    <div class="panel panel-default" style="border: 1px solid #D8D8D8;">
+      <div class="panel-body">
+        <div class="media">
+          <div class="media-left">
+            <img class="media-object img-circle" src="https://ui-avatars.com/api/?name=Hunt+Owen&font-size=0.4x&rounded=true&background=E11E3C&color=fff" alt="" width="48" height="48" />
+          </div>
+          <div class="media-body media-middle">
+            <h6>Hunt Owen</h6>
+            <p>Position</p>
+          </div>
+        </div>
+        <table class="table">
+          <tbody>
+            <tr>
+              <td class="col-xs-6">
+                Person ID<br/>
+                10032017-0055
+              </td>
+              <td class="col-xs-6">
+                Date Joined<br/>
+                2017-10-03
+              </td>
+            </tr>
+            <tr>
+              <td class="col-xs-6">
+                Company<br>
+                EmployeeConnect Pty. Ltd.
+              </td>
+              <td>
+                Manager<br>
+                Ari Kopoulos
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="text-lg">Leave Balance</p>
+        <table class="table">
+          <tbody>
+            <tr>
+              <td>Annual</td>
+              <td>5 Day(s)</td>
+            </tr>
+            <tr>
+              <td>Personal</td>
+              <td>5 Day(s)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

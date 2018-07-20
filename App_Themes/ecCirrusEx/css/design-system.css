@@ -1,0 +1,61 @@
+
+
+
+/* Design System */
+
+.color-palette {
+  margin-bottom: 32px;
+}
+.color-palette .color-display {
+  height: 150px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.color-palette .color-details {
+  padding: 24px;
+  background-color: #f1f1f1;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.ec-dark-blue .color-display {
+  background-color: #2E4052;
+}
+
+.ec-light-blue .color-display {
+  background-color: #4CADCF;
+}
+
+.ec-white .color-display {
+  background-color: #ffffff;
+  border: 1px solid #D8D8D8;
+}
+
+.ec-enterprise .color-display {
+  background-color: #005c83;
+}
+
+.ec-pro .color-display {
+  background-color: #8071b3;
+}
+
+.ec-cirrus .color-display {
+  background-color: #f5821f;
+}
+
+.ec-payroll .color-display {
+  background-color: #e01d3c;
+}
+
+.ec-kiosk .color-display {
+  background-color: #b4d55f;
+}
+
+.ec-toolkit .color-display {
+  background-color: #56c0a4;
+}
+
+
+
+

@@ -1,7 +1,7 @@
 <ul class="wizard wizard-default wizard-tab wizard-lg">
   {% for tabs in page.nav-menu %}
-    <li class="wizard-item complete">
-      <a class="wizard-link" data-toggle="tab" href="#{{ tabs.url }}-tab"><div class="wizard-indicator"></div>{{tabs.text}}</a>
+    <li class="wizard-item {{ tabs.status }}">
+      <a class="wizard-link" data-toggle="tab" href="#{{ tabs.url }}-tab"><div class="wizard-indicator"></div>{{ tabs.text }}</a>
     </li>
   {% endfor %}
 </ul>

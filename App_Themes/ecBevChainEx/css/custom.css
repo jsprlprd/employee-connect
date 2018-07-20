@@ -266,3 +266,42 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .carousel-fade .carousel-control {
   z-index: 2;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+.subheadline {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: 16px;     /* fallback */
+  max-height: 32px;      /* fallback */
+  -webkit-line-clamp: 2; /* number of lines to show */
+  -webkit-box-orient: vertical;
+  color: #474C54;
+}
+
+.news-item {
+  display: block;
+}
+
+#news-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+#news-list li {
+  border-bottom: 1px solid #ddd;
+}
+
+#news-list li:first-child {
+  border-top: 1px solid #ddd;
+}

@@ -61,33 +61,64 @@ layout: bevchain/home/default
   <hr class="dashed">
 
 
+  <style>
+    .subheadline {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      max-height: 32px;      /* fallback */
+      -webkit-line-clamp: 2; /* number of lines to show */
+      -webkit-box-orient: vertical;
+      color: #474C54;
+    }
+
+    .news-item {
+      display: block;
+    }
+
+    #news-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    #news-list li {
+      border-bottom: 1px solid #D8D8D8;
+    }
+
+    #news-list li:first-child {
+      border-top: 1px solid #D8D8D8;
+    }
+  </style>
+
   <div class="row">
     <div class="col-md-5">
 
       <div class="row" id="featured-news">
-        <div class="col-md-7">
-          <img class="" src="https://dummyimage.com/16:9x1080/BEBEBE/000000.png&text=+" alt="Third slide" width="100%" height="" />
-          <h6 class="heading-title">Test</h6>
-          <p class="heading-subtitle">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+        <div class="col-md-7" >
+          <a class="news-item" href="">
+            <img class="" src="https://dummyimage.com/16:9x1080/BEBEBE/000000.png&text=+" alt="Third slide" width="100%" height="" />
+            <h6 class="headline h5">Test</h6>
+            <p class="subheadline">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+          </a>
         </div>
         <div class="col-md-5">
-          <ul id="">
+          <ul id="news-list">
             <li>
-              <a href="">
-                <p>Test</p>
-                <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+              <a class="news-item" href="">
+                <h6 class="headline h5">Test</h6>
+                <p class="subheadline">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.</p>
               </a>
             </li>
             <li>
-              <a href="">
-                <p>Test</p>
-                <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+              <a class="news-item" href="">
+                <h6 class="headline h5">Test</h6>
+                <p class="subheadline">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.</p>
               </a>
             </li>
             <li>
-              <a href="">
-                <p>Test</p>
-                <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+              <a class="news-item" href="">
+                <h6 class="headline h5">Test</h6>
+                <p class="subheadline">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.</p>
               </a>
             </li>
           </ul>

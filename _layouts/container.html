@@ -72,6 +72,8 @@ layout: base
                 <main class="container-fluid full-screen">
                   {% if layout.heading == "my-profile" %}
                     {% include home/my-profile/heading.html %}
+                  {% elsif page.heading == "workflow" %}
+                    {% include home/my-activities/workflow/heading.html %}
                   {% elsif page.heading == "employee-pay-advice" %}
                     {% include home/payment/pay-history/heading.html %}
                   {% else %}
