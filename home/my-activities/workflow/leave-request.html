@@ -24,88 +24,108 @@ nav-menu:
 </div>
 <div class="row">
   <div class="col-md-7">
-    <ul class="list-unstyled list-bordered">
+    <ul class="list list-unstyled list-bordered list-lg">
       <li class="media">
         <div class="media-left">
           <img class="media-object img-circle" src="https://ui-avatars.com/api/?name=Hunt+Owen&font-size=0.4x&rounded=true&background=E11E3C&color=fff" alt="" width="32" height="32" />
         </div>
-        <div class="media-body media-middle">
-          <p>
-            <span class="text-lg">Owen Hunt submitted a leave request</span>
-            <br>
-            <span class="text-muted">July 2, 2018</span>
-          </p>
-          <blockquote>
-            <div class="row item">
-              <div class="col-sm-5 text-muted">Leave Request ID</div>
-              <div class="col-sm-7">1124</div>
+        <div class="media-content media-middle">
+          <div class="media-heading">
+            <p class="media-heading-title"><b>Owen Hunt</b> submitted a leave request</p>
+            <p class="media-heading-subtitle">July 2, 2018</p>
+          </div>
+          <div class="media-body">
+            <div class="alert alert-danger">
+              <p>You only have <b>3 days</b> to action on this request or the system will automatically redirect it to HR</p>
             </div>
-            <div class="row item">
-              <div class="col-sm-5 text-muted">Leave Type</div>
-              <div class="col-sm-7">Annual</div>
-            </div>
-            <div class="row item">
-              <div class="col-sm-5 text-muted">Date</div>
-              <div class="col-sm-7">July 16 to 20, 2018 (5 days)</div>
-            </div>
-            <div class="row item">
-              <div class="col-sm-5 text-muted">Comments</div>
-              <div class="col-sm-7">-</div>
-            </div>
-            <div class="row item">
-              <div class="col-sm-5 text-muted">Pay in Advance</div>
-              <div class="col-sm-7">Yes</div>
-            </div>
-            <div class="row item">
-              <div class="col-sm-5 text-muted">Certificate Provided</div>
-              <div class="col-sm-7">None</div>
-            </div>
-            <div class="row item">
-              <div class="col-sm-5 text-muted">Attachement</div>
-              <div class="col-sm-7">-</div>
-            </div>
-            <div class="row item">
-              <div class="col-sm-5 text-muted">Submit Date</div>
-              <div class="col-sm-7">2018-01-16</div>
-            </div>
-          </blockquote>
+            <blockquote>
+              <div class="row item">
+                <div class="col-sm-5 text-muted">Leave Request ID</div>
+                <div class="col-sm-7">1124</div>
+              </div>
+              <div class="row item">
+                <div class="col-sm-5 text-muted">Leave Type</div>
+                <div class="col-sm-7">Annual</div>
+              </div>
+              <div class="row item">
+                <div class="col-sm-5 text-muted">Date</div>
+                <div class="col-sm-7">July 16 to 20, 2018 (5 days)</div>
+              </div>
+              <div class="row item">
+                <div class="col-sm-5 text-muted">Comments</div>
+                <div class="col-sm-7">-</div>
+              </div>
+              <div class="row item">
+                <div class="col-sm-5 text-muted">Pay in Advance</div>
+                <div class="col-sm-7">Yes</div>
+              </div>
+              <div class="row item">
+                <div class="col-sm-5 text-muted">Certificate Provided</div>
+                <div class="col-sm-7">None</div>
+              </div>
+              <div class="row item">
+                <div class="col-sm-5 text-muted">Attachement</div>
+                <div class="col-sm-7">-</div>
+              </div>
+              <div class="row item">
+                <div class="col-sm-5 text-muted">Submit Date</div>
+                <div class="col-sm-7">2018-01-16</div>
+              </div>
+            </blockquote>
+          </div>
+        </div>
+      </li>
+      <li class="media">
+        <div class="media-left">
+          <img class="media-object img-circle" src="{{ site.baseurl }}/Images/ec-avatar.png" alt="" width="32" height="32" />
+        </div>
+        <div class="media-content media-middle">
+          <div class="media-heading">
+            <p class="media-heading-title">The system has automatically redirect it to Ari Kopoulos because of inaction</p>
+            <p class="media-heading-subtitle">July 2, 2018</p>
+          </div>
         </div>
       </li>
       <li class="media">
         <div class="media-left">
           <img class="media-object img-circle" src="{{ site.baseurl }}/Images/avatar.png" alt="" width="32" height="32" />
         </div>
-        <div class="media-body media-middle">
-          {% include components/molecules/textarea-field.html 
-            placeholder="Comments (Optional)"
-            hasLabel="no-label"
-          %}
-          <a class="btn btn-success" href="">Approve</a>
-          <a class="btn btn-danger" href="">Reject</a>
-          <a class="btn btn-default" href="">Resubmit</a>
-          <hr class="dashed">
-          {% include components/molecules/select-field.html 
-            label="Redirect"
-            name="redirect"
-            placeholder="Select Manager"
-          %}
-          <a class="btn btn-default" href="">Cancel</a>
-          <a class="btn btn-primary" href="">Redirect</a>
-          <br>
-          <br>
+        <div class="media-content media-middle">
+          <div class="media-body">
+            {% include components/molecules/textarea-field.html 
+              placeholder="Comments (Optional)"
+              hasLabel="no-label"
+            %}
+            <a class="btn btn-success" href="">Approve</a>
+            <a class="btn btn-danger" href="">Reject</a>
+            <a class="btn btn-default" href="">Resubmit</a>
+            <hr class="dashed">
+            <fieldset class="form-group">
+              <label for="">Do you want to redirect to another manager</label>
+              <div class="input-group">
+                {% include components/atoms/select.html 
+                  placeholder="Select Manager"
+                %}
+                <span class="input-group-btn">
+                  <a class="btn btn-primary" href="">Redirect</a>
+                </span>
+              </div>
+            </fieldset>
+          </div>
         </div>
       </li>
       <li class="media">
         <div class="media-left">
           <img class="media-object img-circle" src="{{ site.baseurl }}/Images/avatar.png" alt="" width="32" height="32" />
         </div>
-        <div class="media-body media-middle">
-          <p>
-            <span class="text-lg">Jasper Lepardo (You) has <span class="text-success">approved</span> the request and redirect it to Ari Kopoulos.</span>
-            <br>
-            <span class="text-muted">July 2, 2018</span>
-          </p>
-          <p>I'm good with this. Please confirm Ari.</p>
+        <div class="media-content media-middle">
+          <div class="media-heading">
+            <p class="media-heading-title"><b>Jasper Lepardo (You)</b> has <b class="text-success">approved</b> the request and redirect it to Ari Kopoulos</p>
+            <p class="media-heading-subtitle">July 2, 2018</p>
+          </div>
+          <div class="media-body">
+            <p>I'm good with this. Please confirm Ari.</p>
+          </div>
         </div>
       </li>
     </ul>
@@ -118,9 +138,11 @@ nav-menu:
           <div class="media-left">
             <img class="media-object img-circle" src="https://ui-avatars.com/api/?name=Hunt+Owen&font-size=0.4x&rounded=true&background=E11E3C&color=fff" alt="" width="48" height="48" />
           </div>
-          <div class="media-body media-middle">
-            <h6>Hunt Owen</h6>
-            <p>Position</p>
+          <div class="media-content media-middle">
+            <div class="media-heading">
+              <h6 class="media-heading-title">Hunt Owen</h6>
+              <p class="media-heading-subtitle">Position</p>
+            </div>
           </div>
         </div>
         <table class="table">

@@ -11,103 +11,119 @@ next-page: banking.html
 
 <form class="form-horizontal">
 
-  <fieldset class="form-group">
-    <label class="col-sm-3 col-lg-2 control-label" for="">Tax File Number</label>
-    <div class="col-sm-6 col-lg-4">
-      <input type="text" class="form-control" placeholder="Enter Tax File Number">
-      <div class="checkbox">
-        <label><input type="checkbox">I don't have TFN</label>
-      </div>
-    </div>
-  </fieldset>
+  {% include components/molecules/static-field-horizontal.html 
+    label="Name"
+    text="Lepardo, Jasper"
+    label-size="col-sm-4 col-lg-3 col-xl-2"
+    input-size="col-sm-5 col-lg-4 col-xl-3"
+  %}
 
-  <fieldset class="form-group">
-    <label class="col-sm-3 col-lg-2 control-label" for="">Reason</label>
-    <div class="col-sm-6 col-lg-4">
-      <select class="form-control" name="" id="">
-        <option value="" selected="" disabled="">Select Reason</option>
-        <option value="">No TFN</option>
-        <option value="">Application to ATO for TFN</option>
-        <option value="">Under 18 yrs of age</option>
-        <option value="">Recieving Pension</option>
-      </select>
-    </div>
-  </fieldset>
+  {% include components/molecules/input-field-horizontal.html 
+    label="Tax File Number"
+    name="tax-file-number"
+    type="text"
+    placeholder="Enter Tax File Number"
+    label-size="col-sm-4 col-lg-3 col-xl-2"
+    input-size="col-sm-5 col-lg-4 col-xl-3"
+  %}
+
+  {% include components/molecules/select-field-horizontal.html 
+    label="OR: If no TFN"
+    name="no-tfn"
+    placeholder="Select OR: If no TFN"
+    list-value-name=site.data.list-value.leave-unit
+    label-size="col-sm-4 col-lg-3 col-xl-2"
+    input-size="col-sm-5 col-lg-4 col-xl-3"
+    isRequired="form-required"
+  %}
+
+  {% include components/molecules/birthday-select.html 
+    label="Date of Birth"
+    name="date-of-birth"
+    label-size="col-sm-4 col-lg-3 col-xl-2"
+    input-size="col-sm-5 col-lg-4 col-xl-3"
+  %}
+
+  {% include components/molecules/input-field-horizontal.html 
+    label="Previous Surname"
+    name="previous-surname"
+    type="text"
+    placeholder="Enter Previous Surname"
+    label-size="col-sm-4 col-lg-3 col-xl-2"
+    input-size="col-sm-5 col-lg-4 col-xl-3"
+  %}
 
   <hr class="dashed" />
 
   <p class="lead">Tax Calculation Options</p>
   
-  <ol>
-    <li>
-      <p>Are you an Australian Resident for tax purposes?</p>
-      <label class="radio-inline">
-        <input name="optionsRadios2" type="radio" value="option1">
-        Yes
-      </label>
-      <label class="radio-inline">
-        <input name="optionsRadios2" type="radio" value="option2">
-        No
-      </label>
-      <label class="radio-inline disabled">
-        <input name="optionsRadios2" type="radio" value="option3">
-        Working Holiday
-      </label>
-    </li>
-    <li>
-      <p>Do you want to claim the tax free threshold from this Payer?</p>
-      <label class="radio-inline">
-        <input name="optionsRadios2" type="radio" value="option1">
-        Yes
-      </label>
-      <label class="radio-inline">
-        <input name="optionsRadios2" type="radio" value="option2">
-        No
-      </label>
-    </li>
-    <li>
-      <p>Do you have a HELP, SSL or TSL accumulated debt?</p>
-      <label class="radio-inline">
-        <input name="optionsRadios2" type="radio" value="option1">
-        Yes
-      </label>
-      <label class="radio-inline">
-        <input name="optionsRadios2" type="radio" value="option2">
-        No
-      </label>
-    </li>
-    <li>
-      <p>Do you have a Financial Supplement Debt?</p>
-      <label class="radio-inline">
-        <input name="optionsRadios2" type="radio" value="option1">
-        Yes
-      </label>
-      <label class="radio-inline">
-        <input name="optionsRadios2" type="radio" value="option2">
-        No
-      </label>
-    </li>
-    <li>
-      <p>Do you have an approved withholding variation?</p>
-      <label class="radio-inline">
-        <input name="optionsRadios2" type="radio" value="option1">
-        Yes
-      </label>
-      <label class="radio-inline">
-        <input name="optionsRadios2" type="radio" value="option2">
-        No
-      </label>
-    </li>
-    <li>
-      What is your withholding variation % if applicable?
-    </li>
-  </ol>
+  {% include components/molecules/radio-inline-field-horizontal.html 
+    label="Are you an Australian Resident for tax purposes?"
+    name="tax-calculation-option-1"
+    toggle-value-name=site.data.toggle-value.yes-no-working-holiday
+    label-size="col-sm-4 col-lg-3 col-xl-2"
+    input-size="col-sm-5 col-lg-4 col-xl-3"
+  %}
+
+  {% include components/molecules/radio-inline-field-horizontal.html 
+    label="Do you want to claim the tax free threshold from this Payer?"
+    name="tax-calculation-option-2"
+    toggle-value-name=site.data.toggle-value.yes-no
+    label-size="col-sm-4 col-lg-3 col-xl-2"
+    input-size="col-sm-5 col-lg-4 col-xl-3"
+  %}
+
+  {% include components/molecules/radio-inline-field-horizontal.html 
+    label="Do you have a HELP, SSL or TSL accumulated debt?"
+    name="tax-calculation-option-3"
+    toggle-value-name=site.data.toggle-value.yes-no
+    label-size="col-sm-4 col-lg-3 col-xl-2"
+    input-size="col-sm-5 col-lg-4 col-xl-3"
+  %}
+
+  {% include components/molecules/radio-inline-field-horizontal.html 
+    label="Do you have a Financial Supplement Debt?"
+    name="tax-calculation-option-4"
+    toggle-value-name=site.data.toggle-value.yes-no
+    label-size="col-sm-4 col-lg-3 col-xl-2"
+    input-size="col-sm-5 col-lg-4 col-xl-3"
+  %}
+
+  {% include components/molecules/radio-inline-field-horizontal.html 
+    label="Do you have an approved withholding variation?"
+    name="tax-calculation-option-5"
+    toggle-value-name=site.data.toggle-value.yes-no
+    label-size="col-sm-4 col-lg-3 col-xl-2"
+    input-size="col-sm-5 col-lg-4 col-xl-3"
+  %}
+
+  {% include components/molecules/input-field-horizontal.html 
+    label="What is your withholding variation % if applicable?"
+    name="withholding variation"
+    type="text"
+    placeholder="Enter withholding variation %"
+    label-size="col-sm-4 col-lg-3 col-xl-2"
+    input-size="col-sm-5 col-lg-4 col-xl-3"
+  %}
+
   <hr class="dashed" />
-  
+
+  <p class="lead">ATO Lodgement Details</p>
+
+  {% include components/molecules/datepicker-horizontal.html 
+    label="Date Signed"
+    name="date-signed"
+    placeholder="Enter Date Signed"
+    label-size="col-sm-4 col-lg-3 col-xl-2"
+    input-size="col-sm-5 col-lg-4 col-xl-3"
+  %}
+
+  <hr class="dashed" />
+
   <div class="row">
     <div class="col-sm-3 col-md-2"></div>
     <div class="col-sm-6 col-lg-4">
-      <button type="submit" class="btn btn-primary btn-wide">Save</button>        
+      <button type="submit" class="btn btn-primary btn-wide">Save</button>
     </div>
   </div>
 

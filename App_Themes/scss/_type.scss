@@ -86,7 +86,6 @@ small,
 
 .text-lg {
   font-size: 16px;
-  font-weight: 500;
 }
 
 mark,
@@ -211,7 +210,7 @@ abbr[data-original-title] {
 blockquote {
   padding: 8px 16px;
   margin: 0;
-  margin-bottom: 16px;
+  // margin-bottom: 16px;
   // font-size: $blockquote-font-size;
   border-left: 4px solid $blockquote-border-color;
 

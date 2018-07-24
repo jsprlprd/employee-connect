@@ -1,0 +1,5 @@
+{% for toggle in include.toggle-value-name %}
+  <label class="radio-inline">
+    <input name="{{ include.name }}" type="radio" value="{{ toggle.value }}">{{ toggle.text }}
+  </label>
+{% endfor %}

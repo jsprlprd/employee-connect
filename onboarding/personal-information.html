@@ -12,6 +12,7 @@ next-page: emergency-contact.html
 
   <p class="lead">Personal</p>
 
+
   {% include components/molecules/select-field-horizontal.html 
     label="Salutation"
     name="salutation"
@@ -82,12 +83,35 @@ next-page: emergency-contact.html
       <input type="text" class="form-control" placeholder="Tax ID">
     </div>
   </fieldset> -->
+  <div class="form-group">
+    {% include components/atoms/label.html 
+      label="Avatar"
+      name="avatar"
+      label-size="col-sm-4 col-lg-3 col-xl-2"
+    %}
+    <div class="col-sm-5 col-lg-4 col-xl-3">
+      <div class="media">
+        <div class="media-left">
+          {% include components/atoms/image.html
+            class="media-object img-circle"
+            src="/Images/default-avatar.png"
+            alt=""
+            width="48"
+            height="48"
+          %}
+        </div>
+        <div class="media-content media-middle">
+          <div><b>Set your profile photo</b><br><a href="">Upload photo</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <hr class="dashed" />
 
   <p class="lead">Address</p>
 
-  {% include components/organisms/primary-address-form.html %}
+  {% include components/organisms/primary-address-form-horizontal.html %}
   
   <hr class="dashed" />
 

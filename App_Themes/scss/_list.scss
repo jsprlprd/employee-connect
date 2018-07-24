@@ -17,6 +17,15 @@ ol {
 
 
 .list {
+  margin-top: -8px;
+  margin-bottom: -8px;
+  > li {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}
+
+.list-sm {
   margin-top: -4px;
   margin-bottom: -4px;
   > li {
@@ -25,6 +34,15 @@ ol {
   }
 }
 
+
+.list-lg {
+  margin-top: -16px;
+  margin-bottom: -16px;
+  > li {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
 
 
 

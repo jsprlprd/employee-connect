@@ -29,11 +29,13 @@ layout: base
                 {{ content }}
               </div>
             </div>
-            <footer class="footer footer-inverse">
-              <div class="container">
-                <p class="footer-text">Copyright © EmployeeConnect Pty Ltd. <br/> All rights reserved.</p>
-              </div>
-            </footer>
+            {% if page.page-footer %}
+              <footer class="footer footer-inverse">
+                <div class="container">
+                  <p class="footer-text">Copyright © EmployeeConnect Pty Ltd. <br/> All rights reserved.</p>
+                </div>
+              </footer>
+              {% endif %}
           </div>
         </div>
       </div>
