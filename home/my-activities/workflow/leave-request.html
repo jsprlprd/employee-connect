@@ -35,9 +35,10 @@ nav-menu:
             <p class="media-heading-subtitle">July 2, 2018</p>
           </div>
           <div class="media-body">
-            <div class="alert alert-danger">
-              <p>You only have <b>3 days</b> to action on this request or the system will automatically redirect it to HR</p>
-            </div>
+            {% include components/molecules/alert.html 
+              type="alert-danger"
+              content="<p>You only have <b>3 days</b> to action on this request or the system will automatically redirect it to the HR Group</p>"
+            %}
             <blockquote>
               <div class="row item">
                 <div class="col-sm-5 text-muted">Leave Request ID</div>
@@ -75,13 +76,13 @@ nav-menu:
           </div>
         </div>
       </li>
-      <li class="media">
+      <li class="media hidden">
         <div class="media-left">
           <img class="media-object img-circle" src="{{ site.baseurl }}/Images/ec-avatar.png" alt="" width="32" height="32" />
         </div>
         <div class="media-content media-middle">
           <div class="media-heading">
-            <p class="media-heading-title">The system has automatically redirect it to Ari Kopoulos because of inaction</p>
+            <p class="media-heading-title">The system has automatically redirect it to Jasper Lepardo (You) because of inaction</p>
             <p class="media-heading-subtitle">July 2, 2018</p>
           </div>
         </div>
@@ -120,11 +121,11 @@ nav-menu:
         </div>
         <div class="media-content media-middle">
           <div class="media-heading">
-            <p class="media-heading-title"><b>Jasper Lepardo (You)</b> has <b class="text-success">approved</b> the request and redirect it to Ari Kopoulos</p>
+            <p class="media-heading-title"><b>Jasper Lepardo (You)</b> has <b class="text-success">approved</b> the request and redirect it to John Doe</p>
             <p class="media-heading-subtitle">July 2, 2018</p>
           </div>
           <div class="media-body">
-            <p>I'm good with this. Please confirm Ari.</p>
+            <p>I'm good with this. Please confirm John.</p>
           </div>
         </div>
       </li>
